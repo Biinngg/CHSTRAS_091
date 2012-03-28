@@ -1,0 +1,24 @@
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\《认识事物 CHSTRAS_091作业》.exe
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\《认识事物 CHSTRAS_091作业》.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\CHSTRAS_BT.dll
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\CHSTRAS_Test.dll
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\CHSTRAS_UI.dll
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\《认识事物 CHSTRAS_091》.exe
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\SHF_BT.dll
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\SHF_UI.dll
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\SHF_DA.dll
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\CHSTRAS_BT.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\CHSTRAS_Test.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\CHSTRAS_UI.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\《认识事物 CHSTRAS_091》.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\SHF_BT.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\SHF_UI.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\bin\Debug\SHF_DA.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\_认识事物_CHSTRAS_091作业_.CHSTRAS_Work.resources
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\_认识事物_CHSTRAS_091作业_.Properties.Resources.resources
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\《认识事物 CHSTRAS_091作业》.exe
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\《认识事物 CHSTRAS_091作业》.pdb
+D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\GenerateResource.read.1.tlog
