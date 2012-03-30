@@ -12,9 +12,9 @@ using CHSTRAS_Test;
 
 namespace _认识事物_CHSTRAS_091作业_
 {
-    public partial class CHSTRAS_Work : uiCHSTRAS_WorkMain
+    public partial class CHSTRAS_091_Work : uiCHSTRAS_091_WorkMain
     {
-        public CHSTRAS_Work()
+        public CHSTRAS_091_Work()
         {
             InitializeComponent();
         }
@@ -27,13 +27,13 @@ namespace _认识事物_CHSTRAS_091作业_
 
         private void button原版实验_Click(object sender, EventArgs e)
         {
-            CHSTRAS_TestV091 f = new CHSTRAS_TestV091();
+            CHSTRAS_091_TestV091 f = new CHSTRAS_091_TestV091();
             f.Show();
         }
 
         private void button实验程序_Click(object sender, EventArgs e)
         {
-            CHSTRAS_TestV091 f = new CHSTRAS_TestV091();
+            CHSTRAS_091_TestV091 f = new CHSTRAS_091_TestV091();
             f.Show();
         }
     }

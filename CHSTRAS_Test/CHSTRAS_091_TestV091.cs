@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace CHSTRAS_Test
 {
-    public partial class CHSTRAS_TestV091 : Form
+    public partial class CHSTRAS_091_TestV091 : Form
     {
-        public CHSTRAS_TestV091()
+        public CHSTRAS_091_TestV091()
         {
             InitializeComponent();
         }

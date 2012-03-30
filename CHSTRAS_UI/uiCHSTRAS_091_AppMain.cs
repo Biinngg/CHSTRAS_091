@@ -14,7 +14,7 @@ using SHF_DA;
 
 namespace CHSTRAS_UI
 {
-    public partial class uiCHSTRAS_AppMain : Form
+    public partial class uiCHSTRAS_091_AppMain : Form
     {
         #region     程序常数说明 V07-2.01版
         protected string shfConnect = string.Format("Provider={0};Data Source={1}{2}",
@@ -69,7 +69,7 @@ namespace CHSTRAS_UI
 
  		#region uiSHFMain 重载说明
 
-		public uiCHSTRAS_AppMain()
+		public uiCHSTRAS_091_AppMain()
 		{
 			InitializeComponent();
 
@@ -80,14 +80,14 @@ namespace CHSTRAS_UI
 		/// 
 		/// </summary>
 		/// <param name="callForm"></param>
-        public uiCHSTRAS_AppMain(Form callForm)
+        public uiCHSTRAS_091_AppMain(Form callForm)
 		{
 			InitializeComponent();
 			callMeForm = callForm;
 			shfInitializer(); //设置默认登录
 
 		}
-        public uiCHSTRAS_AppMain(Form callForm,ref string callConnect)
+        public uiCHSTRAS_091_AppMain(Form callForm,ref string callConnect)
         {
             InitializeComponent();
             callMeForm = callForm;

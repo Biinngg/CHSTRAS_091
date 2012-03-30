@@ -1,6 +1,6 @@
 ﻿namespace CHSTRAS_Test
 {
-    partial class CHSTRAS_Tester
+    partial class CHSTRAS_091_Tester
     {
         /// <summary>
         /// 必需的设计器变量。

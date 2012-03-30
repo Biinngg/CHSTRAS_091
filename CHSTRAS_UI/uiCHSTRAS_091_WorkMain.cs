@@ -13,7 +13,7 @@ using SHF_DA;
 
 namespace CHSTRAS_UI
 {
-    public partial class uiCHSTRAS_WorkMain : Form
+    public partial class uiCHSTRAS_091_WorkMain : Form
     {
         #region     程序常数说明 V07-2.01版
         protected static string shfConnect = string.Format("Provider={0};Data Source={1}{2}",
@@ -72,7 +72,7 @@ namespace CHSTRAS_UI
 
   		#region uiSHFMain 重载说明
 
-		public uiCHSTRAS_WorkMain()
+		public uiCHSTRAS_091_WorkMain()
 		{
 			InitializeComponent();
 
@@ -83,7 +83,7 @@ namespace CHSTRAS_UI
 		/// 
 		/// </summary>
 		/// <param name="callForm"></param>
-        public uiCHSTRAS_WorkMain(Form callForm)
+        public uiCHSTRAS_091_WorkMain(Form callForm)
 		{
 			InitializeComponent();
 			callMeForm = callForm;

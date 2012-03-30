@@ -44,22 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CHSTRAS_Tester.cs">
+    <Compile Include="CHSTRAS_091_Tester.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CHSTRAS_Tester.Designer.cs">
-      <DependentUpon>CHSTRAS_Tester.cs</DependentUpon>
+    <Compile Include="CHSTRAS_091_Tester.Designer.cs">
+      <DependentUpon>CHSTRAS_091_Tester.cs</DependentUpon>
     </Compile>
-    <Compile Include="CHSTRAS_TestV091.cs">
+    <Compile Include="CHSTRAS_091_TestV091.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CHSTRAS_TestV091.Designer.cs">
-      <DependentUpon>CHSTRAS_TestV091.cs</DependentUpon>
+    <Compile Include="CHSTRAS_091_TestV091.Designer.cs">
+      <DependentUpon>CHSTRAS_091_TestV091.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CHSTRAS_Tester.resx">
-      <DependentUpon>CHSTRAS_Tester.cs</DependentUpon>
+    <EmbeddedResource Include="CHSTRAS_091_Tester.resx">
+      <DependentUpon>CHSTRAS_091_Tester.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

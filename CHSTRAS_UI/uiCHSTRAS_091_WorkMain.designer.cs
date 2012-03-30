@@ -1,6 +1,6 @@
 ﻿namespace CHSTRAS_UI
 {
-    partial class uiCHSTRAS_WorkMain
+    partial class uiCHSTRAS_091_WorkMain
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -254,7 +254,7 @@
             this.groupBox作业项目.Size = new System.Drawing.Size(607, 118);
             this.groupBox作业项目.TabIndex = 47;
             this.groupBox作业项目.TabStop = false;
-            this.groupBox作业项目.Text = "作业项目 程序ID：100000";
+            this.groupBox作业项目.Text = "作业项目 程序ID：1030102";
             // 
             // button基础版
             // 
@@ -360,7 +360,7 @@
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelTitle.Location = new System.Drawing.Point(227, 31);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(712, 48);
+            this.labelTitle.Size = new System.Drawing.Size(597, 40);
             this.labelTitle.TabIndex = 39;
             this.labelTitle.Text = "《认识事物 CHSTRAS_091》作业";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -407,7 +407,7 @@
             this.groupBox教学实验.Size = new System.Drawing.Size(607, 123);
             this.groupBox教学实验.TabIndex = 44;
             this.groupBox教学实验.TabStop = false;
-            this.groupBox教学实验.Text = "教学实验 程序ID：300000";
+            this.groupBox教学实验.Text = "教学实验 程序ID：1030102";
             // 
             // button试验模块
             // 
@@ -614,7 +614,7 @@
             this.button登录.UseVisualStyleBackColor = false;
             this.button登录.Click += new System.EventHandler(this.button登录_Click);
             // 
-            // uuiCHSTRAS_WorkMain
+            // uiCHSTRAS_091_WorkMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -633,7 +633,7 @@
             this.Controls.Add(this.groupBox教学实验);
             this.Controls.Add(this.groupBox编程实践);
             this.Controls.Add(this.groupBox用户管理);
-            this.Name = "uuiCHSTRAS_WorkMain";
+            this.Name = "uiCHSTRAS_091_WorkMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "uiSHF_WorkMain 程序ID：200000";
             this.Activated += new System.EventHandler(this.uiSHF_WorkMain_Activated);

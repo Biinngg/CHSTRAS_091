@@ -14,7 +14,7 @@ namespace _认识事物_CHSTRAS_091作业_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CHSTRAS_Work());
+            Application.Run(new CHSTRAS_091_Work());
         }
     }
 }

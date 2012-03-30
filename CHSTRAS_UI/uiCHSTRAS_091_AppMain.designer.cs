@@ -1,6 +1,6 @@
 ﻿namespace CHSTRAS_UI
 {
-    partial class uiCHSTRAS_AppMain
+    partial class uiCHSTRAS_091_AppMain
     {
         /// <summary>
         /// Required designer variable.
@@ -50,6 +50,7 @@
             this.button组合拼图 = new System.Windows.Forms.Button();
             this.button记忆门窗 = new System.Windows.Forms.Button();
             this.button连结游戏 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox成绩管理.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox用户管理.SuspendLayout();
@@ -90,9 +91,9 @@
             this.groupBox成绩管理.Controls.Add(this.button统计分析);
             this.groupBox成绩管理.Controls.Add(this.button排行榜);
             this.groupBox成绩管理.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox成绩管理.Location = new System.Drawing.Point(609, 164);
+            this.groupBox成绩管理.Location = new System.Drawing.Point(732, 164);
             this.groupBox成绩管理.Name = "groupBox成绩管理";
-            this.groupBox成绩管理.Size = new System.Drawing.Size(231, 275);
+            this.groupBox成绩管理.Size = new System.Drawing.Size(108, 275);
             this.groupBox成绩管理.TabIndex = 53;
             this.groupBox成绩管理.TabStop = false;
             this.groupBox成绩管理.Text = "成绩管理";
@@ -102,9 +103,9 @@
             this.button历史纪录.BackColor = System.Drawing.Color.Tan;
             this.button历史纪录.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button历史纪录.ForeColor = System.Drawing.Color.White;
-            this.button历史纪录.Location = new System.Drawing.Point(83, 28);
+            this.button历史纪录.Location = new System.Drawing.Point(22, 218);
             this.button历史纪录.Name = "button历史纪录";
-            this.button历史纪录.Size = new System.Drawing.Size(64, 228);
+            this.button历史纪录.Size = new System.Drawing.Size(64, 35);
             this.button历史纪录.TabIndex = 17;
             this.button历史纪录.Text = "历史纪录";
             this.button历史纪录.UseVisualStyleBackColor = false;
@@ -115,11 +116,11 @@
             this.button统计分析.BackColor = System.Drawing.Color.Tan;
             this.button统计分析.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button统计分析.ForeColor = System.Drawing.Color.White;
-            this.button统计分析.Location = new System.Drawing.Point(153, 28);
+            this.button统计分析.Location = new System.Drawing.Point(22, 177);
             this.button统计分析.Name = "button统计分析";
-            this.button统计分析.Size = new System.Drawing.Size(64, 228);
+            this.button统计分析.Size = new System.Drawing.Size(64, 35);
             this.button统计分析.TabIndex = 16;
-            this.button统计分析.Text = "统计分析";
+            this.button统计分析.Text = "统计";
             this.button统计分析.UseVisualStyleBackColor = false;
             this.button统计分析.Click += new System.EventHandler(this.button统计分析_Click);
             // 
@@ -128,9 +129,9 @@
             this.button排行榜.BackColor = System.Drawing.Color.Tan;
             this.button排行榜.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button排行榜.ForeColor = System.Drawing.Color.White;
-            this.button排行榜.Location = new System.Drawing.Point(13, 28);
+            this.button排行榜.Location = new System.Drawing.Point(22, 28);
             this.button排行榜.Name = "button排行榜";
-            this.button排行榜.Size = new System.Drawing.Size(64, 228);
+            this.button排行榜.Size = new System.Drawing.Size(64, 143);
             this.button排行榜.TabIndex = 14;
             this.button排行榜.Text = "排行榜";
             this.button排行榜.UseVisualStyleBackColor = false;
@@ -257,7 +258,7 @@
             this.groupBox课程管理.Controls.Add(this.button认识植物);
             this.groupBox课程管理.Controls.Add(this.button前言);
             this.groupBox课程管理.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox课程管理.Location = new System.Drawing.Point(179, 164);
+            this.groupBox课程管理.Location = new System.Drawing.Point(193, 164);
             this.groupBox课程管理.Name = "groupBox课程管理";
             this.groupBox课程管理.Size = new System.Drawing.Size(161, 275);
             this.groupBox课程管理.TabIndex = 55;
@@ -293,13 +294,14 @@
             // groupBox训练管理
             // 
             this.groupBox训练管理.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox训练管理.Controls.Add(this.button1);
             this.groupBox训练管理.Controls.Add(this.button组合拼图);
             this.groupBox训练管理.Controls.Add(this.button记忆门窗);
             this.groupBox训练管理.Controls.Add(this.button连结游戏);
             this.groupBox训练管理.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox训练管理.Location = new System.Drawing.Point(355, 164);
+            this.groupBox训练管理.Location = new System.Drawing.Point(386, 164);
             this.groupBox训练管理.Name = "groupBox训练管理";
-            this.groupBox训练管理.Size = new System.Drawing.Size(229, 275);
+            this.groupBox训练管理.Size = new System.Drawing.Size(310, 275);
             this.groupBox训练管理.TabIndex = 56;
             this.groupBox训练管理.TabStop = false;
             this.groupBox训练管理.Text = "训练游戏";
@@ -343,7 +345,19 @@
             this.button连结游戏.UseVisualStyleBackColor = false;
             this.button连结游戏.Click += new System.EventHandler(this.button连结游戏_Click);
             // 
-            // uuiCHSTRAS_AppMain
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Tan;
+            this.button1.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(225, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(64, 228);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "寻找错误";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // uiCHSTRAS_AppMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -361,7 +375,7 @@
             this.Controls.Add(this.labelAbout);
             this.Controls.Add(this.groupBox用户管理);
             this.ForeColor = System.Drawing.Color.Sienna;
-            this.Name = "uuiCHSTRAS_AppMain";
+            this.Name = "uiCHSTRAS_AppMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "uiSHF_AppMain";
             this.Activated += new System.EventHandler(this.uiSHF_Main_Activated);
@@ -400,5 +414,6 @@
         public System.Windows.Forms.Button button组合拼图;
         public System.Windows.Forms.Button button记忆门窗;
         public System.Windows.Forms.Button button连结游戏;
+        public System.Windows.Forms.Button button1;
     }
 }

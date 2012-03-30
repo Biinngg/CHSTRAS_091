@@ -14,7 +14,7 @@ namespace CHSTRAS_Test
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CHSTRAS_Tester());
+            Application.Run(new CHSTRAS_091_Tester());
         }
     }
 }

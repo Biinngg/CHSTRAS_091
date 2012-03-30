@@ -1,6 +1,6 @@
 ﻿namespace _认识事物_CHSTRAS_091作业_
 {
-    partial class CHSTRAS_Work
+    partial class CHSTRAS_091_Work
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -49,13 +49,13 @@
             // 
             this.button原版实验.Click += new System.EventHandler(this.button原版实验_Click);
             // 
-            // CHSTRAS_Work
+            // CHSTRAS_091_Work
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 600);
-            this.Name = "CHSTRAS_Work";
-            this.Text = "CHSTRAS_Work";
+            this.Name = "CHSTRAS_091_Work";
+            this.Text = "CHSTRAS_091_Work";
             this.groupBoxScore.ResumeLayout(false);
             this.groupBox课程编辑.ResumeLayout(false);
             this.groupBox作业项目.ResumeLayout(false);

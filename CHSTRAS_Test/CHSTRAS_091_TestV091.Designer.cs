@@ -1,6 +1,6 @@
 ﻿namespace CHSTRAS_Test
 {
-    partial class CHSTRAS_TestV091
+    partial class CHSTRAS_091_TestV091
     {
         /// <summary>
         /// Required designer variable.
