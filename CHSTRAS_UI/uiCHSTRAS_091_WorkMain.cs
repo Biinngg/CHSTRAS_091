@@ -11,7 +11,7 @@ using SHF_DA;
 
 
 
-namespace CHSTRAS_UI
+namespace CHSTRAS_091_UI
 {
     public partial class uiCHSTRAS_091_WorkMain : Form
     {

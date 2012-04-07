@@ -6,9 +6,12 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using _认识事物_CHSTRAS_091_;
-using CHSTRAS_UI;
-using CHSTRAS_BT;
-using CHSTRAS_Test;
+using CHSTRAS_091_UI;
+using CHSTRAS_091_BT;
+using CHSTRAS_091_Test;
+using SHF_BT;
+using SHF_DA;
+using SHF_UI;
 
 namespace _认识事物_CHSTRAS_091作业_
 {
@@ -33,7 +36,7 @@ namespace _认识事物_CHSTRAS_091作业_
 
         private void button实验程序_Click(object sender, EventArgs e)
         {
-            CHSTRAS_091_TestV091 f = new CHSTRAS_091_TestV091();
+            CHSTRAS_091_TestV091 f = new CHSTRAS_091_TestV091(this, shfConnect);
             f.Show();
         }
     }

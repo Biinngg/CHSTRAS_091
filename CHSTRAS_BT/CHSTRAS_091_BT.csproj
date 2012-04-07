@@ -8,7 +8,7 @@
     <ProjectGuid>{385E4A65-D571-4356-8ED5-339E57141738}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CHSTRAS_BT</RootNamespace>
+    <RootNamespace>CHSTRAS_091_BT</RootNamespace>
     <AssemblyName>CHSTRAS_BT</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

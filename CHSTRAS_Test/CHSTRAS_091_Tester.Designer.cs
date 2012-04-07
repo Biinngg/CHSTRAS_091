@@ -1,4 +1,4 @@
-﻿namespace CHSTRAS_Test
+﻿namespace CHSTRAS_091_Test
 {
     partial class CHSTRAS_091_Tester
     {
@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tabPage桌面应用.SuspendLayout();
+            this.tabControlUI.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Form1
+            // CHSTRAS_091_Tester
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 266);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(892, 566);
+            this.Name = "CHSTRAS_091_Tester";
             this.Text = "CHSTRAS_Tester";
+            this.tabPage桌面应用.ResumeLayout(false);
+            this.tabControlUI.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

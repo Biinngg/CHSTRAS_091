@@ -1,4 +1,4 @@
-﻿namespace CHSTRAS_UI
+﻿namespace CHSTRAS_091_UI
 {
     partial class uiCHSTRAS_091_WorkMain
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace CHSTRAS_Test
+namespace CHSTRAS_091_Test
 {
     static class Program
     {

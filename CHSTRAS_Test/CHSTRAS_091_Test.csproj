@@ -8,7 +8,7 @@
     <ProjectGuid>{D2E8CF9C-1D80-45CF-A91C-EC8DE80F5DB7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CHSTRAS_Test</RootNamespace>
+    <RootNamespace>CHSTRAS_091_Test</RootNamespace>
     <AssemblyName>CHSTRAS_Test</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -36,6 +36,15 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SHF_BT">
+      <HintPath>..\SHFDB\SHF_BT.dll</HintPath>
+    </Reference>
+    <Reference Include="SHF_DA">
+      <HintPath>..\SHFDB\SHF_DA.dll</HintPath>
+    </Reference>
+    <Reference Include="SHF_UI">
+      <HintPath>..\SHFDB\SHF_UI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -61,6 +70,9 @@
     <EmbeddedResource Include="CHSTRAS_091_Tester.resx">
       <DependentUpon>CHSTRAS_091_Tester.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CHSTRAS_091_TestV091.resx">
+      <DependentUpon>CHSTRAS_091_TestV091.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,7 +81,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +93,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHSTRAS_BT\CHSTRAS_091_BT.csproj">
+      <Project>{385E4A65-D571-4356-8ED5-339E57141738}</Project>
+      <Name>CHSTRAS_091_BT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CHSTRAS_UI\CHSTRAS_091_UI.csproj">
+      <Project>{DFED34E5-8773-4CBF-9B53-9EC505284514}</Project>
+      <Name>CHSTRAS_091_UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\《认识事物 CHSTRAS_091》\《认识事物 CHSTRAS_091》.csproj">
+      <Project>{5C310F88-9227-4E0D-BF45-C67DBFE718E4}</Project>
+      <Name>《认识事物 CHSTRAS_091》</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

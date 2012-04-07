@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace CHSTRAS_UI
+namespace CHSTRAS_091_UI
 {
     static class Program
     {
@@ -14,7 +14,7 @@ namespace CHSTRAS_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new uiTyping01_Option());
         }
     }
 }

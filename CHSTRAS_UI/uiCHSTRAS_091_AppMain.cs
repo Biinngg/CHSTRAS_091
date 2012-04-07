@@ -12,7 +12,7 @@ using SHF_DA;
 
 
 
-namespace CHSTRAS_UI
+namespace CHSTRAS_091_UI
 {
     public partial class uiCHSTRAS_091_AppMain : Form
     {
@@ -21,8 +21,8 @@ namespace CHSTRAS_UI
                 "Microsoft.Jet.OLEDB.4.0;",
                 System.AppDomain.CurrentDomain.BaseDirectory,
                 "..\\..\\..\\SHFDB\\SHFDB_V07.01.mdb");
-        private int myProgramID = 10001;
-        private string myProgramName = "任务名称";
+        private int myProgramID = 1030102;
+        private string myProgramName = "认识事物";
         //private string myProgramCode = "SHFXXX072";
         //private string myProgramNumber = "2008-09-01-01-01";
         //private string myProgramVersion = "V06-2";

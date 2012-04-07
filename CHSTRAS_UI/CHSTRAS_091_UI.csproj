@@ -8,7 +8,7 @@
     <ProjectGuid>{DFED34E5-8773-4CBF-9B53-9EC505284514}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CHSTRAS_UI</RootNamespace>
+    <RootNamespace>CHSTRAS_091_UI</RootNamespace>
     <AssemblyName>CHSTRAS_UI</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -53,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="uiTeaching.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="uiTeaching.Designer.cs">
+      <DependentUpon>uiTeaching.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_WorkMain.resx">
       <DependentUpon>uiCHSTRAS_091_WorkMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiTeaching.resx">
+      <DependentUpon>uiTeaching.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

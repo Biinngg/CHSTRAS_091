@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using CHSTRAS_UI;
+using CHSTRAS_091_UI;
 
 namespace _认识事物_CHSTRAS_091_
 {
