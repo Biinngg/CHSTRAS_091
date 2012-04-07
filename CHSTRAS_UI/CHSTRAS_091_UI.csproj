@@ -53,12 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="uiTeaching.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="uiTeaching.Designer.cs">
-      <DependentUpon>uiTeaching.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="uiCHSTRAS_091_AppMain.cs">
@@ -88,9 +82,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_WorkMain.resx">
       <DependentUpon>uiCHSTRAS_091_WorkMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uiTeaching.resx">
-      <DependentUpon>uiTeaching.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
