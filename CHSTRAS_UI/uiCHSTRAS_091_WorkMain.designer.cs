@@ -254,7 +254,7 @@
             this.groupBox作业项目.Size = new System.Drawing.Size(607, 118);
             this.groupBox作业项目.TabIndex = 47;
             this.groupBox作业项目.TabStop = false;
-            this.groupBox作业项目.Text = "作业项目 程序ID：1030102";
+            this.groupBox作业项目.Text = "作业项目 程序ID：2030102";
             // 
             // button基础版
             // 
@@ -407,7 +407,7 @@
             this.groupBox教学实验.Size = new System.Drawing.Size(607, 123);
             this.groupBox教学实验.TabIndex = 44;
             this.groupBox教学实验.TabStop = false;
-            this.groupBox教学实验.Text = "教学实验 程序ID：1030102";
+            this.groupBox教学实验.Text = "教学实验 程序ID：3030102";
             // 
             // button试验模块
             // 
