@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            this.groupBox成绩管理.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
+            this.groupBox用户管理.SuspendLayout();
+            this.groupBox课程管理.SuspendLayout();
+            this.groupBox训练管理.SuspendLayout();
             // 
             // CHSTRAS_091
             // 
@@ -36,9 +40,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Name = "CHSTRAS_091";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CHSTRAS_091";
+            this.groupBox成绩管理.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
+            this.groupBox用户管理.ResumeLayout(false);
+            this.groupBox课程管理.ResumeLayout(false);
+            this.groupBox训练管理.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

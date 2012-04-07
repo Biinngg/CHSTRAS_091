@@ -47,10 +47,10 @@
             this.button认识植物 = new System.Windows.Forms.Button();
             this.button前言 = new System.Windows.Forms.Button();
             this.groupBox训练管理 = new System.Windows.Forms.GroupBox();
+            this.button找寻错误 = new System.Windows.Forms.Button();
             this.button组合拼图 = new System.Windows.Forms.Button();
             this.button记忆门窗 = new System.Windows.Forms.Button();
             this.button连结游戏 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox成绩管理.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox用户管理.SuspendLayout();
@@ -294,7 +294,7 @@
             // groupBox训练管理
             // 
             this.groupBox训练管理.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox训练管理.Controls.Add(this.button1);
+            this.groupBox训练管理.Controls.Add(this.button找寻错误);
             this.groupBox训练管理.Controls.Add(this.button组合拼图);
             this.groupBox训练管理.Controls.Add(this.button记忆门窗);
             this.groupBox训练管理.Controls.Add(this.button连结游戏);
@@ -305,6 +305,18 @@
             this.groupBox训练管理.TabIndex = 56;
             this.groupBox训练管理.TabStop = false;
             this.groupBox训练管理.Text = "训练游戏";
+            // 
+            // button找寻错误
+            // 
+            this.button找寻错误.BackColor = System.Drawing.Color.Tan;
+            this.button找寻错误.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button找寻错误.ForeColor = System.Drawing.Color.White;
+            this.button找寻错误.Location = new System.Drawing.Point(225, 28);
+            this.button找寻错误.Name = "button找寻错误";
+            this.button找寻错误.Size = new System.Drawing.Size(64, 228);
+            this.button找寻错误.TabIndex = 18;
+            this.button找寻错误.Text = "找寻错误";
+            this.button找寻错误.UseVisualStyleBackColor = false;
             // 
             // button组合拼图
             // 
@@ -345,19 +357,7 @@
             this.button连结游戏.UseVisualStyleBackColor = false;
             this.button连结游戏.Click += new System.EventHandler(this.button连结游戏_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Tan;
-            this.button1.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(225, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 228);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "寻找错误";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // uiCHSTRAS_AppMain
+            // uiCHSTRAS_091_AppMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -375,7 +375,7 @@
             this.Controls.Add(this.labelAbout);
             this.Controls.Add(this.groupBox用户管理);
             this.ForeColor = System.Drawing.Color.Sienna;
-            this.Name = "uiCHSTRAS_AppMain";
+            this.Name = "uiCHSTRAS_091_AppMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "uiSHF_AppMain";
             this.Activated += new System.EventHandler(this.uiSHF_Main_Activated);
@@ -414,6 +414,6 @@
         public System.Windows.Forms.Button button组合拼图;
         public System.Windows.Forms.Button button记忆门窗;
         public System.Windows.Forms.Button button连结游戏;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button找寻错误;
     }
 }

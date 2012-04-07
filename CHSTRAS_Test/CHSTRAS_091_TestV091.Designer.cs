@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.总界面 = new System.Windows.Forms.TabPage();
+            this.tabPage总界面 = new System.Windows.Forms.TabPage();
             this.QUIT00 = new System.Windows.Forms.Button();
             this.QUIT = new System.Windows.Forms.Label();
-            this.认识器物教学 = new System.Windows.Forms.TabPage();
+            this.tabPage认识器物教学 = new System.Windows.Forms.TabPage();
             this.LINK01 = new System.Windows.Forms.Button();
             this.LINK00 = new System.Windows.Forms.Button();
             this.LINK = new System.Windows.Forms.Label();
@@ -39,7 +39,7 @@
             this.TEACH = new System.Windows.Forms.Label();
             this.FOREWORD00 = new System.Windows.Forms.Button();
             this.FOREWORD = new System.Windows.Forms.Label();
-            this.认识器物游戏 = new System.Windows.Forms.TabPage();
+            this.tabPage认识器物游戏 = new System.Windows.Forms.TabPage();
             this.FAULT02 = new System.Windows.Forms.Button();
             this.FAULT01 = new System.Windows.Forms.Button();
             this.FAULT00 = new System.Windows.Forms.Button();
@@ -52,9 +52,9 @@
             this.PUZZLE = new System.Windows.Forms.Label();
             this.tabPage桌面应用.SuspendLayout();
             this.tabControlUI.SuspendLayout();
-            this.总界面.SuspendLayout();
-            this.认识器物教学.SuspendLayout();
-            this.认识器物游戏.SuspendLayout();
+            this.tabPage总界面.SuspendLayout();
+            this.tabPage认识器物教学.SuspendLayout();
+            this.tabPage认识器物游戏.SuspendLayout();
             this.SuspendLayout();
             // 
             // button登录
@@ -69,12 +69,12 @@
             // 
             // tabControlUI
             // 
-            this.tabControlUI.Controls.Add(this.总界面);
-            this.tabControlUI.Controls.Add(this.认识器物教学);
-            this.tabControlUI.Controls.Add(this.认识器物游戏);
-            this.tabControlUI.Controls.SetChildIndex(this.认识器物游戏, 0);
-            this.tabControlUI.Controls.SetChildIndex(this.认识器物教学, 0);
-            this.tabControlUI.Controls.SetChildIndex(this.总界面, 0);
+            this.tabControlUI.Controls.Add(this.tabPage总界面);
+            this.tabControlUI.Controls.Add(this.tabPage认识器物教学);
+            this.tabControlUI.Controls.Add(this.tabPage认识器物游戏);
+            this.tabControlUI.Controls.SetChildIndex(this.tabPage认识器物游戏, 0);
+            this.tabControlUI.Controls.SetChildIndex(this.tabPage认识器物教学, 0);
+            this.tabControlUI.Controls.SetChildIndex(this.tabPage总界面, 0);
             this.tabControlUI.Controls.SetChildIndex(this.tabPage桌面应用, 0);
             // 
             // button目录
@@ -82,17 +82,17 @@
             this.button目录.BackColor = System.Drawing.Color.Aqua;
             this.button目录.Click += new System.EventHandler(this.button目录_Click);
             // 
-            // 总界面
+            // tabPage总界面
             // 
-            this.总界面.Controls.Add(this.QUIT00);
-            this.总界面.Controls.Add(this.QUIT);
-            this.总界面.Location = new System.Drawing.Point(4, 21);
-            this.总界面.Name = "总界面";
-            this.总界面.Padding = new System.Windows.Forms.Padding(3);
-            this.总界面.Size = new System.Drawing.Size(641, 68);
-            this.总界面.TabIndex = 1;
-            this.总界面.Text = "总界面";
-            this.总界面.UseVisualStyleBackColor = true;
+            this.tabPage总界面.Controls.Add(this.QUIT00);
+            this.tabPage总界面.Controls.Add(this.QUIT);
+            this.tabPage总界面.Location = new System.Drawing.Point(4, 21);
+            this.tabPage总界面.Name = "tabPage总界面";
+            this.tabPage总界面.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage总界面.Size = new System.Drawing.Size(641, 68);
+            this.tabPage总界面.TabIndex = 1;
+            this.tabPage总界面.Text = "总界面";
+            this.tabPage总界面.UseVisualStyleBackColor = true;
             // 
             // QUIT00
             // 
@@ -112,21 +112,21 @@
             this.QUIT.TabIndex = 0;
             this.QUIT.Text = "退出";
             // 
-            // 认识器物教学
+            // tabPage认识器物教学
             // 
-            this.认识器物教学.Controls.Add(this.LINK01);
-            this.认识器物教学.Controls.Add(this.LINK00);
-            this.认识器物教学.Controls.Add(this.LINK);
-            this.认识器物教学.Controls.Add(this.TEACH00);
-            this.认识器物教学.Controls.Add(this.TEACH);
-            this.认识器物教学.Controls.Add(this.FOREWORD00);
-            this.认识器物教学.Controls.Add(this.FOREWORD);
-            this.认识器物教学.Location = new System.Drawing.Point(4, 21);
-            this.认识器物教学.Name = "认识器物教学";
-            this.认识器物教学.Size = new System.Drawing.Size(641, 68);
-            this.认识器物教学.TabIndex = 2;
-            this.认识器物教学.Text = "认识器物教学";
-            this.认识器物教学.UseVisualStyleBackColor = true;
+            this.tabPage认识器物教学.Controls.Add(this.LINK01);
+            this.tabPage认识器物教学.Controls.Add(this.LINK00);
+            this.tabPage认识器物教学.Controls.Add(this.LINK);
+            this.tabPage认识器物教学.Controls.Add(this.TEACH00);
+            this.tabPage认识器物教学.Controls.Add(this.TEACH);
+            this.tabPage认识器物教学.Controls.Add(this.FOREWORD00);
+            this.tabPage认识器物教学.Controls.Add(this.FOREWORD);
+            this.tabPage认识器物教学.Location = new System.Drawing.Point(4, 21);
+            this.tabPage认识器物教学.Name = "tabPage认识器物教学";
+            this.tabPage认识器物教学.Size = new System.Drawing.Size(641, 68);
+            this.tabPage认识器物教学.TabIndex = 2;
+            this.tabPage认识器物教学.Text = "认识器物教学";
+            this.tabPage认识器物教学.UseVisualStyleBackColor = true;
             // 
             // LINK01
             // 
@@ -191,24 +191,24 @@
             this.FOREWORD.TabIndex = 0;
             this.FOREWORD.Text = "前言";
             // 
-            // 认识器物游戏
+            // tabPage认识器物游戏
             // 
-            this.认识器物游戏.Controls.Add(this.FAULT02);
-            this.认识器物游戏.Controls.Add(this.FAULT01);
-            this.认识器物游戏.Controls.Add(this.FAULT00);
-            this.认识器物游戏.Controls.Add(this.FAULT);
-            this.认识器物游戏.Controls.Add(this.MEMORY01);
-            this.认识器物游戏.Controls.Add(this.MEMORY00);
-            this.认识器物游戏.Controls.Add(this.MEMORY);
-            this.认识器物游戏.Controls.Add(this.PUZZLE01);
-            this.认识器物游戏.Controls.Add(this.PUZZLE00);
-            this.认识器物游戏.Controls.Add(this.PUZZLE);
-            this.认识器物游戏.Location = new System.Drawing.Point(4, 21);
-            this.认识器物游戏.Name = "认识器物游戏";
-            this.认识器物游戏.Size = new System.Drawing.Size(641, 68);
-            this.认识器物游戏.TabIndex = 3;
-            this.认识器物游戏.Text = "认识器物游戏";
-            this.认识器物游戏.UseVisualStyleBackColor = true;
+            this.tabPage认识器物游戏.Controls.Add(this.FAULT02);
+            this.tabPage认识器物游戏.Controls.Add(this.FAULT01);
+            this.tabPage认识器物游戏.Controls.Add(this.FAULT00);
+            this.tabPage认识器物游戏.Controls.Add(this.FAULT);
+            this.tabPage认识器物游戏.Controls.Add(this.MEMORY01);
+            this.tabPage认识器物游戏.Controls.Add(this.MEMORY00);
+            this.tabPage认识器物游戏.Controls.Add(this.MEMORY);
+            this.tabPage认识器物游戏.Controls.Add(this.PUZZLE01);
+            this.tabPage认识器物游戏.Controls.Add(this.PUZZLE00);
+            this.tabPage认识器物游戏.Controls.Add(this.PUZZLE);
+            this.tabPage认识器物游戏.Location = new System.Drawing.Point(4, 21);
+            this.tabPage认识器物游戏.Name = "tabPage认识器物游戏";
+            this.tabPage认识器物游戏.Size = new System.Drawing.Size(641, 68);
+            this.tabPage认识器物游戏.TabIndex = 3;
+            this.tabPage认识器物游戏.Text = "认识器物游戏";
+            this.tabPage认识器物游戏.UseVisualStyleBackColor = true;
             // 
             // FAULT02
             // 
@@ -307,21 +307,21 @@
             this.Name = "CHSTRAS_091_TestV091";
             this.tabPage桌面应用.ResumeLayout(false);
             this.tabControlUI.ResumeLayout(false);
-            this.总界面.ResumeLayout(false);
-            this.总界面.PerformLayout();
-            this.认识器物教学.ResumeLayout(false);
-            this.认识器物教学.PerformLayout();
-            this.认识器物游戏.ResumeLayout(false);
-            this.认识器物游戏.PerformLayout();
+            this.tabPage总界面.ResumeLayout(false);
+            this.tabPage总界面.PerformLayout();
+            this.tabPage认识器物教学.ResumeLayout(false);
+            this.tabPage认识器物教学.PerformLayout();
+            this.tabPage认识器物游戏.ResumeLayout(false);
+            this.tabPage认识器物游戏.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabPage 总界面;
-        private System.Windows.Forms.TabPage 认识器物教学;
-        private System.Windows.Forms.TabPage 认识器物游戏;
+        private System.Windows.Forms.TabPage tabPage总界面;
+        private System.Windows.Forms.TabPage tabPage认识器物教学;
+        private System.Windows.Forms.TabPage tabPage认识器物游戏;
         private System.Windows.Forms.Label QUIT;
         private System.Windows.Forms.Button QUIT00;
         private System.Windows.Forms.Button LINK01;
