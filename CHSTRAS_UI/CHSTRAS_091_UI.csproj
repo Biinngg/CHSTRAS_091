@@ -61,6 +61,12 @@
     <Compile Include="uiCHSTRAS_091_AppMain.designer.cs">
       <DependentUpon>uiCHSTRAS_091_AppMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="uiCHSTRAS_091_CourseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiCHSTRAS_091_CourseEdit.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091_CourseEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="uiCHSTRAS_091_CourseShow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,12 +84,6 @@
     </Compile>
     <Compile Include="uiTyping01_Option.Designer.cs">
       <DependentUpon>uiTyping01_Option.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

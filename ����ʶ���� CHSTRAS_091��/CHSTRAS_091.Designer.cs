@@ -33,6 +33,11 @@
             this.groupBox用户管理.SuspendLayout();
             this.groupBox课程管理.SuspendLayout();
             this.groupBox训练管理.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // button认识植物
+            // 
+            this.button认识植物.Click += new System.EventHandler(this.button认识植物_Click);
             // 
             // CHSTRAS_091
             // 
