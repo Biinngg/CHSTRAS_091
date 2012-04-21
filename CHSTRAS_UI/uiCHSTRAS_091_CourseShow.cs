@@ -10,9 +10,11 @@ namespace CHSTRAS_091_UI
 {
     public partial class uiCHSTRAS_091_CourseShow : SHF_UI.uiSHF_CourseBase
     {
+        private int itemId;
         public uiCHSTRAS_091_CourseShow()
         {
             InitializeComponent();
+            itemId = 2;
         }
 
         // 组合框选择事件
@@ -28,6 +30,11 @@ namespace CHSTRAS_091_UI
         // TreeView控件选择事件
         private void ucCourseManagerSimple1_trvCourse_AfterSelect(object sender, EventArgs e)
         {
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+            myPages.GetOne(itemId);
         }
     }
 }

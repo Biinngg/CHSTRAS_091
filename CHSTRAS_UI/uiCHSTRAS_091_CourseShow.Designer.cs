@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uiCHSTRAS_091_CourseShow));
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,21 +76,22 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(291, 235);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 3;
-            this.label2.Text = "图片2";
+            this.label2.Text = "书包";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(77, 235);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 2;
-            this.label1.Text = "图片1";
+            this.label1.Text = "杯子";
             // 
             // pictureBox2
             // 
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
             this.pictureBox2.Location = new System.Drawing.Point(212, 51);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 150);
@@ -98,6 +100,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(6, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 150);
@@ -106,6 +109,7 @@
             // 
             // buttonBefore
             // 
+            this.buttonBefore.Enabled = false;
             this.buttonBefore.Location = new System.Drawing.Point(261, 435);
             this.buttonBefore.Name = "buttonBefore";
             this.buttonBefore.Size = new System.Drawing.Size(75, 23);
@@ -121,6 +125,7 @@
             this.buttonNext.TabIndex = 150;
             this.buttonNext.Text = "下一题";
             this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // ucCourseManagerSimple1
             // 
