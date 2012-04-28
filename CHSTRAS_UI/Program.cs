@@ -14,7 +14,7 @@ namespace CHSTRAS_091_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new uiTyping01_Option());
+            Application.Run(new uiCHSTRAS_091_Option());
         }
     }
 }

@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage总界面 = new System.Windows.Forms.TabPage();
+            this.tabPage认识事物 = new System.Windows.Forms.TabPage();
             this.QUIT00 = new System.Windows.Forms.Button();
-            this.QUIT = new System.Windows.Forms.Label();
             this.tabPage认识器物教学 = new System.Windows.Forms.TabPage();
             this.LINK01 = new System.Windows.Forms.Button();
             this.LINK00 = new System.Windows.Forms.Button();
@@ -50,9 +49,21 @@
             this.PUZZLE01 = new System.Windows.Forms.Button();
             this.PUZZLE00 = new System.Windows.Forms.Button();
             this.PUZZLE = new System.Windows.Forms.Label();
+            this.button前言 = new System.Windows.Forms.Button();
+            this.button认识事物 = new System.Windows.Forms.Button();
+            this.button连结游戏 = new System.Windows.Forms.Button();
+            this.button组合拼图 = new System.Windows.Forms.Button();
+            this.button记忆门窗 = new System.Windows.Forms.Button();
+            this.button找寻错误 = new System.Windows.Forms.Button();
+            this.button单项成绩 = new System.Windows.Forms.Button();
+            this.button单元成绩 = new System.Windows.Forms.Button();
+            this.button统计分析 = new System.Windows.Forms.Button();
+            this.button创建课程 = new System.Windows.Forms.Button();
+            this.button显示课程 = new System.Windows.Forms.Button();
+            this.button课程结构 = new System.Windows.Forms.Button();
             this.tabPage桌面应用.SuspendLayout();
             this.tabControlUI.SuspendLayout();
-            this.tabPage总界面.SuspendLayout();
+            this.tabPage认识事物.SuspendLayout();
             this.tabPage认识器物教学.SuspendLayout();
             this.tabPage认识器物游戏.SuspendLayout();
             this.SuspendLayout();
@@ -69,12 +80,12 @@
             // 
             // tabControlUI
             // 
-            this.tabControlUI.Controls.Add(this.tabPage总界面);
+            this.tabControlUI.Controls.Add(this.tabPage认识事物);
             this.tabControlUI.Controls.Add(this.tabPage认识器物教学);
             this.tabControlUI.Controls.Add(this.tabPage认识器物游戏);
             this.tabControlUI.Controls.SetChildIndex(this.tabPage认识器物游戏, 0);
             this.tabControlUI.Controls.SetChildIndex(this.tabPage认识器物教学, 0);
-            this.tabControlUI.Controls.SetChildIndex(this.tabPage总界面, 0);
+            this.tabControlUI.Controls.SetChildIndex(this.tabPage认识事物, 0);
             this.tabControlUI.Controls.SetChildIndex(this.tabPage桌面应用, 0);
             // 
             // button目录
@@ -82,35 +93,37 @@
             this.button目录.BackColor = System.Drawing.Color.Aqua;
             this.button目录.Click += new System.EventHandler(this.button目录_Click);
             // 
-            // tabPage总界面
+            // tabPage认识事物
             // 
-            this.tabPage总界面.Controls.Add(this.QUIT00);
-            this.tabPage总界面.Controls.Add(this.QUIT);
-            this.tabPage总界面.Location = new System.Drawing.Point(4, 21);
-            this.tabPage总界面.Name = "tabPage总界面";
-            this.tabPage总界面.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage总界面.Size = new System.Drawing.Size(641, 68);
-            this.tabPage总界面.TabIndex = 1;
-            this.tabPage总界面.Text = "总界面";
-            this.tabPage总界面.UseVisualStyleBackColor = true;
+            this.tabPage认识事物.Controls.Add(this.button课程结构);
+            this.tabPage认识事物.Controls.Add(this.button显示课程);
+            this.tabPage认识事物.Controls.Add(this.button创建课程);
+            this.tabPage认识事物.Controls.Add(this.button统计分析);
+            this.tabPage认识事物.Controls.Add(this.button单元成绩);
+            this.tabPage认识事物.Controls.Add(this.button单项成绩);
+            this.tabPage认识事物.Controls.Add(this.button找寻错误);
+            this.tabPage认识事物.Controls.Add(this.button记忆门窗);
+            this.tabPage认识事物.Controls.Add(this.button组合拼图);
+            this.tabPage认识事物.Controls.Add(this.button连结游戏);
+            this.tabPage认识事物.Controls.Add(this.button认识事物);
+            this.tabPage认识事物.Controls.Add(this.button前言);
+            this.tabPage认识事物.Controls.Add(this.QUIT00);
+            this.tabPage认识事物.Location = new System.Drawing.Point(4, 21);
+            this.tabPage认识事物.Name = "tabPage认识事物";
+            this.tabPage认识事物.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage认识事物.Size = new System.Drawing.Size(641, 68);
+            this.tabPage认识事物.TabIndex = 1;
+            this.tabPage认识事物.Text = "认识事物";
+            this.tabPage认识事物.UseVisualStyleBackColor = true;
             // 
             // QUIT00
             // 
-            this.QUIT00.Location = new System.Drawing.Point(69, 16);
+            this.QUIT00.Location = new System.Drawing.Point(498, 6);
             this.QUIT00.Name = "QUIT00";
             this.QUIT00.Size = new System.Drawing.Size(75, 23);
             this.QUIT00.TabIndex = 1;
             this.QUIT00.Text = "退出";
             this.QUIT00.UseVisualStyleBackColor = true;
-            // 
-            // QUIT
-            // 
-            this.QUIT.AutoSize = true;
-            this.QUIT.Location = new System.Drawing.Point(4, 21);
-            this.QUIT.Name = "QUIT";
-            this.QUIT.Size = new System.Drawing.Size(29, 12);
-            this.QUIT.TabIndex = 0;
-            this.QUIT.Text = "退出";
             // 
             // tabPage认识器物教学
             // 
@@ -300,6 +313,115 @@
             this.PUZZLE.TabIndex = 0;
             this.PUZZLE.Text = "组合拼图";
             // 
+            // button前言
+            // 
+            this.button前言.Location = new System.Drawing.Point(12, 6);
+            this.button前言.Name = "button前言";
+            this.button前言.Size = new System.Drawing.Size(75, 23);
+            this.button前言.TabIndex = 2;
+            this.button前言.Text = "前言";
+            this.button前言.UseVisualStyleBackColor = true;
+            this.button前言.Click += new System.EventHandler(this.button前言_Click);
+            // 
+            // button认识事物
+            // 
+            this.button认识事物.Location = new System.Drawing.Point(93, 6);
+            this.button认识事物.Name = "button认识事物";
+            this.button认识事物.Size = new System.Drawing.Size(75, 23);
+            this.button认识事物.TabIndex = 3;
+            this.button认识事物.Text = "认识事物";
+            this.button认识事物.UseVisualStyleBackColor = true;
+            // 
+            // button连结游戏
+            // 
+            this.button连结游戏.Location = new System.Drawing.Point(174, 6);
+            this.button连结游戏.Name = "button连结游戏";
+            this.button连结游戏.Size = new System.Drawing.Size(75, 23);
+            this.button连结游戏.TabIndex = 4;
+            this.button连结游戏.Text = "连结游戏";
+            this.button连结游戏.UseVisualStyleBackColor = true;
+            // 
+            // button组合拼图
+            // 
+            this.button组合拼图.Location = new System.Drawing.Point(255, 6);
+            this.button组合拼图.Name = "button组合拼图";
+            this.button组合拼图.Size = new System.Drawing.Size(75, 23);
+            this.button组合拼图.TabIndex = 5;
+            this.button组合拼图.Text = "组合拼图";
+            this.button组合拼图.UseVisualStyleBackColor = true;
+            // 
+            // button记忆门窗
+            // 
+            this.button记忆门窗.Location = new System.Drawing.Point(336, 6);
+            this.button记忆门窗.Name = "button记忆门窗";
+            this.button记忆门窗.Size = new System.Drawing.Size(75, 23);
+            this.button记忆门窗.TabIndex = 6;
+            this.button记忆门窗.Text = "记忆门窗";
+            this.button记忆门窗.UseVisualStyleBackColor = true;
+            // 
+            // button找寻错误
+            // 
+            this.button找寻错误.Location = new System.Drawing.Point(417, 6);
+            this.button找寻错误.Name = "button找寻错误";
+            this.button找寻错误.Size = new System.Drawing.Size(75, 23);
+            this.button找寻错误.TabIndex = 7;
+            this.button找寻错误.Text = "找寻错误";
+            this.button找寻错误.UseVisualStyleBackColor = true;
+            // 
+            // button单项成绩
+            // 
+            this.button单项成绩.Location = new System.Drawing.Point(12, 35);
+            this.button单项成绩.Name = "button单项成绩";
+            this.button单项成绩.Size = new System.Drawing.Size(75, 23);
+            this.button单项成绩.TabIndex = 8;
+            this.button单项成绩.Text = "单项成绩";
+            this.button单项成绩.UseVisualStyleBackColor = true;
+            // 
+            // button单元成绩
+            // 
+            this.button单元成绩.Location = new System.Drawing.Point(93, 35);
+            this.button单元成绩.Name = "button单元成绩";
+            this.button单元成绩.Size = new System.Drawing.Size(75, 23);
+            this.button单元成绩.TabIndex = 9;
+            this.button单元成绩.Text = "单元成绩";
+            this.button单元成绩.UseVisualStyleBackColor = true;
+            // 
+            // button统计分析
+            // 
+            this.button统计分析.Location = new System.Drawing.Point(174, 35);
+            this.button统计分析.Name = "button统计分析";
+            this.button统计分析.Size = new System.Drawing.Size(75, 23);
+            this.button统计分析.TabIndex = 10;
+            this.button统计分析.Text = "统计分析";
+            this.button统计分析.UseVisualStyleBackColor = true;
+            // 
+            // button创建课程
+            // 
+            this.button创建课程.Location = new System.Drawing.Point(255, 35);
+            this.button创建课程.Name = "button创建课程";
+            this.button创建课程.Size = new System.Drawing.Size(75, 23);
+            this.button创建课程.TabIndex = 11;
+            this.button创建课程.Text = "创建课程";
+            this.button创建课程.UseVisualStyleBackColor = true;
+            // 
+            // button显示课程
+            // 
+            this.button显示课程.Location = new System.Drawing.Point(336, 35);
+            this.button显示课程.Name = "button显示课程";
+            this.button显示课程.Size = new System.Drawing.Size(75, 23);
+            this.button显示课程.TabIndex = 12;
+            this.button显示课程.Text = "显示课程";
+            this.button显示课程.UseVisualStyleBackColor = true;
+            // 
+            // button课程结构
+            // 
+            this.button课程结构.Location = new System.Drawing.Point(417, 35);
+            this.button课程结构.Name = "button课程结构";
+            this.button课程结构.Size = new System.Drawing.Size(75, 23);
+            this.button课程结构.TabIndex = 13;
+            this.button课程结构.Text = "课程结构";
+            this.button课程结构.UseVisualStyleBackColor = true;
+            // 
             // CHSTRAS_091_TestV091
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -307,8 +429,7 @@
             this.Name = "CHSTRAS_091_TestV091";
             this.tabPage桌面应用.ResumeLayout(false);
             this.tabControlUI.ResumeLayout(false);
-            this.tabPage总界面.ResumeLayout(false);
-            this.tabPage总界面.PerformLayout();
+            this.tabPage认识事物.ResumeLayout(false);
             this.tabPage认识器物教学.ResumeLayout(false);
             this.tabPage认识器物教学.PerformLayout();
             this.tabPage认识器物游戏.ResumeLayout(false);
@@ -319,10 +440,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage总界面;
+        private System.Windows.Forms.TabPage tabPage认识事物;
         private System.Windows.Forms.TabPage tabPage认识器物教学;
         private System.Windows.Forms.TabPage tabPage认识器物游戏;
-        private System.Windows.Forms.Label QUIT;
         private System.Windows.Forms.Button QUIT00;
         private System.Windows.Forms.Button LINK01;
         private System.Windows.Forms.Button LINK00;
@@ -341,5 +461,17 @@
         private System.Windows.Forms.Button PUZZLE01;
         private System.Windows.Forms.Button PUZZLE00;
         private System.Windows.Forms.Label PUZZLE;
+        private System.Windows.Forms.Button button课程结构;
+        private System.Windows.Forms.Button button显示课程;
+        private System.Windows.Forms.Button button创建课程;
+        private System.Windows.Forms.Button button统计分析;
+        private System.Windows.Forms.Button button单元成绩;
+        private System.Windows.Forms.Button button单项成绩;
+        private System.Windows.Forms.Button button找寻错误;
+        private System.Windows.Forms.Button button记忆门窗;
+        private System.Windows.Forms.Button button组合拼图;
+        private System.Windows.Forms.Button button连结游戏;
+        private System.Windows.Forms.Button button认识事物;
+        private System.Windows.Forms.Button button前言;
     }
 }

@@ -55,6 +55,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uiCHSTRAS_091.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiCHSTRAS_091.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091.cs</DependentUpon>
+    </Compile>
     <Compile Include="uiCHSTRAS_091_AppMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,17 +79,23 @@
     <Compile Include="uiCHSTRAS_091_CourseShow.Designer.cs">
       <DependentUpon>uiCHSTRAS_091_CourseShow.cs</DependentUpon>
     </Compile>
+    <Compile Include="uiCHSTRAS_091_Foreword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiCHSTRAS_091_Foreword.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091_Foreword.cs</DependentUpon>
+    </Compile>
     <Compile Include="uiCHSTRAS_091_WorkMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="uiCHSTRAS_091_WorkMain.designer.cs">
       <DependentUpon>uiCHSTRAS_091_WorkMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="uiTyping01_Option.cs">
+    <Compile Include="uiCHSTRAS_091_Option.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="uiTyping01_Option.Designer.cs">
-      <DependentUpon>uiTyping01_Option.cs</DependentUpon>
+    <Compile Include="uiCHSTRAS_091_Option.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091_Option.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,11 +113,17 @@
     <EmbeddedResource Include="uiCHSTRAS_091_CourseShow.resx">
       <DependentUpon>uiCHSTRAS_091_CourseShow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="uiCHSTRAS_091.resx">
+      <DependentUpon>uiCHSTRAS_091.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiCHSTRAS_091_Foreword.resx">
+      <DependentUpon>uiCHSTRAS_091_Foreword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_WorkMain.resx">
       <DependentUpon>uiCHSTRAS_091_WorkMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uiTyping01_Option.resx">
-      <DependentUpon>uiTyping01_Option.cs</DependentUpon>
+    <EmbeddedResource Include="uiCHSTRAS_091_Option.resx">
+      <DependentUpon>uiCHSTRAS_091_Option.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

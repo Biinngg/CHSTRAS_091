@@ -1,6 +1,6 @@
 ﻿namespace CHSTRAS_091_UI
 {
-    partial class uiTyping01_Option
+    partial class uiCHSTRAS_091_Option
     {
         /// <summary>
         /// 必需的设计器变量。

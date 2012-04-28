@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using SHF_BT;
 using _认识事物_CHSTRAS_091_;
 using CHSTRAS_091_BT;
 using CHSTRAS_091_UI;
@@ -53,8 +54,17 @@ namespace CHSTRAS_091_Test
         {
             // 训练对象：设置训练内容和训练要求。
             // 选择对象：修改训练对象内容。
-            this.myUnitPrac = myUnitPracs.GetOne(6); // 按键练习的训练ID是 6；
-            uiTyping01_Option f = new uiTyping01_Option(this, myUserLogin, myUnitPrac);
+            myUnitPrac = myUnitPracs.GetOne(6); // 按键练习的训练ID是 6；
+            uiCHSTRAS_091_Option f = new uiCHSTRAS_091_Option(this, myUserLogin, myUnitPrac);
+            f.Show();
+        }
+
+        private void button前言_Click(object sender, EventArgs e)
+        {
+            //输入：
+            myUnitPrac = myUnitPracs.GetOne(7); // 键盘练习 的 训练ID 是 7；
+            //处理：
+            uiCHSTRAS_091_Option f = new uiCHSTRAS_091_Option(this, myUserLogin, myUnitPrac);
             f.Show();
         }
     }
