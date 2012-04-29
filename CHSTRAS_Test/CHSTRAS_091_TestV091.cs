@@ -61,10 +61,15 @@ namespace CHSTRAS_091_Test
 
         private void button前言_Click(object sender, EventArgs e)
         {
-            //输入：
-            myUnitPrac = myUnitPracs.GetOne(7); // 键盘练习 的 训练ID 是 7；
             //处理：
-            uiCHSTRAS_091_Option f = new uiCHSTRAS_091_Option(this, myUserLogin, myUnitPrac);
+            CHSTRAS_091_Foreword f = new CHSTRAS_091_Foreword(this, myUserLogin, myUnitPrac);
+            f.Show();
+        }
+
+        private void button认识事物_Click(object sender, EventArgs e)
+        {
+            //处理：
+            CHSTRAS_091_Teach f = new CHSTRAS_091_Teach(this, myUserLogin, myUnitPrac);
             f.Show();
         }
     }

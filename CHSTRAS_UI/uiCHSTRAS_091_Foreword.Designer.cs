@@ -34,6 +34,14 @@
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
+            // button返回
+            // 
+            this.button返回.Visible = false;
+            // 
+            // button确定
+            // 
+            this.button确定.Visible = false;
+            // 
             // label程序信息
             // 
             this.label程序信息.Size = new System.Drawing.Size(359, 12);
@@ -62,12 +70,12 @@
             // 
             // textBox
             // 
-            this.textBox.Location = new System.Drawing.Point(24, 36);
+            this.textBox.Location = new System.Drawing.Point(20, 26);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(555, 328);
-            this.textBox.TabIndex = 0;
-            this.textBox.Text = "谈到幼儿在各方面知识的成长，最佳的教育方法是——游戏！经过良好设计的游戏，可使孩子在欢乐中不知不觉使身心均衡发展。";
+            this.textBox.ReadOnly = true;
+            this.textBox.Size = new System.Drawing.Size(563, 338);
+            this.textBox.TabIndex = 1;
             // 
             // uiCHSTRAS_091_Foreword
             // 
@@ -95,7 +103,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox;
-        private System.Windows.Forms.TextBox textBox;
+        protected System.Windows.Forms.GroupBox groupBox;
+        protected System.Windows.Forms.TextBox textBox;
     }
 }

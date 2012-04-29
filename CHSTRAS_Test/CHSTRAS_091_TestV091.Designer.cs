@@ -29,6 +29,18 @@
         private void InitializeComponent()
         {
             this.tabPage认识事物 = new System.Windows.Forms.TabPage();
+            this.button课程结构 = new System.Windows.Forms.Button();
+            this.button显示课程 = new System.Windows.Forms.Button();
+            this.button创建课程 = new System.Windows.Forms.Button();
+            this.button统计分析 = new System.Windows.Forms.Button();
+            this.button单元成绩 = new System.Windows.Forms.Button();
+            this.button单项成绩 = new System.Windows.Forms.Button();
+            this.button找寻错误 = new System.Windows.Forms.Button();
+            this.button记忆门窗 = new System.Windows.Forms.Button();
+            this.button组合拼图 = new System.Windows.Forms.Button();
+            this.button连结游戏 = new System.Windows.Forms.Button();
+            this.button认识事物 = new System.Windows.Forms.Button();
+            this.button前言 = new System.Windows.Forms.Button();
             this.QUIT00 = new System.Windows.Forms.Button();
             this.tabPage认识器物教学 = new System.Windows.Forms.TabPage();
             this.LINK01 = new System.Windows.Forms.Button();
@@ -49,18 +61,6 @@
             this.PUZZLE01 = new System.Windows.Forms.Button();
             this.PUZZLE00 = new System.Windows.Forms.Button();
             this.PUZZLE = new System.Windows.Forms.Label();
-            this.button前言 = new System.Windows.Forms.Button();
-            this.button认识事物 = new System.Windows.Forms.Button();
-            this.button连结游戏 = new System.Windows.Forms.Button();
-            this.button组合拼图 = new System.Windows.Forms.Button();
-            this.button记忆门窗 = new System.Windows.Forms.Button();
-            this.button找寻错误 = new System.Windows.Forms.Button();
-            this.button单项成绩 = new System.Windows.Forms.Button();
-            this.button单元成绩 = new System.Windows.Forms.Button();
-            this.button统计分析 = new System.Windows.Forms.Button();
-            this.button创建课程 = new System.Windows.Forms.Button();
-            this.button显示课程 = new System.Windows.Forms.Button();
-            this.button课程结构 = new System.Windows.Forms.Button();
             this.tabPage桌面应用.SuspendLayout();
             this.tabControlUI.SuspendLayout();
             this.tabPage认识事物.SuspendLayout();
@@ -115,6 +115,116 @@
             this.tabPage认识事物.TabIndex = 1;
             this.tabPage认识事物.Text = "认识事物";
             this.tabPage认识事物.UseVisualStyleBackColor = true;
+            // 
+            // button课程结构
+            // 
+            this.button课程结构.Location = new System.Drawing.Point(417, 35);
+            this.button课程结构.Name = "button课程结构";
+            this.button课程结构.Size = new System.Drawing.Size(75, 23);
+            this.button课程结构.TabIndex = 13;
+            this.button课程结构.Text = "课程结构";
+            this.button课程结构.UseVisualStyleBackColor = true;
+            // 
+            // button显示课程
+            // 
+            this.button显示课程.Location = new System.Drawing.Point(336, 35);
+            this.button显示课程.Name = "button显示课程";
+            this.button显示课程.Size = new System.Drawing.Size(75, 23);
+            this.button显示课程.TabIndex = 12;
+            this.button显示课程.Text = "显示课程";
+            this.button显示课程.UseVisualStyleBackColor = true;
+            // 
+            // button创建课程
+            // 
+            this.button创建课程.Location = new System.Drawing.Point(255, 35);
+            this.button创建课程.Name = "button创建课程";
+            this.button创建课程.Size = new System.Drawing.Size(75, 23);
+            this.button创建课程.TabIndex = 11;
+            this.button创建课程.Text = "创建课程";
+            this.button创建课程.UseVisualStyleBackColor = true;
+            // 
+            // button统计分析
+            // 
+            this.button统计分析.Location = new System.Drawing.Point(174, 35);
+            this.button统计分析.Name = "button统计分析";
+            this.button统计分析.Size = new System.Drawing.Size(75, 23);
+            this.button统计分析.TabIndex = 10;
+            this.button统计分析.Text = "统计分析";
+            this.button统计分析.UseVisualStyleBackColor = true;
+            // 
+            // button单元成绩
+            // 
+            this.button单元成绩.Location = new System.Drawing.Point(93, 35);
+            this.button单元成绩.Name = "button单元成绩";
+            this.button单元成绩.Size = new System.Drawing.Size(75, 23);
+            this.button单元成绩.TabIndex = 9;
+            this.button单元成绩.Text = "单元成绩";
+            this.button单元成绩.UseVisualStyleBackColor = true;
+            // 
+            // button单项成绩
+            // 
+            this.button单项成绩.Location = new System.Drawing.Point(12, 35);
+            this.button单项成绩.Name = "button单项成绩";
+            this.button单项成绩.Size = new System.Drawing.Size(75, 23);
+            this.button单项成绩.TabIndex = 8;
+            this.button单项成绩.Text = "单项成绩";
+            this.button单项成绩.UseVisualStyleBackColor = true;
+            // 
+            // button找寻错误
+            // 
+            this.button找寻错误.Location = new System.Drawing.Point(417, 6);
+            this.button找寻错误.Name = "button找寻错误";
+            this.button找寻错误.Size = new System.Drawing.Size(75, 23);
+            this.button找寻错误.TabIndex = 7;
+            this.button找寻错误.Text = "找寻错误";
+            this.button找寻错误.UseVisualStyleBackColor = true;
+            // 
+            // button记忆门窗
+            // 
+            this.button记忆门窗.Location = new System.Drawing.Point(336, 6);
+            this.button记忆门窗.Name = "button记忆门窗";
+            this.button记忆门窗.Size = new System.Drawing.Size(75, 23);
+            this.button记忆门窗.TabIndex = 6;
+            this.button记忆门窗.Text = "记忆门窗";
+            this.button记忆门窗.UseVisualStyleBackColor = true;
+            // 
+            // button组合拼图
+            // 
+            this.button组合拼图.Location = new System.Drawing.Point(255, 6);
+            this.button组合拼图.Name = "button组合拼图";
+            this.button组合拼图.Size = new System.Drawing.Size(75, 23);
+            this.button组合拼图.TabIndex = 5;
+            this.button组合拼图.Text = "组合拼图";
+            this.button组合拼图.UseVisualStyleBackColor = true;
+            // 
+            // button连结游戏
+            // 
+            this.button连结游戏.Location = new System.Drawing.Point(174, 6);
+            this.button连结游戏.Name = "button连结游戏";
+            this.button连结游戏.Size = new System.Drawing.Size(75, 23);
+            this.button连结游戏.TabIndex = 4;
+            this.button连结游戏.Text = "连结游戏";
+            this.button连结游戏.UseVisualStyleBackColor = true;
+            // 
+            // button认识事物
+            // 
+            this.button认识事物.Location = new System.Drawing.Point(93, 6);
+            this.button认识事物.Name = "button认识事物";
+            this.button认识事物.Size = new System.Drawing.Size(75, 23);
+            this.button认识事物.TabIndex = 3;
+            this.button认识事物.Text = "认识事物";
+            this.button认识事物.UseVisualStyleBackColor = true;
+            this.button认识事物.Click += new System.EventHandler(this.button认识事物_Click);
+            // 
+            // button前言
+            // 
+            this.button前言.Location = new System.Drawing.Point(12, 6);
+            this.button前言.Name = "button前言";
+            this.button前言.Size = new System.Drawing.Size(75, 23);
+            this.button前言.TabIndex = 2;
+            this.button前言.Text = "前言";
+            this.button前言.UseVisualStyleBackColor = true;
+            this.button前言.Click += new System.EventHandler(this.button前言_Click);
             // 
             // QUIT00
             // 
@@ -312,115 +422,6 @@
             this.PUZZLE.Size = new System.Drawing.Size(53, 12);
             this.PUZZLE.TabIndex = 0;
             this.PUZZLE.Text = "组合拼图";
-            // 
-            // button前言
-            // 
-            this.button前言.Location = new System.Drawing.Point(12, 6);
-            this.button前言.Name = "button前言";
-            this.button前言.Size = new System.Drawing.Size(75, 23);
-            this.button前言.TabIndex = 2;
-            this.button前言.Text = "前言";
-            this.button前言.UseVisualStyleBackColor = true;
-            this.button前言.Click += new System.EventHandler(this.button前言_Click);
-            // 
-            // button认识事物
-            // 
-            this.button认识事物.Location = new System.Drawing.Point(93, 6);
-            this.button认识事物.Name = "button认识事物";
-            this.button认识事物.Size = new System.Drawing.Size(75, 23);
-            this.button认识事物.TabIndex = 3;
-            this.button认识事物.Text = "认识事物";
-            this.button认识事物.UseVisualStyleBackColor = true;
-            // 
-            // button连结游戏
-            // 
-            this.button连结游戏.Location = new System.Drawing.Point(174, 6);
-            this.button连结游戏.Name = "button连结游戏";
-            this.button连结游戏.Size = new System.Drawing.Size(75, 23);
-            this.button连结游戏.TabIndex = 4;
-            this.button连结游戏.Text = "连结游戏";
-            this.button连结游戏.UseVisualStyleBackColor = true;
-            // 
-            // button组合拼图
-            // 
-            this.button组合拼图.Location = new System.Drawing.Point(255, 6);
-            this.button组合拼图.Name = "button组合拼图";
-            this.button组合拼图.Size = new System.Drawing.Size(75, 23);
-            this.button组合拼图.TabIndex = 5;
-            this.button组合拼图.Text = "组合拼图";
-            this.button组合拼图.UseVisualStyleBackColor = true;
-            // 
-            // button记忆门窗
-            // 
-            this.button记忆门窗.Location = new System.Drawing.Point(336, 6);
-            this.button记忆门窗.Name = "button记忆门窗";
-            this.button记忆门窗.Size = new System.Drawing.Size(75, 23);
-            this.button记忆门窗.TabIndex = 6;
-            this.button记忆门窗.Text = "记忆门窗";
-            this.button记忆门窗.UseVisualStyleBackColor = true;
-            // 
-            // button找寻错误
-            // 
-            this.button找寻错误.Location = new System.Drawing.Point(417, 6);
-            this.button找寻错误.Name = "button找寻错误";
-            this.button找寻错误.Size = new System.Drawing.Size(75, 23);
-            this.button找寻错误.TabIndex = 7;
-            this.button找寻错误.Text = "找寻错误";
-            this.button找寻错误.UseVisualStyleBackColor = true;
-            // 
-            // button单项成绩
-            // 
-            this.button单项成绩.Location = new System.Drawing.Point(12, 35);
-            this.button单项成绩.Name = "button单项成绩";
-            this.button单项成绩.Size = new System.Drawing.Size(75, 23);
-            this.button单项成绩.TabIndex = 8;
-            this.button单项成绩.Text = "单项成绩";
-            this.button单项成绩.UseVisualStyleBackColor = true;
-            // 
-            // button单元成绩
-            // 
-            this.button单元成绩.Location = new System.Drawing.Point(93, 35);
-            this.button单元成绩.Name = "button单元成绩";
-            this.button单元成绩.Size = new System.Drawing.Size(75, 23);
-            this.button单元成绩.TabIndex = 9;
-            this.button单元成绩.Text = "单元成绩";
-            this.button单元成绩.UseVisualStyleBackColor = true;
-            // 
-            // button统计分析
-            // 
-            this.button统计分析.Location = new System.Drawing.Point(174, 35);
-            this.button统计分析.Name = "button统计分析";
-            this.button统计分析.Size = new System.Drawing.Size(75, 23);
-            this.button统计分析.TabIndex = 10;
-            this.button统计分析.Text = "统计分析";
-            this.button统计分析.UseVisualStyleBackColor = true;
-            // 
-            // button创建课程
-            // 
-            this.button创建课程.Location = new System.Drawing.Point(255, 35);
-            this.button创建课程.Name = "button创建课程";
-            this.button创建课程.Size = new System.Drawing.Size(75, 23);
-            this.button创建课程.TabIndex = 11;
-            this.button创建课程.Text = "创建课程";
-            this.button创建课程.UseVisualStyleBackColor = true;
-            // 
-            // button显示课程
-            // 
-            this.button显示课程.Location = new System.Drawing.Point(336, 35);
-            this.button显示课程.Name = "button显示课程";
-            this.button显示课程.Size = new System.Drawing.Size(75, 23);
-            this.button显示课程.TabIndex = 12;
-            this.button显示课程.Text = "显示课程";
-            this.button显示课程.UseVisualStyleBackColor = true;
-            // 
-            // button课程结构
-            // 
-            this.button课程结构.Location = new System.Drawing.Point(417, 35);
-            this.button课程结构.Name = "button课程结构";
-            this.button课程结构.Size = new System.Drawing.Size(75, 23);
-            this.button课程结构.TabIndex = 13;
-            this.button课程结构.Text = "课程结构";
-            this.button课程结构.UseVisualStyleBackColor = true;
             // 
             // CHSTRAS_091_TestV091
             // 

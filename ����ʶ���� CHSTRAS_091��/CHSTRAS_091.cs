@@ -19,7 +19,20 @@ namespace _认识事物_CHSTRAS_091_
 
         private void button认识植物_Click(object sender, EventArgs e)
         {
-            uiCHSTRAS_091_CourseShow f = new uiCHSTRAS_091_CourseShow();
+            try
+            {
+                CHSTRAS_091_Teach f = new CHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice);
+                f.Show();
+            }
+            catch// Exception ex
+            {
+                this.Text = "按键训练异常 异常！  ";
+            }
+        }
+
+        private void button前言_Click(object sender, EventArgs e)
+        {
+            CHSTRAS_091_Foreword f = new CHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice);
             f.Show();
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace _认识事物_CHSTRAS_091_
 {
-    partial class CHSTRAS_091
+    partial class CHSTRAS_091_Teach
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,33 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox成绩管理.SuspendLayout();
+            this.groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
-            this.groupBox用户管理.SuspendLayout();
-            this.groupBox课程管理.SuspendLayout();
-            this.groupBox训练管理.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button认识植物
+            // button1
             // 
-            this.button认识植物.Click += new System.EventHandler(this.button认识植物_Click);
+            this.buttonBefore.Click += new System.EventHandler(this.buttonBefore_Click);
             // 
-            // button前言
+            // button2
             // 
-            this.button前言.Click += new System.EventHandler(this.button前言_Click);
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
-            // CHSTRAS_091
+            // CHSTRAS_091_Teach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 600);
-            this.Name = "CHSTRAS_091";
-            this.Text = "CHSTRAS_091";
-            this.groupBox成绩管理.ResumeLayout(false);
+            this.ClientSize = new System.Drawing.Size(792, 516);
+            this.Name = "CHSTRAS_091_Teach";
+            this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
-            this.groupBox用户管理.ResumeLayout(false);
-            this.groupBox课程管理.ResumeLayout(false);
-            this.groupBox训练管理.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -63,4 +60,3 @@
         #endregion
     }
 }
-

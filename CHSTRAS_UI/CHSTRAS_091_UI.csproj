@@ -85,6 +85,18 @@
     <Compile Include="uiCHSTRAS_091_Foreword.Designer.cs">
       <DependentUpon>uiCHSTRAS_091_Foreword.cs</DependentUpon>
     </Compile>
+    <Compile Include="uiCHSTRAS_091_Link.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiCHSTRAS_091_Link.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091_Link.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiCHSTRAS_091_Teach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiCHSTRAS_091_Teach.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091_Teach.cs</DependentUpon>
+    </Compile>
     <Compile Include="uiCHSTRAS_091_WorkMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_Foreword.resx">
       <DependentUpon>uiCHSTRAS_091_Foreword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiCHSTRAS_091_Link.resx">
+      <DependentUpon>uiCHSTRAS_091_Link.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiCHSTRAS_091_Teach.resx">
+      <DependentUpon>uiCHSTRAS_091_Teach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_WorkMain.resx">
       <DependentUpon>uiCHSTRAS_091_WorkMain.cs</DependentUpon>

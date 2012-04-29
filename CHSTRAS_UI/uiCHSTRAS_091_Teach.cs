@@ -8,10 +8,16 @@ using System.Windows.Forms;
 
 namespace CHSTRAS_091_UI
 {
-    public partial class uiCHSTRAS_091_Foreword : SHF_UI.uiSHF_CourseBase
+    public partial class uiCHSTRAS_091_Teach : SHF_UI.uiSHF_CourseBase
     {
         protected int TerminalID = 1;
-        public uiCHSTRAS_091_Foreword(Form form, SHF_BT.btSHFUserLogin shfUserLogin, SHF_BT.btSHFUnitPractice shfUnitPratice)
+
+        public uiCHSTRAS_091_Teach()
+        {
+            InitializeComponent();
+        }
+
+        public uiCHSTRAS_091_Teach(Form form, SHF_BT.btSHFUserLogin shfUserLogin, SHF_BT.btSHFUnitPractice shfUnitPratice)
             : base(form, shfUserLogin, shfUnitPratice)
         {
             InitializeComponent();
