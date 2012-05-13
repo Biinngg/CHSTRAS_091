@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CHSTRAS_091_UI
 {
-    public partial class uiCHSTRAS_091_Teach : SHF_UI.uiSHF_CourseBase
+    public partial class uiCHSTRAS_091_Teach : uiCHSTRAS_091
     {
         protected int TerminalID = 1;
 

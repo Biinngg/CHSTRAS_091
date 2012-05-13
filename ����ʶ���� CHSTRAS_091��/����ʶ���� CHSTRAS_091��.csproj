@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_认识事物_CHSTRAS_091_</RootNamespace>
     <AssemblyName>《认识事物 CHSTRAS_091》</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -78,6 +79,9 @@
     <EmbeddedResource Include="CHSTRAS_091.resx">
       <DependentUpon>CHSTRAS_091.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CHSTRAS_091_Link.resx">
+      <DependentUpon>CHSTRAS_091_Link.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CHSTRAS_091_Teach.resx">
       <DependentUpon>CHSTRAS_091_Teach.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +94,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

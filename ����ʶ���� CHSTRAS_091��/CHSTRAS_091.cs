@@ -24,16 +24,31 @@ namespace _认识事物_CHSTRAS_091_
                 CHSTRAS_091_Teach f = new CHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice);
                 f.Show();
             }
-            catch// Exception ex
+            catch(Exception exception)// Exception ex
             {
-                this.Text = "按键训练异常 异常！  ";
+                this.Text = "Exception:" + exception.ToString();
             }
         }
 
         private void button前言_Click(object sender, EventArgs e)
         {
-            CHSTRAS_091_Foreword f = new CHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice);
+            uiCHSTRAS_091 f = new uiCHSTRAS_091(this, shfUserLogin, shfUnitPractice);
+            /*
+            CHSTRAS_091_Foreword f = new CHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice);*/
             f.Show();
+        }
+
+        private void button连结游戏_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CHSTRAS_091_Link f = new CHSTRAS_091_Link(this, shfUserLogin, shfUnitPractice);
+                f.Show();
+            }
+            catch (Exception exception)// Exception ex
+            {
+                MessageBox.Show("Exception:" + exception.ToString());
+            }
         }
     }
 }

@@ -33,8 +33,8 @@ namespace CHSTRAS_091_Test
 
         private void button主界面_Click(object sender, EventArgs e)
         {
-            CHSTRAS_091 f = new CHSTRAS_091();
-            f.Show();
+            //CHSTRAS_091 f = new CHSTRAS_091();
+            //f.Show();
         }
 
         private void button登录_Click(object sender, EventArgs e)

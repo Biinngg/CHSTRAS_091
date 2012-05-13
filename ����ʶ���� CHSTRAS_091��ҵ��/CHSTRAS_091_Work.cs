@@ -7,7 +7,6 @@ using System.Text;
 using System.Windows.Forms;
 using _认识事物_CHSTRAS_091_;
 using CHSTRAS_091_UI;
-using CHSTRAS_091_BT;
 using CHSTRAS_091_Test;
 using SHF_BT;
 using SHF_DA;

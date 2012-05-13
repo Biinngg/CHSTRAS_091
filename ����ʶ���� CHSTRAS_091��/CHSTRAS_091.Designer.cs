@@ -43,6 +43,10 @@
             // 
             this.button前言.Click += new System.EventHandler(this.button前言_Click);
             // 
+            // button连结游戏
+            // 
+            this.button连结游戏.Click += new System.EventHandler(this.button连结游戏_Click);
+            // 
             // CHSTRAS_091
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);

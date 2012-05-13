@@ -47,30 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button返回
-            // 
-            this.button返回.Visible = false;
-            // 
-            // button确定
-            // 
-            this.button确定.Visible = false;
-            // 
-            // label程序信息
-            // 
-            this.label程序信息.Size = new System.Drawing.Size(335, 12);
-            this.label程序信息.Text = "《认识事物 CHSTRAS_091》V09-1|SHF_UI|uiCHSTRAS_091_Link";
-            // 
-            // label课程信息
-            // 
-            this.label课程信息.Size = new System.Drawing.Size(161, 12);
-            this.label课程信息.Tag = "中文学习|认识事物|连结游戏";
-            this.label课程信息.Text = "中文学习|认识事物|连结游戏";
-            // 
-            // labelPageTitle
-            // 
-            this.labelPageTitle.Size = new System.Drawing.Size(159, 35);
-            this.labelPageTitle.Text = "连结游戏";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label4);
@@ -129,6 +105,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(452, 42);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(140, 105);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
@@ -137,6 +114,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(306, 42);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(140, 105);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
@@ -154,6 +132,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(6, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

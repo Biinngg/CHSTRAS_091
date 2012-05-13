@@ -37,7 +37,7 @@ namespace CHSTRAS_091_UI
         //private string inst01UnitName = "业务01";
         private int inst02UnitID = 2;
         //private string inst02UnitName = "业务02";
-        private int Typing01UnitID = 6;
+        private int game01UnitID = 3;
         //private string Typing01UnitName = "按键练习";
         private int Typing02UnitID = 7;
         //private string Typing02UnitName = "键盘练习";
@@ -189,6 +189,7 @@ namespace CHSTRAS_091_UI
         private void button前言_Click(object sender, EventArgs e)
         {
             shfUserLogin.LoginUnitID = inst01UnitID;//设置学习内容
+            shfUnitPractice = shfUnitPractices.GetOne(inst01UnitID);
             //uiPageEditSimple fr = new uiPageEditSimple(this, shfUserLogin, shfSHFPage);
             //this.Hide();
             //fr.Show();
@@ -200,6 +201,7 @@ namespace CHSTRAS_091_UI
 
             //shfPracticeID = 6;  设置训练课程
             shfUserLogin.LoginUnitID = inst02UnitID; //设置学习内容
+            shfUnitPractice = shfUnitPractices.GetOne(inst02UnitID);
             //uiPageShowSimple fr = new uiPageShowSimple(this, shfUserLogin, shfSHFPage);
             //fr.Show();
             //this.Hide();
@@ -210,7 +212,8 @@ namespace CHSTRAS_091_UI
         {
 
             //shfPracticeID = 6; //设置训练课程
-            shfUserLogin.LoginUnitID = Typing01UnitID;//设置训练内容
+            shfUserLogin.LoginUnitID = game01UnitID;//设置训练内容
+            shfUnitPractice = shfUnitPractices.GetOne(game01UnitID);
             //uiTyping01 f = new uiTyping01(this, shfUserLogin.UserLoginID, shfPracticeID);
             //f.Show();
 
