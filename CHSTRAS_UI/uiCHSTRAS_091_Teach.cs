@@ -8,10 +8,8 @@ using System.Windows.Forms;
 
 namespace CHSTRAS_091_UI
 {
-    public partial class uiCHSTRAS_091_Teach : uiCHSTRAS_091
+    public partial class uiCHSTRAS_091_Teach : uiCHSTRAS_091_Base
     {
-        protected int TerminalID = 1;
-
         public uiCHSTRAS_091_Teach()
         {
             InitializeComponent();
@@ -21,6 +19,8 @@ namespace CHSTRAS_091_UI
             : base(form, shfUserLogin, shfUnitPratice)
         {
             InitializeComponent();
+            pictureBox = new PictureBox[] { pictureBox1, pictureBox2 };
+            label = new Label[] { label1, label2 };
         }
     }
 }

@@ -46,6 +46,3 @@ E:\CHSTRAS_091\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\GenerateResour
 E:\CHSTRAS_091\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\GenerateResource.write.1.tlog
 E:\CHSTRAS_091\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\《认识事物 CHSTRAS_091作业》.exe
 E:\CHSTRAS_091\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\《认识事物 CHSTRAS_091作业》.pdb
-D:\CHSTRAS_091\《认识事物 CHSTRAS_091作业》\bin\Debug\《认识事物 CHSTRAS_091作业》.exe.config
-D:\CHSTRAS_091\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\《认识事物 CHSTRAS_091作业》.exe
-D:\CHSTRAS_091\《认识事物 CHSTRAS_091作业》\obj\x86\Debug\《认识事物 CHSTRAS_091作业》.pdb

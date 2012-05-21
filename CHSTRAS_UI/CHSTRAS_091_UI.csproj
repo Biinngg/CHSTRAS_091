@@ -56,11 +56,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="uiCHSTRAS_091.cs">
+    <Compile Include="uiCHSTRAS_091_Base.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="uiCHSTRAS_091.Designer.cs">
-      <DependentUpon>uiCHSTRAS_091.cs</DependentUpon>
+    <Compile Include="uiCHSTRAS_091_Base.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091_Base.cs</DependentUpon>
     </Compile>
     <Compile Include="uiCHSTRAS_091_AppMain.cs">
       <SubType>Form</SubType>
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="uiCHSTRAS_091_CourseShow.resx">
       <DependentUpon>uiCHSTRAS_091_CourseShow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uiCHSTRAS_091.resx">
-      <DependentUpon>uiCHSTRAS_091.cs</DependentUpon>
+    <EmbeddedResource Include="uiCHSTRAS_091_Base.resx">
+      <DependentUpon>uiCHSTRAS_091_Base.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_Foreword.resx">
       <DependentUpon>uiCHSTRAS_091_Foreword.cs</DependentUpon>
@@ -144,6 +144,7 @@
     <EmbeddedResource Include="uiCHSTRAS_091_Option.resx">
       <DependentUpon>uiCHSTRAS_091_Option.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

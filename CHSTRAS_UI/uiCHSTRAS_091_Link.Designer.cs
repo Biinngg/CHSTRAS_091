@@ -144,6 +144,7 @@
             this.buttonNext.TabIndex = 152;
             this.buttonNext.Text = "下一题";
             this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // buttonBefore
             // 

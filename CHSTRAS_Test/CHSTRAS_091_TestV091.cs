@@ -62,7 +62,7 @@ namespace CHSTRAS_091_Test
         private void button前言_Click(object sender, EventArgs e)
         {
             //处理：
-            CHSTRAS_091_Foreword f = new CHSTRAS_091_Foreword(this, myUserLogin, myUnitPrac);
+            uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, myUserLogin, myUnitPrac);
             f.Show();
         }
 

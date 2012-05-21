@@ -6,59 +6,55 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using CHSTRAS_091_BT;
+using SHF_BT;
 
 namespace _认识事物_CHSTRAS_091_
 {
     public partial class CHSTRAS_091_Teach : CHSTRAS_091_UI.uiCHSTRAS_091_Teach
     {
-        int itemNum, itemMax;
-        String sqlString;
-        CHSTRAS_091_Database database;
+        int itemNum, itemMax, size;
+        btCHSTRAS_091_Database database;
 
-        public CHSTRAS_091_Teach()
-        {
-            InitializeComponent();
-        }
-
-        public CHSTRAS_091_Teach(Form form, SHF_BT.btSHFUserLogin shfUserLogin,
-            SHF_BT.btSHFUnitPractice shfUnitPratice)
+        public CHSTRAS_091_Teach(Form form, btSHFUserLogin shfUserLogin,
+            btSHFUnitPractice shfUnitPratice)
             : base(form, shfUserLogin, shfUnitPratice)
         {
             InitializeComponent();
+            size = label.Length;
             initial(shfUnitPratice);
         }
 
-        private void initial(SHF_BT.btSHFUnitPractice shfUnitPratice)
+        private void initial(btSHFUnitPractice shfUnitPratice)
         {
             itemNum = 1;
-            int programID = 7;
-            sqlString = "SELECT TextInfo, ImageInfo FROM E_SHFPages WHERE ProgramID=" + programID;
-            database = new CHSTRAS_091_Database(sqlString);
+            btCHSTRAS_091_Base bt = new btCHSTRAS_091_Base();
+            String sqlString = "ProgramID=" + bt.getPagesID(shfUnitPratice);
+            database = new btCHSTRAS_091_Database();
+            database.query("E_SHFPages", new String[] { "TextInfo", "ImageInfo" }, sqlString, null);
             itemMax = database.getSize();
-            buttonBefore.Enabled = false;
-            buttonNext_Click(null,null);
+            buttonBackward.Enabled = false;
+            buttonForward_Click(null, null);
         }
 
-        private void buttonBefore_Click(object sender, EventArgs e)
+        private void buttonForward_Click(object sender, EventArgs e)
         {
-            itemNum-=2;
-        }
-
-        private void buttonNext_Click(object sender, EventArgs e)
-        {
-            String[] str = database.moveToNextString(2);
-            CHSTRAS_091_File file = new CHSTRAS_091_File(str[1]);
-            pictureBox1.Image = file.getBitMap();
-            label1.Text = str[0];
-            str = database.moveToNextString(2);
-            file = new CHSTRAS_091_File(str[1]);
-            pictureBox2.Image = file.getBitMap();
-            label2.Text = str[0];
-            itemNum += 2;
+            for (int i = 0; i < size; i++)
+            {
+                String[] str = database.moveToNextString();
+                btCHSTRAS_091_File file = new btCHSTRAS_091_File();
+                pictureBox[i].Image = file.getBitMap(str[1]);
+                label[i].Text = file.getText(str[0]);
+            }
+            itemNum += size;
             if (itemNum >= itemMax)
             {
-                buttonNext.Enabled = false;
+                buttonForward.Enabled = false;
             }
+        }
+
+        private void buttonBackward_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CHSTRAS_091_UI
 {
-    public partial class uiCHSTRAS_091_Link : uiCHSTRAS_091
+    public partial class uiCHSTRAS_091_Link : uiCHSTRAS_091_Base
     {
         public uiCHSTRAS_091_Link()
         {
@@ -19,6 +19,11 @@ namespace CHSTRAS_091_UI
             : base(form, shfUserLogin, shfUnitPratice)
         {
             InitializeComponent();
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

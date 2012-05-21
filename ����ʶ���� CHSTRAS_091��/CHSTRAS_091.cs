@@ -32,9 +32,8 @@ namespace _认识事物_CHSTRAS_091_
 
         private void button前言_Click(object sender, EventArgs e)
         {
-            uiCHSTRAS_091 f = new uiCHSTRAS_091(this, shfUserLogin, shfUnitPractice);
-            /*
-            CHSTRAS_091_Foreword f = new CHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice);*/
+            
+            uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice);
             f.Show();
         }
 

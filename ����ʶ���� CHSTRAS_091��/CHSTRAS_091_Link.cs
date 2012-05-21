@@ -12,7 +12,7 @@ namespace _认识事物_CHSTRAS_091_
     public partial class CHSTRAS_091_Link : CHSTRAS_091_UI.uiCHSTRAS_091_Link
     {
         int itemNum, itemMax;
-        CHSTRAS_091_Database database;
+        btCHSTRAS_091_Database database;
 
         public CHSTRAS_091_Link()
         {
@@ -31,8 +31,9 @@ namespace _认识事物_CHSTRAS_091_
         {
             itemNum = 1;
             int programID = 7;
-            String sqlString = "SELECT TextInfo, ImageInfo FROM E_SHFPages WHERE ProgramID=" + programID;
-            database = new CHSTRAS_091_Database(sqlString);
+            String sqlString = "ProgramID=" + programID;
+            database = new btCHSTRAS_091_Database();
+            database.query("E_SHFPages", new String[] { "TextInfo", "ImageInfo" }, sqlString, null);
             itemMax = database.getSize();
             buttonBefore.Enabled = false;
             buttonNext_Click(null,null);
@@ -40,23 +41,18 @@ namespace _认识事物_CHSTRAS_091_
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
-            String[] str = database.moveToNextString(2);
-            CHSTRAS_091_File file = new CHSTRAS_091_File(str[1]);
-            pictureBox1.Image = file.getBitMap();
-            label1.Text = str[0];
-            str = database.moveToNextString(2);
-            file = new CHSTRAS_091_File(str[1]);
-            pictureBox2.Image = file.getBitMap();
-            label2.Text = str[0];
-            str = database.moveToNextString(2);
-            file = new CHSTRAS_091_File(str[1]);
-            pictureBox3.Image = file.getBitMap();
-            label3.Text = str[0];
-            str = database.moveToNextString(2);
-            file = new CHSTRAS_091_File(str[1]);
-            pictureBox4.Image = file.getBitMap();
-            label4.Text = str[0];
-            itemNum += 4;
+            PictureBox[] pictureBox = new PictureBox[] { pictureBox1,
+                pictureBox2, pictureBox3, pictureBox4 };
+            Label[] label = new Label[]{label1, label2, label3, label4};
+            int size = label.Length;
+            for (int i = 0; i < size; i++)
+            {
+                String[] str = database.moveToNextString();
+                btCHSTRAS_091_File file = new btCHSTRAS_091_File();
+                pictureBox[i].Image = file.getBitMap(str[1]);
+                label[i].Text = file.getText(str[0]);
+            }
+            itemNum += size;
             if (itemNum >= itemMax)
             {
                 buttonNext.Enabled = false;

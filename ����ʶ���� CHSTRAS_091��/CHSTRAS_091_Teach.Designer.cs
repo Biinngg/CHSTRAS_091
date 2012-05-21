@@ -28,29 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonBackward
             // 
-            this.buttonBefore.Click += new System.EventHandler(this.buttonBefore_Click);
+            this.buttonBackward.Click += new System.EventHandler(this.buttonBackward_Click);
             // 
-            // button2
+            // buttonForward
             // 
-            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+            this.buttonForward.Click += new System.EventHandler(this.buttonForward_Click);
             // 
             // CHSTRAS_091_Teach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.ClientSize = new System.Drawing.Size(792, 516);
             this.Name = "CHSTRAS_091_Teach";
-            this.groupBox.ResumeLayout(false);
-            this.groupBox.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

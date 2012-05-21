@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox = new System.Windows.Forms.GroupBox();
             this.textBox = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
+            this.label = new System.Windows.Forms.Label();
             this.groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.SuspendLayout();
             // 
-            // button返回
+            // groupBox
             // 
-            this.button返回.Visible = false;
+            this.groupBox.Controls.Add(this.label);
+            this.groupBox.Controls.SetChildIndex(this.label, 0);
+            this.groupBox.Controls.SetChildIndex(this.buttonSubmit, 0);
+            this.groupBox.Controls.SetChildIndex(this.buttonForward, 0);
+            this.groupBox.Controls.SetChildIndex(this.buttonBackward, 0);
             // 
-            // button确定
+            // buttonBackward
             // 
-            this.button确定.Visible = false;
+            this.buttonBackward.Visible = false;
+            // 
+            // buttonForward
+            // 
+            this.buttonForward.Visible = false;
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.Visible = false;
             // 
             // label程序信息
             // 
@@ -58,16 +70,6 @@
             this.labelPageTitle.Size = new System.Drawing.Size(87, 35);
             this.labelPageTitle.Text = "前言";
             // 
-            // groupBox
-            // 
-            this.groupBox.Controls.Add(this.textBox);
-            this.groupBox.Location = new System.Drawing.Point(30, 109);
-            this.groupBox.Name = "groupBox";
-            this.groupBox.Size = new System.Drawing.Size(603, 379);
-            this.groupBox.TabIndex = 148;
-            this.groupBox.TabStop = false;
-            this.groupBox.Text = "给家长教师的话";
-            // 
             // textBox
             // 
             this.textBox.Location = new System.Drawing.Point(20, 26);
@@ -77,25 +79,24 @@
             this.textBox.Size = new System.Drawing.Size(563, 338);
             this.textBox.TabIndex = 1;
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(6, 38);
+            this.label.MaximumSize = new System.Drawing.Size(600, 300);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(29, 12);
+            this.label.TabIndex = 152;
+            this.label.Text = "正文";
+            // 
             // uiCHSTRAS_091_Foreword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.ClientSize = new System.Drawing.Size(792, 516);
-            this.Controls.Add(this.groupBox);
             this.Name = "uiCHSTRAS_091_Foreword";
-            this.Controls.SetChildIndex(this.groupBox, 0);
-            this.Controls.SetChildIndex(this.labelPageTitle, 0);
-            this.Controls.SetChildIndex(this.label课程信息, 0);
-            this.Controls.SetChildIndex(this.label程序信息, 0);
-            this.Controls.SetChildIndex(this.label姓名, 0);
-            this.Controls.SetChildIndex(this.label学号, 0);
-            this.Controls.SetChildIndex(this.pictureBoxHead, 0);
-            this.Controls.SetChildIndex(this.button退出, 0);
-            this.Controls.SetChildIndex(this.button返回, 0);
-            this.Controls.SetChildIndex(this.button确定, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,7 +104,7 @@
 
         #endregion
 
-        protected System.Windows.Forms.GroupBox groupBox;
         protected System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.Label label;
     }
 }
