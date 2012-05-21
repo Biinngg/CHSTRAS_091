@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="btCHSTRAS_091_Teach.cs" />
     <Compile Include="btCHSTRAS_091_Base.cs" />
     <Compile Include="btCHSTRAS_091_Question.cs" />
     <Compile Include="btCHSTRAS_091_Database.cs" />
