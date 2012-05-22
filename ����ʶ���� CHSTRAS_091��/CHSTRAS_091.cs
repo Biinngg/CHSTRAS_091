@@ -21,12 +21,12 @@ namespace _认识事物_CHSTRAS_091_
         {
             try
             {
-                CHSTRAS_091_Teach f = new CHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice);
+                uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice);
                 f.Show();
             }
             catch(Exception exception)// Exception ex
             {
-                this.Text = "Exception:" + exception.ToString();
+                MessageBox.Show("Exception:" + exception.ToString());
             }
         }
 

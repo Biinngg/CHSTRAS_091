@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
+using System.Collections;
+using System.Windows.Forms;
 using SHF_DA;
 
 namespace CHSTRAS_091_BT
@@ -39,6 +41,30 @@ namespace CHSTRAS_091_BT
             dataSet = database.GetDataSet(sql);
             reader = dataSet.CreateDataReader();
             return reader;
+        }
+
+        public void insert(String tableName, Hashtable keyValues)
+        {
+            String sql = "INSERT INTO " + tableName;
+            String keys = " (";
+            String values = " (";
+            foreach (DictionaryEntry keyValue in keyValues)
+            {
+                keys += keyValue.Key + ",";
+                if (keyValue.Value.GetType().Name == "DateTime" ||
+                    keyValues.Values.GetType().Name == "String")
+                {
+                    values += "\'" + keyValue.Value + "\',";
+                }
+                else
+                {
+                    values += keyValue.Value + ",";
+                }
+            }
+            keys = keys.Substring(0,keys.Length-1) + ") ";
+            values = values.Substring(0,values.Length-1) + ") ";
+            sql += keys + "VALUES" + values;
+            database.Add(sql);
         }
 
         public int getSize()

@@ -54,17 +54,6 @@
             // 
             this.buttonSubmit.Visible = false;
             // 
-            // label程序信息
-            // 
-            this.label程序信息.Size = new System.Drawing.Size(359, 12);
-            this.label程序信息.Text = "《认识事物 CHSTRAS_091》V09-1|SHF_UI|uiCHSTRAS_091_Foreword";
-            // 
-            // label课程信息
-            // 
-            this.label课程信息.Size = new System.Drawing.Size(137, 12);
-            this.label课程信息.Tag = "中文学习|认识事物|前言";
-            this.label课程信息.Text = "中文学习|认识事物|前言";
-            // 
             // labelPageTitle
             // 
             this.labelPageTitle.Size = new System.Drawing.Size(87, 35);

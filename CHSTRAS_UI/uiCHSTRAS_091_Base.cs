@@ -15,6 +15,7 @@ namespace CHSTRAS_091_UI
     {
         protected PictureBox[] pictureBox;
         protected Label[] label;
+        protected int number;
 
         public uiCHSTRAS_091_Base()
         {
@@ -26,7 +27,9 @@ namespace CHSTRAS_091_UI
         {
             InitializeComponent();
             btCHSTRAS_091_Base bt = new btCHSTRAS_091_Base();
-            this.labelPageTitle.Text = callUnit.UnitPracticeName;
+            String title = callUnit.UnitPracticeName;
+            this.Text = title;
+            this.labelPageTitle.Text = title;
             this.label课程信息.Text = bt.getClassInfo(callUnit);
             this.label程序信息.Text = bt.getProgramInfo(callUnit);
         }

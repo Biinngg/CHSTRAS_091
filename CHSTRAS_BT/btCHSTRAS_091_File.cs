@@ -9,13 +9,6 @@ namespace CHSTRAS_091_BT
 {
     public class btCHSTRAS_091_File
     {
-        String filePath;
-
-        public btCHSTRAS_091_File()
-        {
-            filePath = "..\\..\\..\\SHFDB\\";
-        }
-
         public String getText(String text)
         {
             if (text == null)
@@ -25,7 +18,7 @@ namespace CHSTRAS_091_BT
             }
             if (text.Contains(".txt"))
             {
-                filePath += "Text\\" + text;
+                String filePath = "..\\..\\..\\SHFDB\\Text\\" + text;
                 String result = "";
                 StreamReader myStream = new StreamReader(filePath,
                     System.Text.Encoding.GetEncoding("gb2312"));
@@ -44,7 +37,7 @@ namespace CHSTRAS_091_BT
         public Image getBitMap(String fileName)
         {
             Bitmap bitmap;
-            filePath += "Image\\";
+            String filePath = "..\\..\\..\\SHFDB\\Image\\";
             if (fileName != null)
             {
                 filePath += fileName;

@@ -69,7 +69,7 @@ namespace CHSTRAS_091_Test
         private void button认识事物_Click(object sender, EventArgs e)
         {
             //处理：
-            CHSTRAS_091_Teach f = new CHSTRAS_091_Teach(this, myUserLogin, myUnitPrac);
+            uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, myUserLogin, myUnitPrac);
             f.Show();
         }
     }

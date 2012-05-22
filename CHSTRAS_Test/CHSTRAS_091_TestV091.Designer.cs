@@ -68,6 +68,11 @@
             this.tabPage认识器物游戏.SuspendLayout();
             this.SuspendLayout();
             // 
+            // tabPage桌面应用
+            // 
+            this.tabPage桌面应用.Location = new System.Drawing.Point(4, 22);
+            this.tabPage桌面应用.Size = new System.Drawing.Size(641, 67);
+            // 
             // button登录
             // 
             this.button登录.BackColor = System.Drawing.Color.Aqua;
@@ -108,10 +113,10 @@
             this.tabPage认识事物.Controls.Add(this.button认识事物);
             this.tabPage认识事物.Controls.Add(this.button前言);
             this.tabPage认识事物.Controls.Add(this.QUIT00);
-            this.tabPage认识事物.Location = new System.Drawing.Point(4, 21);
+            this.tabPage认识事物.Location = new System.Drawing.Point(4, 22);
             this.tabPage认识事物.Name = "tabPage认识事物";
             this.tabPage认识事物.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage认识事物.Size = new System.Drawing.Size(641, 68);
+            this.tabPage认识事物.Size = new System.Drawing.Size(641, 67);
             this.tabPage认识事物.TabIndex = 1;
             this.tabPage认识事物.Text = "认识事物";
             this.tabPage认识事物.UseVisualStyleBackColor = true;
@@ -244,9 +249,9 @@
             this.tabPage认识器物教学.Controls.Add(this.TEACH);
             this.tabPage认识器物教学.Controls.Add(this.FOREWORD00);
             this.tabPage认识器物教学.Controls.Add(this.FOREWORD);
-            this.tabPage认识器物教学.Location = new System.Drawing.Point(4, 21);
+            this.tabPage认识器物教学.Location = new System.Drawing.Point(4, 22);
             this.tabPage认识器物教学.Name = "tabPage认识器物教学";
-            this.tabPage认识器物教学.Size = new System.Drawing.Size(641, 68);
+            this.tabPage认识器物教学.Size = new System.Drawing.Size(641, 67);
             this.tabPage认识器物教学.TabIndex = 2;
             this.tabPage认识器物教学.Text = "认识器物教学";
             this.tabPage认识器物教学.UseVisualStyleBackColor = true;
@@ -326,9 +331,9 @@
             this.tabPage认识器物游戏.Controls.Add(this.PUZZLE01);
             this.tabPage认识器物游戏.Controls.Add(this.PUZZLE00);
             this.tabPage认识器物游戏.Controls.Add(this.PUZZLE);
-            this.tabPage认识器物游戏.Location = new System.Drawing.Point(4, 21);
+            this.tabPage认识器物游戏.Location = new System.Drawing.Point(4, 22);
             this.tabPage认识器物游戏.Name = "tabPage认识器物游戏";
-            this.tabPage认识器物游戏.Size = new System.Drawing.Size(641, 68);
+            this.tabPage认识器物游戏.Size = new System.Drawing.Size(641, 67);
             this.tabPage认识器物游戏.TabIndex = 3;
             this.tabPage认识器物游戏.Text = "认识器物游戏";
             this.tabPage认识器物游戏.UseVisualStyleBackColor = true;
@@ -426,6 +431,7 @@
             // CHSTRAS_091_TestV091
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(892, 566);
             this.Name = "CHSTRAS_091_TestV091";
             this.tabPage桌面应用.ResumeLayout(false);

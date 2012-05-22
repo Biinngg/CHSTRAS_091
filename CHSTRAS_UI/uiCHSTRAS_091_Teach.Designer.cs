@@ -47,20 +47,11 @@
             // buttonForward
             // 
             this.buttonForward.Location = new System.Drawing.Point(345, 328);
+            this.buttonForward.Click += new System.EventHandler(this.buttonForward_Click);
             // 
             // buttonSubmit
             // 
             this.buttonSubmit.Visible = false;
-            // 
-            // label程序信息
-            // 
-            this.label程序信息.Size = new System.Drawing.Size(341, 12);
-            this.label程序信息.Text = "《认识事物 CHSTRAS_091》V09-1|SHF_UI|uiCHSTRAS_091_Teach";
-            // 
-            // label课程信息
-            // 
-            this.label课程信息.Tag = "中文学习|认识事物|认识事物";
-            this.label课程信息.Text = "中文学习|认识事物|认识事物";
             // 
             // groupBox1
             // 
