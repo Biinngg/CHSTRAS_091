@@ -49,7 +49,6 @@
     <Compile Include="btCHSTRAS_091_Question.cs" />
     <Compile Include="btCHSTRAS_091_Database.cs" />
     <Compile Include="btCHSTRAS_091_File.cs" />
-    <Compile Include="btCHSTRAS_091_Record.cs" />
     <Compile Include="btCHSTRAS_091_Teach.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

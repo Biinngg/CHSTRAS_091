@@ -67,6 +67,30 @@ namespace CHSTRAS_091_BT
             database.Add(sql);
         }
 
+        public void update(String tableName, Hashtable keyValues, String condition)
+        {
+            String sql = "UPDATE " + tableName + " SET ";
+            foreach (DictionaryEntry keyValue in keyValues)
+            {
+                sql += keyValue.Key + "=";
+                if (keyValue.Value.GetType().Name == "DateTime" ||
+                    keyValues.Values.GetType().Name == "String")
+                {
+                    sql += "\'" + keyValue.Value + "\',";
+                }
+                else
+                {
+                    sql += keyValue.Value + ",";
+                }
+            }
+            sql = sql.Substring(0, sql.Length - 1);
+            if (condition != null)
+            {
+                sql += " WHERE " + condition;
+            }
+            database.Update(sql);
+        }
+
         public int getSize()
         {
             int size = dataSet.Tables[0].Rows.Count;

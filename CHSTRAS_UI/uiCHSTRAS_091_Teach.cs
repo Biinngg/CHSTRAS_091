@@ -49,5 +49,20 @@ namespace CHSTRAS_091_UI
                 }
             }
         }
+
+        private void buttonBackward_Click(object sender, EventArgs e)
+        {
+            buttonForward.Enabled = true;
+            for (int i = number - 1; i >= 0; i--)
+            {
+                Boolean result = bt.moveToLast();
+                pictureBox[i].Image = bt.getImage();
+                label[i].Text = bt.getText();
+                if (!result)
+                {
+                    buttonBackward.Enabled = false;
+                }
+            }
+        }
     }
 }

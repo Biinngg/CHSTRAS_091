@@ -43,6 +43,7 @@
             // buttonBackward
             // 
             this.buttonBackward.Location = new System.Drawing.Point(167, 328);
+            this.buttonBackward.Click += new System.EventHandler(this.buttonBackward_Click);
             // 
             // buttonForward
             // 
