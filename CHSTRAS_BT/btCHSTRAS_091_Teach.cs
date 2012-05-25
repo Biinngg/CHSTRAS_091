@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.Collections;
+using System.Windows.Forms;
 using SHF_BT;
 using System.Data;
 
@@ -12,7 +13,9 @@ namespace CHSTRAS_091_BT
     public class btCHSTRAS_091_Teach
     {
         private int total, itemLearned, itemCurrent;
+        private bool moveToLastPressed = false;
         private btSHFPage page;
+        private ArrayList arrayList;
         private DateTime startTime;
         private IDataReader readerPages, readerStudys, readerNext, readerBack;
         private btSHFUserLogin shfUserLogin;
@@ -32,17 +35,26 @@ namespace CHSTRAS_091_BT
             String where = "ProgramID=" + bt.getPagesID(shfUnitPratice);
             readerPages = database.query("E_SHFPages", columns, where, null);
             total = database.getSize();
-            itemLearned = 1;
-            itemCurrent = 1;
+            itemLearned = -1;
+            itemCurrent = -1;
+            arrayList = new ArrayList();
             startTime = DateTime.Now;
         }
 
         public bool moveToNext()
         {
-            itemCurrent++;
-            if (itemCurrent < itemLearned)
+            if (moveToLastPressed)
             {
-                unrecord(itemCurrent, "ASC");
+                itemCurrent += 2;
+                moveToLastPressed = false;
+            }
+            else
+            {
+                itemCurrent++;
+            }
+            if (itemCurrent <= itemLearned)
+            {
+                unrecord(itemCurrent);
             }
             else
             {
@@ -50,22 +62,24 @@ namespace CHSTRAS_091_BT
                 if (readerPages.Read())
                     record(readerPages.GetInt32(0), readerPages.GetInt32(1), true);
             }
-            if (itemLearned >= total)
+            Console.Write("itemCurrent=" + itemCurrent + " total=" + total + "\n");
+            if (itemCurrent >= total - 1)
                 return false;
             return true;
         }
 
         public bool moveToLast()
         {
-            if (itemCurrent == itemLearned)
+            if (!moveToLastPressed)
             {
-                itemCurrent -= 3;
+                itemCurrent -= 2;
+                moveToLastPressed = true;
             }
             else
             {
                 itemCurrent--;
             }
-            unrecord(itemLearned - itemCurrent, "DESC");
+            unrecord(itemCurrent);
             if (itemCurrent <= 0)
             {
                 return false;
@@ -73,19 +87,13 @@ namespace CHSTRAS_091_BT
             return true;
         }
 
-        private bool unrecord(int num, String order)
+        private void unrecord(int num)
         {
-            IDataReader reader = getReader(order);
-            for (int i = 0; i < num; i++)
-            {
-                if (!reader.Read())
-                    return false;
-            }
-            int id = reader.GetInt32(0);
+            Console.Write(" " + num + ", itemCurrent=" + itemCurrent + ", itemLearned=" + itemLearned + "\n");
+            int id = (int)arrayList[num];
             btSHFPages pages = new btSHFPages();
             btSHFPage page = pages.GetOne(id);
             record(page.ProgramID, page.PageID, false);
-            return true;
         }
 
         private IDataReader getReader(String order)
@@ -125,6 +133,7 @@ namespace CHSTRAS_091_BT
             keyValues.Add(shfStudys[5], startTime);
             keyValues.Add(shfStudys[6], DateTime.Now);
             database.insert("R_SHFStudys", keyValues);
+            arrayList.Add(CoursePageID);
             readerStudys = getReader("DESC");
             getPages();
         }
