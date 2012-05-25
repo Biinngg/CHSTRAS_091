@@ -56,19 +56,10 @@
     <Compile Include="CHSTRAS_091.Designer.cs">
       <DependentUpon>CHSTRAS_091.cs</DependentUpon>
     </Compile>
-    <Compile Include="CHSTRAS_091_Link.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CHSTRAS_091_Link.Designer.cs">
-      <DependentUpon>CHSTRAS_091_Link.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CHSTRAS_091.resx">
       <DependentUpon>CHSTRAS_091.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CHSTRAS_091_Link.resx">
-      <DependentUpon>CHSTRAS_091_Link.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

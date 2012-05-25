@@ -41,7 +41,7 @@ namespace _认识事物_CHSTRAS_091_
         {
             try
             {
-                CHSTRAS_091_Link f = new CHSTRAS_091_Link(this, shfUserLogin, shfUnitPractice);
+                uiCHSTRAS_091_Link f = new uiCHSTRAS_091_Link(this, shfUserLogin, shfUnitPractice);
                 f.Show();
             }
             catch (Exception exception)// Exception ex
