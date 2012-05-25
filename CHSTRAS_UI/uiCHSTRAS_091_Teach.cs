@@ -22,6 +22,7 @@ namespace CHSTRAS_091_UI
             : base(form, shfUserLogin, shfUnitPratice)
         {
             InitializeComponent();
+
             pictureBox = new PictureBox[] { pictureBox1, pictureBox2 };
             label = new Label[] { label1, label2 };
             number = label.Length;

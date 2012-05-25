@@ -32,6 +32,7 @@
             this.buttonBackward = new System.Windows.Forms.Button();
             this.buttonForward = new System.Windows.Forms.Button();
             this.buttonSubmit = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -39,6 +40,10 @@
             // button返回
             // 
             this.button返回.Visible = false;
+            // 
+            // button退出
+            // 
+            this.button退出.Visible = false;
             // 
             // button确定
             // 
@@ -76,7 +81,7 @@
             this.buttonBackward.Location = new System.Drawing.Point(78, 328);
             this.buttonBackward.Name = "buttonBackward";
             this.buttonBackward.Size = new System.Drawing.Size(75, 23);
-            this.buttonBackward.TabIndex = 149;
+            this.buttonBackward.TabIndex = 20;
             this.buttonBackward.Text = "上一题";
             this.buttonBackward.UseVisualStyleBackColor = true;
             // 
@@ -85,7 +90,7 @@
             this.buttonForward.Location = new System.Drawing.Point(256, 328);
             this.buttonForward.Name = "buttonForward";
             this.buttonForward.Size = new System.Drawing.Size(75, 23);
-            this.buttonForward.TabIndex = 150;
+            this.buttonForward.TabIndex = 0;
             this.buttonForward.Text = "下一题";
             this.buttonForward.UseVisualStyleBackColor = true;
             // 
@@ -94,17 +99,36 @@
             this.buttonSubmit.Location = new System.Drawing.Point(432, 328);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
-            this.buttonSubmit.TabIndex = 151;
+            this.buttonSubmit.TabIndex = 10;
             this.buttonSubmit.Text = "提交";
             this.buttonSubmit.UseVisualStyleBackColor = true;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.SteelBlue;
+            this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonExit.Font = new System.Drawing.Font("华文行楷", 15.75F);
+            this.buttonExit.Location = new System.Drawing.Point(696, 417);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(64, 56);
+            this.buttonExit.TabIndex = 149;
+            this.buttonExit.Text = "退出";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // uiCHSTRAS_091_Base
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.CancelButton = this.buttonExit;
             this.ClientSize = new System.Drawing.Size(792, 516);
             this.Controls.Add(this.groupBox);
+            this.Controls.Add(this.buttonExit);
+            this.KeyPreview = true;
             this.Name = "uiCHSTRAS_091_Base";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.uiCHSTRAS_091_Base_KeyDown);
+            this.Controls.SetChildIndex(this.button退出, 0);
+            this.Controls.SetChildIndex(this.buttonExit, 0);
             this.Controls.SetChildIndex(this.groupBox, 0);
             this.Controls.SetChildIndex(this.labelPageTitle, 0);
             this.Controls.SetChildIndex(this.label课程信息, 0);
@@ -112,7 +136,6 @@
             this.Controls.SetChildIndex(this.label姓名, 0);
             this.Controls.SetChildIndex(this.label学号, 0);
             this.Controls.SetChildIndex(this.pictureBoxHead, 0);
-            this.Controls.SetChildIndex(this.button退出, 0);
             this.Controls.SetChildIndex(this.button返回, 0);
             this.Controls.SetChildIndex(this.button确定, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
@@ -128,6 +151,7 @@
         protected System.Windows.Forms.Button buttonBackward;
         protected System.Windows.Forms.Button buttonForward;
         protected System.Windows.Forms.Button buttonSubmit;
+        protected System.Windows.Forms.Button buttonExit;
 
     }
 }

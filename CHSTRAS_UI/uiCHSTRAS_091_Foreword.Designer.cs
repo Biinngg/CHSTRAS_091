@@ -94,6 +94,6 @@
         #endregion
 
         protected System.Windows.Forms.TextBox textBox;
-        private System.Windows.Forms.Label label;
+        protected System.Windows.Forms.Label label;
     }
 }

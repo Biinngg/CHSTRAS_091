@@ -33,5 +33,18 @@ namespace CHSTRAS_091_UI
             this.label课程信息.Text = bt.getClassInfo(callUnit);
             this.label程序信息.Text = bt.getProgramInfo(callUnit);
         }
+
+        protected void buttonExit_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        protected void uiCHSTRAS_091_Base_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Escape))
+            {
+                Dispose();
+            }
+        }
     }
 }

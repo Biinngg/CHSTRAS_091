@@ -1,4 +1,5 @@
-﻿namespace CHSTRAS_091_UI
+﻿using System.Windows.Forms;
+namespace CHSTRAS_091_UI
 {
     partial class uiCHSTRAS_091_Teach
     {

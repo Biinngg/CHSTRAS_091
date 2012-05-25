@@ -17,7 +17,7 @@ namespace CHSTRAS_091_BT
         private btSHFPage page;
         private ArrayList arrayList;
         private DateTime startTime;
-        private IDataReader readerPages, readerStudys, readerNext, readerBack;
+        private IDataReader readerPages;
         private btSHFUserLogin shfUserLogin;
         private btCHSTRAS_091_File file;
         private btCHSTRAS_091_Database database;
@@ -96,15 +96,6 @@ namespace CHSTRAS_091_BT
             record(page.ProgramID, page.PageID, false);
         }
 
-        private IDataReader getReader(String order)
-        {
-            String where = shfStudys[5] + "=#" + startTime +
-                "# AND " + shfStudys[3] + "=true";
-            IDataReader reader = database.query("R_SHFStudys",
-                new String[] { shfStudys[2] }, where, "StudyID " + order);
-            return reader;
-        }
-
         private int getTimes(int coursePageID)
         {
             int studyTimes;
@@ -134,7 +125,6 @@ namespace CHSTRAS_091_BT
             keyValues.Add(shfStudys[6], DateTime.Now);
             database.insert("R_SHFStudys", keyValues);
             arrayList.Add(CoursePageID);
-            readerStudys = getReader("DESC");
             getPages();
         }
 
