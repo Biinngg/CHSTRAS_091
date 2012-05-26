@@ -45,9 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="btCHSTRAS_091_Status.cs" />
+    <Compile Include="Common\btCHSTRAS_091_Item.cs" />
+    <Compile Include="Common\btCHSTRAS_091_Time.cs" />
+    <Compile Include="Common\btCHSTRAS_091_Unit.cs" />
     <Compile Include="Common\btCHSTRAS_091_Base.cs" />
     <Compile Include="btCHSTRAS_091_Link.cs" />
-    <Compile Include="btCHSTRAS_091_Question.cs" />
+    <Compile Include="Common\btCHSTRAS_091_Question.cs" />
     <Compile Include="Common\btCHSTRAS_091_Database.cs" />
     <Compile Include="Common\btCHSTRAS_091_File.cs" />
     <Compile Include="btCHSTRAS_091_Teach.cs" />

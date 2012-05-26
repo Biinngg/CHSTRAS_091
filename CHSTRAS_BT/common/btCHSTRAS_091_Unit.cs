@@ -13,14 +13,16 @@ namespace CHSTRAS_091_BT.Common
         private Hashtable userUnitIDs;
         private btCHSTRAS_091_Database database;
         private btCHSTRAS_091_Base bt;
+        private btCHSTRAS_091_Time time;
         private DateTime startTime;
         private int totalNum, completeNum, totalScore, rightNum, answerTime;
 
         public btCHSTRAS_091_Unit(DateTime startTime, int totalNum, btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
         {
             bt = new btCHSTRAS_091_Base();
+            time = new btCHSTRAS_091_Time();
             userUnitIDs = bt.getUserUnitIDs(shfUserLogin, shfUnitPratice);
-            answerTime = bt.getAnswerTime(startTime);
+            answerTime = time.getAnswerTime(startTime);
             this.startTime = startTime;
             this.totalNum = totalNum;
         }
@@ -34,7 +36,7 @@ namespace CHSTRAS_091_BT.Common
                 keyValues.Add(userUnitID.Key, userUnitID.Value);
             }
             keyValues.Add("StartDateTime", startTime);
-            keyValues.Add("PracticeTime", bt.getAnswerTime(startTime));
+            keyValues.Add("PracticeTime", time.getAnswerTime(startTime));
             keyValues.Add("TotalNumber", totalNum);
             keyValues.Add("CompleteNumber", completeNum);
             keyValues.Add("RightNumber", rightNum);

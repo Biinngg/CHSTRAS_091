@@ -11,7 +11,7 @@ namespace CHSTRAS_091_BT.Common
     {
         private btCHSTRAS_091_Database database;
         private Hashtable userUnitIDs;
-        btCHSTRAS_091_Base bt;
+        private btCHSTRAS_091_Base bt;
 
         public btCHSTRAS_091_Item(btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
         {
@@ -23,6 +23,7 @@ namespace CHSTRAS_091_BT.Common
         public void record(int questionID, DateTime startTime,
             String testAnswer, bool testRight, int testScore)
         {
+            btCHSTRAS_091_Time time = new btCHSTRAS_091_Time();
             Hashtable keyValues = new Hashtable();
             foreach (DictionaryEntry userUnitID in userUnitIDs)
             {
@@ -30,7 +31,7 @@ namespace CHSTRAS_091_BT.Common
             }
             keyValues.Add("QuestionID", questionID);
             keyValues.Add("StartDateTime", startTime);
-            keyValues.Add("AnswerTime", bt.getAnswerTime(startTime));
+            keyValues.Add("AnswerTime", time.getAnswerTime(startTime));
             keyValues.Add("TestAnswer", testAnswer);
             keyValues.Add("TestRight", testRight);
             keyValues.Add("TestScore", testScore);
