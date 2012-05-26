@@ -59,12 +59,5 @@ namespace CHSTRAS_091_BT
             }
             return keyValues;
         }
-
-        public int getAnswerTime(DateTime startTime)
-        {
-            DateTime now = DateTime.Now;
-            TimeSpan diff = now - startTime;
-            return (int)diff.TotalSeconds;
-        }
     }
 }
