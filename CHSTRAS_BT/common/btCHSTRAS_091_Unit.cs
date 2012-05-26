@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data;
 using System.Text;
 using SHF_BT;
 
@@ -12,18 +13,21 @@ namespace CHSTRAS_091_BT.Common
         private Hashtable userUnitIDs;
         private btCHSTRAS_091_Database database;
         private btCHSTRAS_091_Base bt;
+        private DateTime startTime;
+        private int totalNum, completeNum, totalScore, rightNum, answerTime;
 
-        public btCHSTRAS_091_Unit(btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
+        public btCHSTRAS_091_Unit(DateTime startTime, int totalNum, btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
         {
-            database = new btCHSTRAS_091_Database();
             bt = new btCHSTRAS_091_Base();
             userUnitIDs = bt.getUserUnitIDs(shfUserLogin, shfUnitPratice);
+            answerTime = bt.getAnswerTime(startTime);
+            this.startTime = startTime;
+            this.totalNum = totalNum;
         }
 
-        public void record(DateTime startTime, int totalNum, int completeNum,
-            String testAnswer, bool testRight, int testScore)
+        public void record()
         {
-            //TODO: completenumber等可以通过item算出
+            getStatistics();
             Hashtable keyValues = new Hashtable();
             foreach (DictionaryEntry userUnitID in userUnitIDs)
             {
@@ -33,10 +37,28 @@ namespace CHSTRAS_091_BT.Common
             keyValues.Add("PracticeTime", bt.getAnswerTime(startTime));
             keyValues.Add("TotalNumber", totalNum);
             keyValues.Add("CompleteNumber", completeNum);
-            keyValues.Add("TestAnswer", testAnswer);
-            keyValues.Add("TestRight", testRight);
-            keyValues.Add("TestScore", testScore);
+            keyValues.Add("RightNumber", rightNum);
+            keyValues.Add("ErrorNumber", completeNum - rightNum);
+            keyValues.Add("CorrectRate", rightNum / completeNum);
+            keyValues.Add("TotalScore", totalScore);
             database.insert("R_SHFItemScores", keyValues);
+        }
+
+        private void getStatistics()
+        {
+            String where = "StartDateTime>=#" + startTime + "#";
+            String[] selections = new String[] { "TestScore" };
+            database = new btCHSTRAS_091_Database();
+            IDataReader reader = database.query("R_SHFItemScores", selections, where, null);
+            completeNum = database.getSize();
+            totalScore = 0;
+            while (reader.Read())
+            {
+                totalScore += reader.GetInt32(0);
+            }
+            where = "StartDateTime>=#" + startTime + "# AND TestRight=true";
+            database.query("R_SHFItemScores", selections, where, null);
+            rightNum = database.getSize();
         }
     }
 }
