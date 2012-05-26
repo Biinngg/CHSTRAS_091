@@ -31,6 +31,7 @@
             this.textBox = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.groupBox.SuspendLayout();
+            this.groupBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +54,10 @@
             // buttonSubmit
             // 
             this.buttonSubmit.Visible = false;
+            // 
+            // groupBoxInfo
+            // 
+            this.groupBoxInfo.Visible = false;
             // 
             // labelPageTitle
             // 
@@ -85,6 +90,8 @@
             this.Name = "uiCHSTRAS_091_Foreword";
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
+            this.groupBoxInfo.ResumeLayout(false);
+            this.groupBoxInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
