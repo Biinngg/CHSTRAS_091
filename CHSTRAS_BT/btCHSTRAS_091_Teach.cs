@@ -151,7 +151,7 @@ namespace CHSTRAS_091_BT
 
         public int getTotal()
         {
-            return total;
+            return total/2;
         }
     }
 }
