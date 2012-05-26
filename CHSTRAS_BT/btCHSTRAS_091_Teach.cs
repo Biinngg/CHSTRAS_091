@@ -148,5 +148,10 @@ namespace CHSTRAS_091_BT
         {
             return file.getText(page.TextInfo);
         }
+
+        public int getTotal()
+        {
+            return total;
+        }
     }
 }
