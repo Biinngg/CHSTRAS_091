@@ -38,7 +38,7 @@ namespace CHSTRAS_091_UI
             this.label程序信息.Text = bt.getProgramInfo(callUnit);
             startTime = DateTime.Now;
             this.labelBegin.Text += times.getTime(startTime);
-            answeredNum = 2;
+            answeredNum = 1;
             this.labelAnswered.Text += answeredNum;
         }
 
@@ -55,13 +55,13 @@ namespace CHSTRAS_091_UI
 
         protected void buttonForward_Click(object sender, EventArgs e)
         {
-            answeredNum += 2;
+            answeredNum ++;
             this.labelAnswered.Text = "已答题数：" + answeredNum;
         }
 
         protected void buttonBackward_Click(object sender, EventArgs e)
         {
-            answeredNum -= 2;
+            answeredNum --;
             this.labelAnswered.Text = "已答题数：" + answeredNum;
         }
     }
