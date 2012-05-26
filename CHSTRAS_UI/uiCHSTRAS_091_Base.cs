@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using SHF_BT;
 using CHSTRAS_091_BT;
+using CHSTRAS_091_BT.Common;
 
 namespace CHSTRAS_091_UI
 {
@@ -15,7 +16,9 @@ namespace CHSTRAS_091_UI
     {
         protected PictureBox[] pictureBox;
         protected Label[] label;
-        protected int number;
+        protected int number, answeredNum;
+        protected DateTime startTime;
+        private btCHSTRAS_091_Time times;
 
         public uiCHSTRAS_091_Base()
         {
@@ -26,12 +29,17 @@ namespace CHSTRAS_091_UI
             : base(callForm, callLog, callUnit)
         {
             InitializeComponent();
+            times = new btCHSTRAS_091_Time();
             btCHSTRAS_091_Base bt = new btCHSTRAS_091_Base();
             String title = callUnit.UnitPracticeName;
             this.Text = title;
             this.labelPageTitle.Text = title;
             this.label课程信息.Text = bt.getClassInfo(callUnit);
             this.label程序信息.Text = bt.getProgramInfo(callUnit);
+            startTime = DateTime.Now;
+            this.labelBegin.Text += times.getTime(startTime);
+            answeredNum = 2;
+            this.labelAnswered.Text += answeredNum;
         }
 
         protected void buttonExit_Click(object sender, EventArgs e)
@@ -39,12 +47,22 @@ namespace CHSTRAS_091_UI
             Dispose();
         }
 
-        protected void uiCHSTRAS_091_Base_KeyDown(object sender, KeyEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            if (e.KeyData.Equals(Keys.Escape))
-            {
-                Dispose();
-            }
+            TimeSpan diff = DateTime.Now - startTime;
+            this.labelHave.Text = "已用时间：" + times.getTime(diff); ;
+        }
+
+        protected void buttonForward_Click(object sender, EventArgs e)
+        {
+            answeredNum += 2;
+            this.labelAnswered.Text = "已答题数：" + answeredNum;
+        }
+
+        protected void buttonBackward_Click(object sender, EventArgs e)
+        {
+            answeredNum -= 2;
+            this.labelAnswered.Text = "已答题数：" + answeredNum;
         }
     }
 }
