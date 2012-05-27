@@ -40,17 +40,12 @@ namespace CHSTRAS_091_UI
             this.labelBegin.Text += times.getTime(startTime);
             answeredNum = 1;
             this.labelAnswered.Text += answeredNum;
+            this.timer1.Enabled = true;
         }
 
         protected void buttonExit_Click(object sender, EventArgs e)
         {
             Dispose();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            TimeSpan diff = DateTime.Now - startTime;
-            this.labelHave.Text = "已用时间：" + times.getTime(diff); ;
         }
 
         protected void buttonForward_Click(object sender, EventArgs e)
@@ -63,6 +58,12 @@ namespace CHSTRAS_091_UI
         {
             answeredNum --;
             this.labelAnswered.Text = "已答题数：" + answeredNum;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan diff = DateTime.Now - startTime;
+            this.labelHave.Text = "已用时间：" + times.getTime(diff); ;
         }
     }
 }
