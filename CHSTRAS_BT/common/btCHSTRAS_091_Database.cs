@@ -33,6 +33,8 @@ namespace CHSTRAS_091_BT
             if (condition != null)
             {
                 sql += " WHERE " + condition;
+                //在课程编辑完成后激活，用以区分其它人员开发的程序
+                //sql += " AND ProgramID=\'1030102\'";
             }
             if (orderBy != null)
             {
