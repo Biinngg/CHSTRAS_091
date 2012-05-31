@@ -141,7 +141,7 @@ namespace CHSTRAS_091_BT
 
         public Image getImage()
         {
-            return file.getBitMap(page.ImageInfo);
+            return file.getImage(page.ImageInfo);
         }
 
         public String getText()

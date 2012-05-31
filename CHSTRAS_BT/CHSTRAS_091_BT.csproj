@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="btCHSTRAS_091_Status.cs" />
+    <Compile Include="Common\btCHSTRAS_091_Algorithm.cs" />
     <Compile Include="Common\btCHSTRAS_091_Item.cs" />
     <Compile Include="Common\btCHSTRAS_091_Time.cs" />
     <Compile Include="Common\btCHSTRAS_091_Unit.cs" />
