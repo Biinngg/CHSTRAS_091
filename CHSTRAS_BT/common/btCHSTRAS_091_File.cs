@@ -34,9 +34,8 @@ namespace CHSTRAS_091_BT
             return text;
         }
 
-        public Image getBitMap(String fileName)
+        public Image getImage(String fileName)
         {
-            Bitmap bitmap;
             String filePath = "..\\..\\..\\SHFDB\\Image\\";
             if (fileName != null)
             {
@@ -46,8 +45,7 @@ namespace CHSTRAS_091_BT
             {
                 filePath += "none.BMP";
             }
-            bitmap = new Bitmap(filePath);
-            return bitmap;
+            return Image.FromFile(filePath);
         }
     }
 }
