@@ -38,6 +38,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox.SuspendLayout();
+            this.groupBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -45,6 +46,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // buttonForward
+            // 
+            this.buttonForward.Click += new System.EventHandler(this.buttonForward_Click);
             // 
             // groupBox1
             // 
@@ -161,6 +166,7 @@
             this.ClientSize = new System.Drawing.Size(792, 516);
             this.Controls.Add(this.groupBox1);
             this.Name = "uiCHSTRAS_091_Link";
+            this.Controls.SetChildIndex(this.groupBoxInfo, 0);
             this.Controls.SetChildIndex(this.buttonExit, 0);
             this.Controls.SetChildIndex(this.groupBox, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
@@ -174,6 +180,8 @@
             this.Controls.SetChildIndex(this.button返回, 0);
             this.Controls.SetChildIndex(this.button确定, 0);
             this.groupBox.ResumeLayout(false);
+            this.groupBoxInfo.ResumeLayout(false);
+            this.groupBoxInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

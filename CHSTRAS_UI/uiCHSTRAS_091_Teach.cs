@@ -14,13 +14,9 @@ namespace CHSTRAS_091_UI
         private btCHSTRAS_091_Teach bt;
         private int totalNum;
 
-        public uiCHSTRAS_091_Teach()
-        {
-            InitializeComponent();
-        }
-
-        public uiCHSTRAS_091_Teach(Form form, SHF_BT.btSHFUserLogin shfUserLogin, SHF_BT.btSHFUnitPractice shfUnitPratice)
-            : base(form, shfUserLogin, shfUnitPratice)
+        public uiCHSTRAS_091_Teach(Form form, SHF_BT.btSHFUserLogin shfUserLogin,
+            SHF_BT.btSHFUnitPractice shfUnitPratice, int courseType)
+            : base(form, shfUserLogin, shfUnitPratice, courseType)
         {
             InitializeComponent();
 

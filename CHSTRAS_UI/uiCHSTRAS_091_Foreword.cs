@@ -14,8 +14,9 @@ namespace CHSTRAS_091_UI
     {
         private btSHFUnitPractice pratice;
 
-        public uiCHSTRAS_091_Foreword(Form form, btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
-            : base(form, shfUserLogin, shfUnitPratice)
+        public uiCHSTRAS_091_Foreword(Form form, btSHFUserLogin shfUserLogin,
+            btSHFUnitPractice shfUnitPratice, int courseType)
+            : base(form, shfUserLogin, shfUnitPratice, courseType)
         {
             InitializeComponent();
             pratice = shfUnitPratice;

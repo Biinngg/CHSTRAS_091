@@ -216,9 +216,9 @@
             this.Controls.Add(this.groupBoxInfo);
             this.Name = "uiCHSTRAS_091_Base";
             this.Controls.SetChildIndex(this.groupBoxInfo, 0);
-            this.Controls.SetChildIndex(this.button退出, 0);
             this.Controls.SetChildIndex(this.buttonExit, 0);
             this.Controls.SetChildIndex(this.groupBox, 0);
+            this.Controls.SetChildIndex(this.button退出, 0);
             this.Controls.SetChildIndex(this.labelPageTitle, 0);
             this.Controls.SetChildIndex(this.label课程信息, 0);
             this.Controls.SetChildIndex(this.label程序信息, 0);
