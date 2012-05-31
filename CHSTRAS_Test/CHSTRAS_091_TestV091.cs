@@ -62,14 +62,14 @@ namespace CHSTRAS_091_Test
         private void button前言_Click(object sender, EventArgs e)
         {
             //处理：
-            uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, myUserLogin, myUnitPrac);
+            uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, myUserLogin, myUnitPrac, 0);
             f.Show();
         }
 
         private void button认识事物_Click(object sender, EventArgs e)
         {
             //处理：
-            uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, myUserLogin, myUnitPrac);
+            uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, myUserLogin, myUnitPrac, 0);
             f.Show();
         }
     }

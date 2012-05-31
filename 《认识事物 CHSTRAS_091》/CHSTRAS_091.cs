@@ -21,7 +21,7 @@ namespace _认识事物_CHSTRAS_091_
         {
             try
             {
-                uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice);
+                uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice, 0);
                 f.Show();
             }
             catch(Exception exception)// Exception ex
@@ -33,7 +33,7 @@ namespace _认识事物_CHSTRAS_091_
         private void button前言_Click(object sender, EventArgs e)
         {
             
-            uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice);
+            uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice, 0);
             f.Show();
         }
 
@@ -41,7 +41,7 @@ namespace _认识事物_CHSTRAS_091_
         {
             try
             {
-                uiCHSTRAS_091_Link f = new uiCHSTRAS_091_Link(this, shfUserLogin, shfUnitPractice);
+                uiCHSTRAS_091_Link f = new uiCHSTRAS_091_Link(this, shfUserLogin, shfUnitPractice, 0);
                 f.Show();
             }
             catch (Exception exception)// Exception ex
