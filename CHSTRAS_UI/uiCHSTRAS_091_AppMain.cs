@@ -193,19 +193,16 @@ namespace CHSTRAS_091_UI
             //uiPageEditSimple fr = new uiPageEditSimple(this, shfUserLogin, shfSHFPage);
             //this.Hide();
             //fr.Show();
-
         }
 
         private void button认识植物_Click(object sender, EventArgs e)
         {
-
             //shfPracticeID = 6;  设置训练课程
             shfUserLogin.LoginUnitID = inst02UnitID; //设置学习内容
             shfUnitPractice = shfUnitPractices.GetOne(inst02UnitID);
             //uiPageShowSimple fr = new uiPageShowSimple(this, shfUserLogin, shfSHFPage);
             //fr.Show();
             //this.Hide();
-
         }
 
         private void button连结游戏_Click(object sender, EventArgs e)
@@ -216,8 +213,6 @@ namespace CHSTRAS_091_UI
             shfUnitPractice = shfUnitPractices.GetOne(game01UnitID);
             //uiTyping01 f = new uiTyping01(this, shfUserLogin.UserLoginID, shfPracticeID);
             //f.Show();
-
-
         }
 
         private void button组合拼图_Click(object sender, EventArgs e)
@@ -231,15 +226,11 @@ namespace CHSTRAS_091_UI
                 //uiTyping02Option f = new uiTyping02Option(this, shfUserLogin, shfUnitPrac);
                 //f.Show();
                 //this.Hide();
-
             }
             catch
             {
                 this.Text = "button组合拼图_Click 异常！  ";
-
             }
-
-
         }
 
         private void button记忆门窗_Click(object sender, EventArgs e)
@@ -258,7 +249,6 @@ namespace CHSTRAS_091_UI
             catch
             {
                 this.Text = "综合练习启动 异常！  ";
-
             }
 
 
