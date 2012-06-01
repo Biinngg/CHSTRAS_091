@@ -23,7 +23,7 @@ namespace CHSTRAS_091_UI
             pictureBox = new PictureBox[] { pictureBox1, pictureBox2 };
             label = new Label[] { label1, label2 };
             number = label.Length;
-            bt = new btCHSTRAS_091_Teach(shfUserLogin, shfUnitPratice);
+            bt = new btCHSTRAS_091_Teach(shfUserLogin, shfUnitPratice, courseType);
             buttonBackward.Enabled = false;
             totalNum = bt.getTotal();
             this.labelTotal.Text += totalNum;
