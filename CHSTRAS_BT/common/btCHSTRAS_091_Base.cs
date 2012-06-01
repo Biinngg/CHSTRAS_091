@@ -36,7 +36,7 @@ namespace CHSTRAS_091_BT
             int unitID = shfUnitPratice.UnitID;
             String where = "FatherID=" + unitID + " AND SubOrder=0";
             btCHSTRAS_091_Database database = new btCHSTRAS_091_Database();
-            IDataReader reader = database.query("E_SHFStructures", new String[]{"ProgramID"}, where, null);
+            IDataReader reader = database.query("E_SHFStructures", new String[]{"StructureID"}, where, null);
             reader.Read();
             return reader.GetInt32(0);
         }
