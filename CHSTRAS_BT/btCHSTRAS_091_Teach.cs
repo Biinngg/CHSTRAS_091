@@ -25,14 +25,15 @@ namespace CHSTRAS_091_BT
             "ProgramID", "UserID", "CoursePageID",
             "StudyYN", "StudyTimes", "StartDateTime", "StdudyDateTime"};
 
-        public btCHSTRAS_091_Teach(btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
+        public btCHSTRAS_091_Teach(btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice, int courseType)
         {
             this.shfUserLogin = shfUserLogin;
             file = new btCHSTRAS_091_File();
             database = new btCHSTRAS_091_Database();
             btCHSTRAS_091_Base bt = new btCHSTRAS_091_Base();
             String[] columns = new String[] { "ProgramID", "PageID" };
-            String where = "ProgramID=" + bt.getPagesID(shfUnitPratice);
+            String where = "PageNumber=\'" + bt.getPagesID(shfUnitPratice) +
+                "\' AND Tag=\'" + courseType + "\'";
             readerPages = database.query("E_SHFPages", columns, where, null);
             total = database.getSize();
             itemLearned = -1;
@@ -62,7 +63,6 @@ namespace CHSTRAS_091_BT
                 if (readerPages.Read())
                     record(readerPages.GetInt32(0), readerPages.GetInt32(1), true);
             }
-            Console.Write("itemCurrent=" + itemCurrent + " total=" + total + "\n");
             if (itemCurrent >= total - 1)
                 return false;
             return true;
@@ -89,7 +89,6 @@ namespace CHSTRAS_091_BT
 
         private void unrecord(int num)
         {
-            Console.Write(" " + num + ", itemCurrent=" + itemCurrent + ", itemLearned=" + itemLearned + "\n");
             int id = (int)arrayList[num];
             btSHFPages pages = new btSHFPages();
             btSHFPage page = pages.GetOne(id);
@@ -141,12 +140,18 @@ namespace CHSTRAS_091_BT
 
         public Image getImage()
         {
-            return file.getImage(page.ImageInfo);
+            String name = null;
+            if (page != null)
+                name = page.ImageInfo;
+            return file.getImage(name);
         }
 
         public String getText()
         {
-            return file.getText(page.TextInfo);
+            String name = null;
+            if (page != null)
+                name = page.TextInfo;
+            return file.getText(name);
         }
 
         public int getTotal()
