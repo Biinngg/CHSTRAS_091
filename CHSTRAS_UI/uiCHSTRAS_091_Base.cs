@@ -20,6 +20,11 @@ namespace CHSTRAS_091_UI
         protected DateTime startTime;
         private btCHSTRAS_091_Time times;
 
+        public uiCHSTRAS_091_Base()
+        {
+            InitializeComponent();
+        }
+
         public uiCHSTRAS_091_Base(Form callForm, btSHFUserLogin callLog, btSHFUnitPractice callUnit, int courseType)
             : base(callForm, callLog, callUnit)
         {
