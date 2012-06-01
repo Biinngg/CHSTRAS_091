@@ -96,11 +96,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CHSTRAS_BT\CHSTRAS_091_BT.csproj">
+    <ProjectReference Include="..\CHSTRAS_091_BT\CHSTRAS_091_BT.csproj">
       <Project>{385E4A65-D571-4356-8ED5-339E57141738}</Project>
       <Name>CHSTRAS_091_BT</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CHSTRAS_UI\CHSTRAS_091_UI.csproj">
+    <ProjectReference Include="..\CHSTRAS_091_UI\CHSTRAS_091_UI.csproj">
       <Project>{DFED34E5-8773-4CBF-9B53-9EC505284514}</Project>
       <Name>CHSTRAS_091_UI</Name>
     </ProjectReference>

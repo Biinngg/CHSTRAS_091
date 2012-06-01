@@ -6,18 +6,26 @@ using System.Collections;
 
 namespace CHSTRAS_091_BT
 {
-    class btCHSTRAS_091_Status
+    public class btCHSTRAS_091_Link_Status
     {
-        private ArrayList list = new ArrayList(4);
-        public ArrayList images = new ArrayList(4);
-        public ArrayList labels = new ArrayList(4);
+        private ArrayList list;
+        public ArrayList images;
+        public ArrayList labels;
 
-        public btCHSTRAS_091_Status()
+        public btCHSTRAS_091_Link_Status(int arrayLength)
         {
+            list = new ArrayList(arrayLength);
+            images = new ArrayList(arrayLength);
+            labels = new ArrayList(arrayLength);
             for (int i = 0; i < 4; i++)
             {
                 list.Add(false);
             }
+            unset();
+        }
+
+        public void unset()
+        {
             unsetImages();
             unsetLabels();
         }

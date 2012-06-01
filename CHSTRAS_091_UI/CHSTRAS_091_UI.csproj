@@ -156,7 +156,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CHSTRAS_BT\CHSTRAS_091_BT.csproj">
+    <ProjectReference Include="..\CHSTRAS_091_BT\CHSTRAS_091_BT.csproj">
       <Project>{385E4A65-D571-4356-8ED5-339E57141738}</Project>
       <Name>CHSTRAS_091_BT</Name>
     </ProjectReference>
