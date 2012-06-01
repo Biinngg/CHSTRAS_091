@@ -25,7 +25,7 @@ namespace CHSTRAS_091_UI
 
         public String disForeword()
         {
-            String condition = "ProgramId=" + pratice.UnitID;
+            String condition = "Tag=\'0\'";
             btCHSTRAS_091_Database database = new btCHSTRAS_091_Database();
             btCHSTRAS_091_File file = new btCHSTRAS_091_File();
             database.query("E_SHFPages", new String[] { "TextInfo" }, condition, null);
