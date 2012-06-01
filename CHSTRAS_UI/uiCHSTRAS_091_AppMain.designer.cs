@@ -51,11 +51,15 @@
             this.button组合拼图 = new System.Windows.Forms.Button();
             this.button记忆门窗 = new System.Windows.Forms.Button();
             this.button连结游戏 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox成绩管理.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox用户管理.SuspendLayout();
             this.groupBox课程管理.SuspendLayout();
             this.groupBox训练管理.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label学号
@@ -140,7 +144,7 @@
             // button退出
             // 
             this.button退出.BackColor = System.Drawing.Color.DarkGreen;
-            this.button退出.Font = new System.Drawing.Font("楷体_GB2312", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button退出.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button退出.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button退出.Location = new System.Drawing.Point(797, 471);
             this.button退出.Name = "button退出";
@@ -357,12 +361,50 @@
             this.button连结游戏.UseVisualStyleBackColor = false;
             this.button连结游戏.Click += new System.EventHandler(this.button连结游戏_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Location = new System.Drawing.Point(386, 122);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(310, 36);
+            this.groupBox1.TabIndex = 58;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "课程选择";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(184, 14);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(71, 16);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "认识器物";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(25, 14);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(71, 16);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "认识植物";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // uiCHSTRAS_091_AppMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(892, 566);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox训练管理);
             this.Controls.Add(this.groupBox课程管理);
             this.Controls.Add(this.label学号);
@@ -385,6 +427,8 @@
             this.groupBox用户管理.ResumeLayout(false);
             this.groupBox课程管理.ResumeLayout(false);
             this.groupBox训练管理.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,5 +459,8 @@
         public System.Windows.Forms.Button button记忆门窗;
         public System.Windows.Forms.Button button连结游戏;
         public System.Windows.Forms.Button button找寻错误;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

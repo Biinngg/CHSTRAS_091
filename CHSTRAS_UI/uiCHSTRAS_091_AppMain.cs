@@ -59,6 +59,8 @@ namespace CHSTRAS_091_UI
         //protected btSHFStructure shfSHFStructure = new btSHFStructure();
         //private btSHFStructures shfSHFStructures = new btSHFStructures();
 
+        protected int courseType = 1;
+
         //private int shfPracticeID;
         //private string shfPracticeName;
         #endregion
@@ -310,6 +312,21 @@ namespace CHSTRAS_091_UI
 
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                courseType = 1;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                courseType = 2;
+            }
+        }
 
         #endregion
 
@@ -317,6 +334,5 @@ namespace CHSTRAS_091_UI
         {
 
         }
-   
     }
 }
