@@ -32,9 +32,7 @@ namespace CHSTRAS_091_BT
             sql += " FROM " + tableName;
             if (condition != null)
             {
-                sql += " WHERE " + condition;
-                //在课程编辑完成后激活，用以区分其它人员开发的程序
-                //sql += " AND ProgramID=\'1030102\'";
+                sql += " WHERE ProgramID=1030102 AND " + condition;
             }
             if (orderBy != null)
             {
@@ -66,6 +64,7 @@ namespace CHSTRAS_091_BT
             keys = keys.Substring(0,keys.Length-1) + ") ";
             values = values.Substring(0,values.Length-1) + ") ";
             sql += keys + "VALUES" + values;
+            Console.Write(sql + "\n");
             database.Add(sql);
         }
 
