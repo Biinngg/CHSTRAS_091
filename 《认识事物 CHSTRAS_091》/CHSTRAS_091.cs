@@ -17,31 +17,37 @@ namespace _认识事物_CHSTRAS_091_
             InitializeComponent();
         }
 
-        private void button认识植物_Click(object sender, EventArgs e)
+        private void button前言_Click(object sender, EventArgs e)
         {
             try
             {
-                uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice, 0);
+                uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice, courseType);
                 f.Show();
             }
-            catch(Exception exception)// Exception ex
+            catch (Exception exception)// Exception ex
             {
                 MessageBox.Show("Exception:" + exception.ToString());
             }
         }
 
-        private void button前言_Click(object sender, EventArgs e)
+        private void button认识植物_Click(object sender, EventArgs e)
         {
-            
-            uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, shfUserLogin, shfUnitPractice, 0);
-            f.Show();
+            try
+            {
+                uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, shfUserLogin, shfUnitPractice, courseType);
+                f.Show();
+            }
+            catch (Exception exception)// Exception ex
+            {
+                MessageBox.Show("Exception:" + exception.ToString());
+            }
         }
 
         private void button连结游戏_Click(object sender, EventArgs e)
         {
             try
             {
-                uiCHSTRAS_091_Link f = new uiCHSTRAS_091_Link(this, shfUserLogin, shfUnitPractice, 0);
+                uiCHSTRAS_091_Link f = new uiCHSTRAS_091_Link(this, shfUserLogin, shfUnitPractice, courseType);
                 f.Show();
             }
             catch (Exception exception)// Exception ex
