@@ -7,7 +7,7 @@ using System.Data;
 
 namespace CHSTRAS_091_BT
 {
-    public class btCHSTRAS_091_Question : btSHFQuestion
+    public class btCHSTRAS_091_Question
     {
         public int QuestionID, QuestionDiff, QuestionScore, AverageTime;
         public string QuestionSubject, Question, QuestionSolution,
@@ -34,7 +34,7 @@ namespace CHSTRAS_091_BT
             return database.getSize();
         }
 
-        public void moveToNext()
+        public bool moveToNext()
         {
             if (reader.Read())
             {
@@ -43,10 +43,14 @@ namespace CHSTRAS_091_BT
                 QuestionDiff = reader.GetInt32(1);
                 QuestionScore = reader.GetInt32(2);
                 AverageTime = reader.GetInt32(3);
-                QuestionSubject = reader.GetString(4);
-                Question = reader.GetString(5);
-                QuestionSolution = reader.GetString(6);
-                QuestionAnswer = reader.GetString(7);
+                QuestionSubject = reader.GetString(4) + "";
+                Question = reader.GetString(5) + "";
+                if (!reader.IsDBNull(6))
+                    QuestionSolution = reader.GetString(6) + "";
+                else
+                    QuestionSolution = null;
+                QuestionAnswer = reader.GetString(7) + "";
+                return true;
             }
             else
             {
@@ -58,6 +62,7 @@ namespace CHSTRAS_091_BT
                 Question = null;
                 QuestionSolution = null;
                 QuestionAnswer = null;
+                return false;
             }
         }
     }
