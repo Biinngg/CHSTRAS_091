@@ -51,8 +51,8 @@ namespace CHSTRAS_091_BT
             foreach (DictionaryEntry keyValue in keyValues)
             {
                 keys += keyValue.Key + ",";
-                if (keyValue.Value.GetType().Name == "DateTime" ||
-                    keyValues.Values.GetType().Name == "String")
+                String type = keyValue.Value.GetType().Name;
+                if (type == "DateTime" || type == "String")
                 {
                     values += "\'" + keyValue.Value + "\',";
                 }
@@ -64,7 +64,6 @@ namespace CHSTRAS_091_BT
             keys = keys.Substring(0,keys.Length-1) + ") ";
             values = values.Substring(0,values.Length-1) + ") ";
             sql += keys + "VALUES" + values;
-            Console.Write(sql + "\n");
             database.Add(sql);
         }
 
