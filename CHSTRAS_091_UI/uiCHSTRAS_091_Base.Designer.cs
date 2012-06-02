@@ -42,6 +42,7 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelAnswered = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labelStatistics = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox.SuspendLayout();
             this.groupBoxInfo.SuspendLayout();
@@ -77,6 +78,7 @@
             // 
             // groupBox
             // 
+            this.groupBox.Controls.Add(this.labelStatistics);
             this.groupBox.Controls.Add(this.buttonBackward);
             this.groupBox.Controls.Add(this.buttonForward);
             this.groupBox.Controls.Add(this.buttonSubmit);
@@ -205,6 +207,17 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // labelStatistics
+            // 
+            this.labelStatistics.AutoSize = true;
+            this.labelStatistics.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelStatistics.Location = new System.Drawing.Point(20, 30);
+            this.labelStatistics.MaximumSize = new System.Drawing.Size(565, 0);
+            this.labelStatistics.Name = "labelStatistics";
+            this.labelStatistics.Size = new System.Drawing.Size(74, 22);
+            this.labelStatistics.TabIndex = 21;
+            this.labelStatistics.Text = "训练成绩";
+            // 
             // uiCHSTRAS_091_Base
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -229,6 +242,7 @@
             this.Controls.SetChildIndex(this.button确定, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
             this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.groupBoxInfo.ResumeLayout(false);
             this.groupBoxInfo.PerformLayout();
             this.ResumeLayout(false);
@@ -251,6 +265,7 @@
         protected System.Windows.Forms.Label labelTotal;
         protected System.Windows.Forms.Label labelAnswered;
         protected System.Windows.Forms.Timer timer1;
+        protected System.Windows.Forms.Label labelStatistics;
 
     }
 }

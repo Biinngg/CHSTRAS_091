@@ -16,7 +16,7 @@ namespace CHSTRAS_091_UI
     {
         protected PictureBox[] pictureBox;
         protected Label[] label;
-        protected int number, answeredNum;
+        protected int itemNumber, answeredNumber, totalNumber;
         protected DateTime startTime;
         private btCHSTRAS_091_Time times;
 
@@ -38,9 +38,10 @@ namespace CHSTRAS_091_UI
             this.label程序信息.Text = bt.getProgramInfo(callUnit);
             startTime = DateTime.Now;
             this.labelBegin.Text += times.getTime(startTime);
-            answeredNum = 1;
-            this.labelAnswered.Text += answeredNum;
+            answeredNumber = 1;
+            this.labelAnswered.Text += answeredNumber;
             this.timer1.Enabled = true;
+            this.buttonBackward.Enabled = false;
         }
 
         protected void buttonExit_Click(object sender, EventArgs e)
@@ -50,20 +51,36 @@ namespace CHSTRAS_091_UI
 
         protected void buttonForward_Click(object sender, EventArgs e)
         {
-            answeredNum ++;
-            this.labelAnswered.Text = "已答题数：" + answeredNum;
+            answeredNumber ++;
+            this.labelAnswered.Text = "已答题数：" + answeredNumber;
+            int progress = answeredNumber * 100 / totalNumber;
+            this.progressBar1.Value = progress;
+            if (answeredNumber == totalNumber)
+            {
+                buttonForward.Enabled = false;
+            }
+            buttonBackward.Enabled = true;
         }
 
         protected void buttonBackward_Click(object sender, EventArgs e)
         {
-            answeredNum --;
-            this.labelAnswered.Text = "已答题数：" + answeredNum;
+            answeredNumber --;
+            this.labelAnswered.Text = "已答题数：" + answeredNumber;
+            int progress = answeredNumber * 100 / totalNumber;
+            this.progressBar1.Value = progress;
+            if (answeredNumber == 1)
+            {
+                buttonBackward.Enabled = false;
+            }
+            buttonForward.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan diff = DateTime.Now - startTime;
-            this.labelHave.Text = "已用时间：" + times.getTime(diff); ;
+            this.labelHave.Text = "已用时间：" + times.getTime(diff);
+            //totalNumber在子类中更新，父类初始化时并不知道其数值。
+            this.labelTotal.Text ="总题数：" + totalNumber;
         }
     }
 }
