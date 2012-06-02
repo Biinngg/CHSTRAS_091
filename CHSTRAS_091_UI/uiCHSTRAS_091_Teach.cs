@@ -12,7 +12,6 @@ namespace CHSTRAS_091_UI
     public partial class uiCHSTRAS_091_Teach : uiCHSTRAS_091_Base
     {
         private btCHSTRAS_091_Teach bt;
-        private int totalNum;
 
         public uiCHSTRAS_091_Teach(Form form, SHF_BT.btSHFUserLogin shfUserLogin,
             SHF_BT.btSHFUnitPractice shfUnitPratice, int courseType)
@@ -22,51 +21,34 @@ namespace CHSTRAS_091_UI
 
             pictureBox = new PictureBox[] { pictureBox1, pictureBox2 };
             label = new Label[] { label1, label2 };
-            number = label.Length;
+            itemNumber = label.Length;
             bt = new btCHSTRAS_091_Teach(shfUserLogin, shfUnitPratice, courseType);
-            buttonBackward.Enabled = false;
-            totalNum = bt.getTotal();
-            this.labelTotal.Text += totalNum;
+            totalNumber = bt.getTotal();
             next();
         }
 
         protected void buttonForward_Click(object sender, EventArgs e)
         {
-            buttonBackward.Enabled = true;
             next();
-            int progress = answeredNum * 100 / totalNum;
-            this.progressBar1.Value = progress;
-            Console.Write("value:" + progress + "\n answeredNum=" + answeredNum + " totalNum="+ totalNum);
         }
 
         protected void buttonBackward_Click(object sender, EventArgs e)
         {
-            buttonForward.Enabled = true;
-            for (int i = number - 1; i >= 0; i--)
+            for (int i = itemNumber - 1; i >= 0; i--)
             {
                 Boolean result = bt.moveToLast();
                 pictureBox[i].Image = bt.getImage();
                 label[i].Text = bt.getText();
-                if (!result)
-                {
-                    buttonBackward.Enabled = false;
-                }
             }
-            int progress = answeredNum * 100 / totalNum;
-            this.progressBar1.Value = progress;
         }
 
         private void next()
         {
-            for (int i = 0; i < number; i++)
+            for (int i = 0; i < itemNumber; i++)
             {
                 Boolean result = bt.moveToNext();
                 pictureBox[i].Image = bt.getImage();
                 label[i].Text = bt.getText();
-                if (!result)
-                {
-                    buttonForward.Enabled = false;
-                }
             }
         }
     }
