@@ -37,6 +37,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonAnswer = new System.Windows.Forms.Button();
             this.groupBox.SuspendLayout();
             this.groupBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
@@ -47,9 +48,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // buttonBackward
+            // 
+            this.buttonBackward.Visible = false;
+            // 
             // buttonForward
             // 
+            this.buttonForward.Location = new System.Drawing.Point(174, 328);
             this.buttonForward.Click += new System.EventHandler(this.buttonForward_Click);
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.Location = new System.Drawing.Point(350, 328);
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // groupBox1
             // 
@@ -61,6 +72,7 @@
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.buttonAnswer);
             this.groupBox1.Location = new System.Drawing.Point(30, 109);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(603, 302);
@@ -72,10 +84,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Location = new System.Drawing.Point(405, 228);
+            this.label4.Location = new System.Drawing.Point(391, 228);
             this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(5);
-            this.label4.Size = new System.Drawing.Size(51, 22);
+            this.label4.Padding = new System.Windows.Forms.Padding(20);
+            this.label4.Size = new System.Drawing.Size(81, 52);
             this.label4.TabIndex = 7;
             this.label4.Text = "label4";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -84,10 +96,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Location = new System.Drawing.Point(318, 228);
+            this.label3.Location = new System.Drawing.Point(304, 228);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(5);
-            this.label3.Size = new System.Drawing.Size(51, 22);
+            this.label3.Padding = new System.Windows.Forms.Padding(20);
+            this.label3.Size = new System.Drawing.Size(81, 52);
             this.label3.TabIndex = 6;
             this.label3.Text = "label3";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -96,10 +108,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Location = new System.Drawing.Point(233, 228);
+            this.label2.Location = new System.Drawing.Point(217, 228);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(5);
-            this.label2.Size = new System.Drawing.Size(51, 22);
+            this.label2.Padding = new System.Windows.Forms.Padding(20);
+            this.label2.Size = new System.Drawing.Size(81, 52);
             this.label2.TabIndex = 5;
             this.label2.Text = "label2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -108,11 +120,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Location = new System.Drawing.Point(150, 228);
+            this.label1.Location = new System.Drawing.Point(128, 228);
             this.label1.Margin = new System.Windows.Forms.Padding(5);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(5);
-            this.label1.Size = new System.Drawing.Size(51, 22);
+            this.label1.Padding = new System.Windows.Forms.Padding(20);
+            this.label1.Size = new System.Drawing.Size(81, 52);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -168,6 +180,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // buttonAnswer
+            // 
+            this.buttonAnswer.Location = new System.Drawing.Point(506, 257);
+            this.buttonAnswer.Name = "buttonAnswer";
+            this.buttonAnswer.Size = new System.Drawing.Size(75, 23);
+            this.buttonAnswer.TabIndex = 151;
+            this.buttonAnswer.Text = "正确答案";
+            this.buttonAnswer.UseVisualStyleBackColor = true;
+            this.buttonAnswer.Visible = false;
+            this.buttonAnswer.Click += new System.EventHandler(this.buttonAnswer_Click);
+            // 
             // uiCHSTRAS_091_Link
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -188,6 +211,7 @@
             this.Controls.SetChildIndex(this.button返回, 0);
             this.Controls.SetChildIndex(this.button确定, 0);
             this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.groupBoxInfo.ResumeLayout(false);
             this.groupBoxInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
@@ -213,5 +237,6 @@
         protected System.Windows.Forms.Label label3;
         protected System.Windows.Forms.Label label2;
         protected System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonAnswer;
     }
 }
