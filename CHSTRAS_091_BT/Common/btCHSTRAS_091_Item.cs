@@ -12,16 +12,17 @@ namespace CHSTRAS_091_BT.Common
         private btCHSTRAS_091_Database database;
         private Hashtable userUnitIDs;
         private btCHSTRAS_091_Base bt;
+        private DateTime startTime;
 
         public btCHSTRAS_091_Item(btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
         {
             database = new btCHSTRAS_091_Database();
             bt = new btCHSTRAS_091_Base();
             userUnitIDs = bt.getUserUnitIDs(shfUserLogin, shfUnitPratice);
+            startTime = DateTime.Now;
         }
 
-        public void record(int questionID, DateTime startTime,
-            String testAnswer, bool testRight, int testScore)
+        public void record(int questionID, String testAnswer, bool testRight, int testScore)
         {
             btCHSTRAS_091_Time time = new btCHSTRAS_091_Time();
             Hashtable keyValues = new Hashtable();
@@ -36,7 +37,9 @@ namespace CHSTRAS_091_BT.Common
             keyValues.Add("TestRight", testRight);
             keyValues.Add("TestScore", testScore);
             database.insert("R_SHFItemScores", keyValues);
+            startTime = DateTime.Now;
         }
+
 
     }
 }
