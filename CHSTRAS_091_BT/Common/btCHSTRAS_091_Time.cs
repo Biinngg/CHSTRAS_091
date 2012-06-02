@@ -36,11 +36,11 @@ namespace CHSTRAS_091_BT.Common
             return time;
         }
 
-        public int getAnswerTime(DateTime dateTime)
+        public long getAnswerTime(DateTime dateTime)
         {
             DateTime now = DateTime.Now;
             TimeSpan diff = now - dateTime;
-            return (int)diff.TotalSeconds;
+            return (long)diff.TotalMilliseconds;
         }
     }
 }
