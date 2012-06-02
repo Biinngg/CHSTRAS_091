@@ -29,19 +29,10 @@
         private void InitializeComponent()
         {
             this.textBox = new System.Windows.Forms.TextBox();
-            this.label = new System.Windows.Forms.Label();
             this.groupBox.SuspendLayout();
             this.groupBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox
-            // 
-            this.groupBox.Controls.Add(this.label);
-            this.groupBox.Controls.SetChildIndex(this.label, 0);
-            this.groupBox.Controls.SetChildIndex(this.buttonSubmit, 0);
-            this.groupBox.Controls.SetChildIndex(this.buttonForward, 0);
-            this.groupBox.Controls.SetChildIndex(this.buttonBackward, 0);
             // 
             // buttonBackward
             // 
@@ -59,6 +50,11 @@
             // 
             this.groupBoxInfo.Visible = false;
             // 
+            // labelStatistics
+            // 
+            this.labelStatistics.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelStatistics.Size = new System.Drawing.Size(174, 20);
+            // 
             // labelPageTitle
             // 
             this.labelPageTitle.Size = new System.Drawing.Size(87, 35);
@@ -72,16 +68,6 @@
             this.textBox.ReadOnly = true;
             this.textBox.Size = new System.Drawing.Size(563, 338);
             this.textBox.TabIndex = 1;
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(6, 38);
-            this.label.MaximumSize = new System.Drawing.Size(600, 300);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(29, 12);
-            this.label.TabIndex = 152;
-            this.label.Text = "正文";
             // 
             // uiCHSTRAS_091_Foreword
             // 
@@ -101,6 +87,5 @@
         #endregion
 
         protected System.Windows.Forms.TextBox textBox;
-        protected System.Windows.Forms.Label label;
     }
 }

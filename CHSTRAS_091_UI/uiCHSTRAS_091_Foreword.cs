@@ -20,7 +20,7 @@ namespace CHSTRAS_091_UI
         {
             InitializeComponent();
             pratice = shfUnitPratice;
-            this.label.Text = disForeword();
+            this.labelStatistics.Text = disForeword();
         }
 
         public String disForeword()
