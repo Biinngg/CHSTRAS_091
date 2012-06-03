@@ -92,6 +92,12 @@
     <Compile Include="uiCHSTRAS_091_Link.Designer.cs">
       <DependentUpon>uiCHSTRAS_091_Link.cs</DependentUpon>
     </Compile>
+    <Compile Include="uiCHSTRAS_091_Memory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uiCHSTRAS_091_Memory.Designer.cs">
+      <DependentUpon>uiCHSTRAS_091_Memory.cs</DependentUpon>
+    </Compile>
     <Compile Include="uiCHSTRAS_091_Puzzle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_Link.resx">
       <DependentUpon>uiCHSTRAS_091_Link.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiCHSTRAS_091_Memory.resx">
+      <DependentUpon>uiCHSTRAS_091_Memory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_Puzzle.resx">
       <DependentUpon>uiCHSTRAS_091_Puzzle.cs</DependentUpon>

@@ -55,5 +55,31 @@ namespace _认识事物_CHSTRAS_091_
                 MessageBox.Show("Exception:" + exception.ToString());
             }
         }
+
+        private void button组合拼图_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                uiCHSTRAS_091_Puzzle f = new uiCHSTRAS_091_Puzzle(this, shfUserLogin, shfUnitPractice, courseType);
+                f.Show();
+            }
+            catch (Exception exception)// Exception ex
+            {
+                MessageBox.Show("Exception:" + exception.ToString());
+            }
+        }
+
+        private void button记忆门窗_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                uiCHSTRAS_091_Memory f = new uiCHSTRAS_091_Memory(this, shfUserLogin, shfUnitPractice, courseType);
+                f.Show();
+            }
+            catch (Exception exception)// Exception ex
+            {
+                MessageBox.Show("Exception:" + exception.ToString());
+            }
+        }
     }
 }

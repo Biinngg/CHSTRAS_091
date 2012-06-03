@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="btCHSTRAS_091_Link_Status.cs" />
+    <Compile Include="btCHSTRAS_091_Memory.cs" />
+    <Compile Include="btCHSTRAS_091_Puzzle.cs" />
     <Compile Include="Common\btCHSTRAS_091_Algorithm.cs" />
     <Compile Include="Common\btCHSTRAS_091_Item.cs" />
     <Compile Include="Common\btCHSTRAS_091_Time.cs" />

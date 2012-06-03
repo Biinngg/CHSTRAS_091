@@ -44,6 +44,14 @@
             // 
             this.button前言.Click += new System.EventHandler(this.button前言_Click);
             // 
+            // button组合拼图
+            // 
+            this.button组合拼图.Click += new System.EventHandler(this.button组合拼图_Click);
+            // 
+            // button记忆门窗
+            // 
+            this.button记忆门窗.Click += new System.EventHandler(this.button记忆门窗_Click);
+            // 
             // button连结游戏
             // 
             this.button连结游戏.Click += new System.EventHandler(this.button连结游戏_Click);
