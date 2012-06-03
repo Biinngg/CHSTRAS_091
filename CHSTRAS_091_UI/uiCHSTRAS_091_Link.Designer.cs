@@ -62,6 +62,10 @@
             this.buttonSubmit.Location = new System.Drawing.Point(350, 328);
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click_1);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label4);
@@ -207,9 +211,6 @@
             this.Controls.SetChildIndex(this.label姓名, 0);
             this.Controls.SetChildIndex(this.label学号, 0);
             this.Controls.SetChildIndex(this.pictureBoxHead, 0);
-            this.Controls.SetChildIndex(this.button退出, 0);
-            this.Controls.SetChildIndex(this.button返回, 0);
-            this.Controls.SetChildIndex(this.button确定, 0);
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
             this.groupBoxInfo.ResumeLayout(false);

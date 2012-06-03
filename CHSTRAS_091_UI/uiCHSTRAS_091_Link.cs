@@ -229,5 +229,10 @@ namespace CHSTRAS_091_UI
         {
             clickLabel(3);
         }
+
+        private void buttonExit_Click_1(object sender, EventArgs e)
+        {
+            bt.submit();
+        }
     }
 }
