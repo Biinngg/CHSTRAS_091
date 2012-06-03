@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonReset = new System.Windows.Forms.Button();
+            this.buttonAnswer = new System.Windows.Forms.Button();
+            this.pictureBoxResult = new System.Windows.Forms.PictureBox();
             this.pictureBoxR9 = new System.Windows.Forms.PictureBox();
             this.pictureBoxR8 = new System.Windows.Forms.PictureBox();
             this.pictureBoxR7 = new System.Windows.Forms.PictureBox();
@@ -51,6 +54,7 @@
             this.groupBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR7)).BeginInit();
@@ -80,8 +84,33 @@
             this.groupBox.Controls.SetChildIndex(this.labelStatistics, 0);
             this.groupBox.Controls.SetChildIndex(this.groupBox1, 0);
             // 
+            // buttonBackward
+            // 
+            this.buttonBackward.Visible = false;
+            // 
+            // buttonForward
+            // 
+            this.buttonForward.Location = new System.Drawing.Point(176, 328);
+            this.buttonForward.Click += new System.EventHandler(this.buttonForward_Click_1);
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.Location = new System.Drawing.Point(352, 328);
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click_1);
+            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonReset);
+            this.groupBox1.Controls.Add(this.buttonAnswer);
+            this.groupBox1.Controls.Add(this.pictureBoxResult);
             this.groupBox1.Controls.Add(this.pictureBoxR9);
             this.groupBox1.Controls.Add(this.pictureBoxR8);
             this.groupBox1.Controls.Add(this.pictureBoxR7);
@@ -107,86 +136,134 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "组合拼图答题";
             // 
+            // buttonReset
+            // 
+            this.buttonReset.Location = new System.Drawing.Point(412, 248);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.TabIndex = 170;
+            this.buttonReset.Text = "重置";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
+            // 
+            // buttonAnswer
+            // 
+            this.buttonAnswer.Location = new System.Drawing.Point(115, 248);
+            this.buttonAnswer.Name = "buttonAnswer";
+            this.buttonAnswer.Size = new System.Drawing.Size(75, 23);
+            this.buttonAnswer.TabIndex = 150;
+            this.buttonAnswer.Text = "查看答案";
+            this.buttonAnswer.UseVisualStyleBackColor = true;
+            this.buttonAnswer.Click += new System.EventHandler(this.buttonAnswer_Click);
+            // 
+            // pictureBoxResult
+            // 
+            this.pictureBoxResult.Location = new System.Drawing.Point(35, 45);
+            this.pictureBoxResult.Name = "pictureBoxResult";
+            this.pictureBoxResult.Size = new System.Drawing.Size(240, 180);
+            this.pictureBoxResult.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxResult.TabIndex = 169;
+            this.pictureBoxResult.TabStop = false;
+            this.pictureBoxResult.Visible = false;
+            // 
             // pictureBoxR9
             // 
             this.pictureBoxR9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR9.Location = new System.Drawing.Point(492, 165);
             this.pictureBoxR9.Name = "pictureBoxR9";
             this.pictureBoxR9.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR9.TabIndex = 168;
             this.pictureBoxR9.TabStop = false;
+            this.pictureBoxR9.Click += new System.EventHandler(this.pictureBoxR9_Click);
             // 
             // pictureBoxR8
             // 
             this.pictureBoxR8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR8.Location = new System.Drawing.Point(412, 165);
             this.pictureBoxR8.Name = "pictureBoxR8";
             this.pictureBoxR8.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR8.TabIndex = 167;
             this.pictureBoxR8.TabStop = false;
+            this.pictureBoxR8.Click += new System.EventHandler(this.pictureBoxR8_Click);
             // 
             // pictureBoxR7
             // 
             this.pictureBoxR7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR7.Location = new System.Drawing.Point(332, 165);
             this.pictureBoxR7.Name = "pictureBoxR7";
             this.pictureBoxR7.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR7.TabIndex = 166;
             this.pictureBoxR7.TabStop = false;
+            this.pictureBoxR7.Click += new System.EventHandler(this.pictureBoxR7_Click);
             // 
             // pictureBoxR6
             // 
             this.pictureBoxR6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR6.Location = new System.Drawing.Point(492, 105);
             this.pictureBoxR6.Name = "pictureBoxR6";
             this.pictureBoxR6.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR6.TabIndex = 165;
             this.pictureBoxR6.TabStop = false;
+            this.pictureBoxR6.Click += new System.EventHandler(this.pictureBoxR6_Click);
             // 
             // pictureBoxR5
             // 
             this.pictureBoxR5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR5.Location = new System.Drawing.Point(412, 105);
             this.pictureBoxR5.Name = "pictureBoxR5";
             this.pictureBoxR5.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR5.TabIndex = 164;
             this.pictureBoxR5.TabStop = false;
+            this.pictureBoxR5.Click += new System.EventHandler(this.pictureBoxR5_Click);
             // 
             // pictureBoxR4
             // 
             this.pictureBoxR4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR4.Location = new System.Drawing.Point(332, 105);
             this.pictureBoxR4.Name = "pictureBoxR4";
             this.pictureBoxR4.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR4.TabIndex = 163;
             this.pictureBoxR4.TabStop = false;
+            this.pictureBoxR4.Click += new System.EventHandler(this.pictureBoxR4_Click);
             // 
             // pictureBoxR3
             // 
             this.pictureBoxR3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR3.Location = new System.Drawing.Point(492, 45);
             this.pictureBoxR3.Name = "pictureBoxR3";
             this.pictureBoxR3.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR3.TabIndex = 162;
             this.pictureBoxR3.TabStop = false;
+            this.pictureBoxR3.Click += new System.EventHandler(this.pictureBoxR3_Click);
             // 
             // pictureBoxR2
             // 
             this.pictureBoxR2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR2.Location = new System.Drawing.Point(412, 45);
             this.pictureBoxR2.Name = "pictureBoxR2";
             this.pictureBoxR2.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR2.TabIndex = 161;
             this.pictureBoxR2.TabStop = false;
+            this.pictureBoxR2.Click += new System.EventHandler(this.pictureBoxR2_Click);
             // 
             // pictureBoxR1
             // 
             this.pictureBoxR1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxR1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxR1.Location = new System.Drawing.Point(332, 45);
             this.pictureBoxR1.Name = "pictureBoxR1";
             this.pictureBoxR1.Size = new System.Drawing.Size(80, 60);
             this.pictureBoxR1.TabIndex = 160;
             this.pictureBoxR1.TabStop = false;
+            this.pictureBoxR1.Click += new System.EventHandler(this.pictureBoxR1_Click);
             // 
             // pictureBoxL9
             // 
@@ -282,6 +359,7 @@
             this.groupBoxInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResult)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR7)).EndInit();
@@ -326,5 +404,8 @@
         private System.Windows.Forms.PictureBox pictureBoxL3;
         private System.Windows.Forms.PictureBox pictureBoxL2;
         private System.Windows.Forms.PictureBox pictureBoxL1;
+        private System.Windows.Forms.PictureBox pictureBoxResult;
+        private System.Windows.Forms.Button buttonReset;
+        private System.Windows.Forms.Button buttonAnswer;
     }
 }
