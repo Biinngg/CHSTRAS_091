@@ -21,6 +21,7 @@ namespace CHSTRAS_091_BT
         private btCHSTRAS_091_Question question;
         private String[] textNames, imageNames, questionAnswer;
         private int arrayLength, totalNumber;
+        private bool submitMark = true;
 
         public btCHSTRAS_091_Link(btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice, int courseType, int arrayLength)
         {
@@ -30,7 +31,7 @@ namespace CHSTRAS_091_BT
             file = new btCHSTRAS_091_File();
             question = new btCHSTRAS_091_Question(shfUnitPratice, courseType);
             totalNumber = question.getSize();
-            unit = new btCHSTRAS_091_Unit(DateTime.Now, totalNumber, shfUserLogin, shfUnitPratice);
+            unit = new btCHSTRAS_091_Unit(totalNumber, shfUserLogin, shfUnitPratice);
             item = new btCHSTRAS_091_Item(shfUserLogin, shfUnitPratice);
             textNames = new String[arrayLength];
             imageNames = new String[arrayLength];
@@ -38,8 +39,13 @@ namespace CHSTRAS_091_BT
 
         public String submit()
         {
-            unit.record();
-            return unit.getStatistics();
+            if (submitMark)
+            {
+                submitMark = false;
+                unit.record();
+                return unit.getStatistics();
+            }
+            return null;
         }
 
         public ArrayList record(ArrayList answer)
