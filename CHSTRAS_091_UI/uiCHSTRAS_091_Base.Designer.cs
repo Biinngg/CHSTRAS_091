@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox = new System.Windows.Forms.GroupBox();
+            this.labelStatistics = new System.Windows.Forms.Label();
             this.buttonBackward = new System.Windows.Forms.Button();
             this.buttonForward = new System.Windows.Forms.Button();
             this.buttonSubmit = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelAnswered = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.labelStatistics = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox.SuspendLayout();
             this.groupBoxInfo.SuspendLayout();
@@ -54,6 +54,7 @@
             // 
             // button退出
             // 
+            this.button退出.Location = new System.Drawing.Point(641, 293);
             this.button退出.Visible = false;
             // 
             // button确定
@@ -87,6 +88,17 @@
             this.groupBox.Size = new System.Drawing.Size(605, 377);
             this.groupBox.TabIndex = 148;
             this.groupBox.TabStop = false;
+            // 
+            // labelStatistics
+            // 
+            this.labelStatistics.AutoSize = true;
+            this.labelStatistics.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelStatistics.Location = new System.Drawing.Point(20, 30);
+            this.labelStatistics.MaximumSize = new System.Drawing.Size(565, 0);
+            this.labelStatistics.Name = "labelStatistics";
+            this.labelStatistics.Size = new System.Drawing.Size(74, 22);
+            this.labelStatistics.TabIndex = 21;
+            this.labelStatistics.Text = "训练成绩";
             // 
             // buttonBackward
             // 
@@ -207,17 +219,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // labelStatistics
-            // 
-            this.labelStatistics.AutoSize = true;
-            this.labelStatistics.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelStatistics.Location = new System.Drawing.Point(20, 30);
-            this.labelStatistics.MaximumSize = new System.Drawing.Size(565, 0);
-            this.labelStatistics.Name = "labelStatistics";
-            this.labelStatistics.Size = new System.Drawing.Size(74, 22);
-            this.labelStatistics.TabIndex = 21;
-            this.labelStatistics.Text = "训练成绩";
-            // 
             // uiCHSTRAS_091_Base
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -228,10 +229,10 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBoxInfo);
             this.Name = "uiCHSTRAS_091_Base";
+            this.Controls.SetChildIndex(this.button退出, 0);
             this.Controls.SetChildIndex(this.groupBoxInfo, 0);
             this.Controls.SetChildIndex(this.buttonExit, 0);
             this.Controls.SetChildIndex(this.groupBox, 0);
-            this.Controls.SetChildIndex(this.button退出, 0);
             this.Controls.SetChildIndex(this.labelPageTitle, 0);
             this.Controls.SetChildIndex(this.label课程信息, 0);
             this.Controls.SetChildIndex(this.label程序信息, 0);
@@ -256,7 +257,6 @@
         protected System.Windows.Forms.Button buttonBackward;
         protected System.Windows.Forms.Button buttonForward;
         protected System.Windows.Forms.Button buttonSubmit;
-        protected System.Windows.Forms.Button buttonExit;
         protected System.Windows.Forms.GroupBox groupBoxInfo;
         protected System.Windows.Forms.ProgressBar progressBar1;
         protected System.Windows.Forms.Label labelProgress;
@@ -266,6 +266,7 @@
         protected System.Windows.Forms.Label labelAnswered;
         protected System.Windows.Forms.Timer timer1;
         protected System.Windows.Forms.Label labelStatistics;
+        public System.Windows.Forms.Button buttonExit;
 
     }
 }
