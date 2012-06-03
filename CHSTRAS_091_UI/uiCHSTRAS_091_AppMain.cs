@@ -39,10 +39,11 @@ namespace CHSTRAS_091_UI
         //private string inst02UnitName = "业务02";
         private int game01UnitID = 3;
         //private string Typing01UnitName = "按键练习";
-        private int Typing02UnitID = 7;
+        private int game02UnitID = 4;
         //private string Typing02UnitName = "键盘练习";
-        private int Typing03UnitID = 8;
+        private int game03UnitID = 5;
         //private string Typing03UnitName = "综合练习";
+        private int Typing03UnitID = 8;
         #endregion
 
         #region 全程变量 字段说明
@@ -219,28 +220,17 @@ namespace CHSTRAS_091_UI
 
         private void button组合拼图_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //shfPracticeID = 7; //设置训练课程
-
-                shfUserLogin.LoginUnitID = Typing02UnitID;//设置训练内容
-                shfUnitPractice = shfUnitPractices.GetOne(Typing02UnitID);
-                //uiTyping02Option f = new uiTyping02Option(this, shfUserLogin, shfUnitPrac);
-                //f.Show();
-                //this.Hide();
-            }
-            catch
-            {
-                this.Text = "button组合拼图_Click 异常！  ";
-            }
+            
+            shfUserLogin.LoginUnitID = game02UnitID;//设置训练内容
+            shfUnitPractice = shfUnitPractices.GetOne(game02UnitID);
         }
 
         private void button记忆门窗_Click(object sender, EventArgs e)
         {
             try
             {
-                shfUserLogin.LoginUnitID = Typing03UnitID;//设置训练内容
-                shfUnitPractice = shfUnitPractices.GetOne(Typing03UnitID);
+                shfUserLogin.LoginUnitID = game03UnitID;//设置训练内容
+                shfUnitPractice = shfUnitPractices.GetOne(game03UnitID);
                 //btSHFUserLogin uL = new btSHFUserLogin();
                 //btSHFStructure stt = new btSHFStructure();
                 //uiSHFCourseBase f = new uiSHFCourseBase(this, shfUserLogin, shfSHFStructure);
