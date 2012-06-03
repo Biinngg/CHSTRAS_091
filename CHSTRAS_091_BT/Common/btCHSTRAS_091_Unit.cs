@@ -20,14 +20,14 @@ namespace CHSTRAS_091_BT.Common
         private btSHFUnitPractice shfUnitPratice;
         private int totalNum, completeNum, totalScore, rightNum;
 
-        public btCHSTRAS_091_Unit(DateTime startTime, int totalNum, btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
+        public btCHSTRAS_091_Unit(int totalNum, btSHFUserLogin shfUserLogin, btSHFUnitPractice shfUnitPratice)
         {
             this.shfUnitPratice = shfUnitPratice;
             this.shfUserLogin = shfUserLogin;
             bt = new btCHSTRAS_091_Base();
             time = new btCHSTRAS_091_Time();
             userUnitIDs = bt.getUserUnitIDs(shfUserLogin, shfUnitPratice);
-            this.startTime = startTime;
+            startTime = DateTime.Now;
             this.totalNum = totalNum;
             keyValues = new Hashtable();
         }
@@ -35,6 +35,9 @@ namespace CHSTRAS_091_BT.Common
         public void record()
         {
             statistics();
+            int correctRate = 0;
+            if (completeNum != 0)
+                correctRate = rightNum * 100 / completeNum;
             foreach (DictionaryEntry userUnitID in userUnitIDs)
             {
                 keyValues.Add(userUnitID.Key, userUnitID.Value);
@@ -46,7 +49,7 @@ namespace CHSTRAS_091_BT.Common
             keyValues.Add("CompleteNumber", completeNum);
             keyValues.Add("RightNumber", rightNum);
             keyValues.Add("ErrorNumber", completeNum - rightNum);
-            keyValues.Add("CorrectRate", rightNum * 100 / completeNum);
+            keyValues.Add("CorrectRate", correctRate);
             keyValues.Add("TotalScore", totalScore);
             keyValues.Add("Speed", completeNum * 60000 / practiceTime);
             database.insert("R_SHFUnitScores", keyValues);
