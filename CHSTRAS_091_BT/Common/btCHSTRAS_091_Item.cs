@@ -33,6 +33,7 @@ namespace CHSTRAS_091_BT.Common
             keyValues.Add("QuestionID", questionID);
             keyValues.Add("StartDateTime", startTime);
             keyValues.Add("AnswerTime", time.getAnswerTime(startTime));
+            if(testAnswer != null)
             keyValues.Add("TestAnswer", testAnswer);
             keyValues.Add("TestRight", testRight);
             keyValues.Add("TestScore", testScore);
