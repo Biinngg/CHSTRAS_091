@@ -53,9 +53,9 @@
             this.groupBox.Controls.Add(this.groupBox1);
             this.groupBox.Controls.SetChildIndex(this.buttonSubmit, 0);
             this.groupBox.Controls.SetChildIndex(this.buttonForward, 0);
-            this.groupBox.Controls.SetChildIndex(this.groupBox1, 0);
             this.groupBox.Controls.SetChildIndex(this.buttonBackward, 0);
             this.groupBox.Controls.SetChildIndex(this.labelStatistics, 0);
+            this.groupBox.Controls.SetChildIndex(this.groupBox1, 0);
             // 
             // buttonBackward
             // 
@@ -78,7 +78,6 @@
             // labelStatistics
             // 
             this.labelStatistics.TabIndex = 210;
-            this.labelStatistics.Visible = false;
             // 
             // buttonExit
             // 

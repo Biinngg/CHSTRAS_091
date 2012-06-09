@@ -138,7 +138,6 @@ namespace CHSTRAS_091_UI
             groupBox1.Visible = false;
             buttonSubmit.Enabled = false;
             buttonForward.Enabled = false;
-            labelStatistics.Visible = true;
             labelStatistics.Text = memory.submit();
         }
 
