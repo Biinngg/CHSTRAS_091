@@ -116,12 +116,5 @@ namespace CHSTRAS_091_BT
             }
             return result;
         }
-
-        public String[] moveToBeforeString(int arraySize)
-        {
-            String[] str = new String[arraySize];
-            DataTableCollection dtc = dataSet.Tables;
-            return str;
-        }
     }
 }
