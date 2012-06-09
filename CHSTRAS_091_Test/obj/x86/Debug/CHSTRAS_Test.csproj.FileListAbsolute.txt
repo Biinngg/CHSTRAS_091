@@ -1,9 +1,0 @@
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\bin\Debug\CHSTRAS_Test.dll
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\bin\Debug\CHSTRAS_Test.pdb
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\obj\x86\Debug\CHSTRAS_Test.CHSTRAS_Tester.resources
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\obj\x86\Debug\CHSTRAS_Test.Properties.Resources.resources
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\obj\x86\Debug\CHSTRAS_Test.dll
-D:\rks\20120316刘冰《认识事物 CHSTRAS_091》源程序V09-1.02\《认识事物 CHSTRAS_091》V09-1\CHSTRAS_Test\obj\x86\Debug\CHSTRAS_Test.pdb

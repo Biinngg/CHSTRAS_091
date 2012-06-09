@@ -79,10 +79,10 @@
             // 
             // groupBox
             // 
-            this.groupBox.Controls.Add(this.labelStatistics);
             this.groupBox.Controls.Add(this.buttonBackward);
             this.groupBox.Controls.Add(this.buttonForward);
             this.groupBox.Controls.Add(this.buttonSubmit);
+            this.groupBox.Controls.Add(this.labelStatistics);
             this.groupBox.Location = new System.Drawing.Point(30, 107);
             this.groupBox.Name = "groupBox";
             this.groupBox.Size = new System.Drawing.Size(605, 377);

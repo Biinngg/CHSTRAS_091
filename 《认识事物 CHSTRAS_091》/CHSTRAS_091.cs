@@ -81,5 +81,18 @@ namespace _认识事物_CHSTRAS_091_
                 MessageBox.Show("Exception:" + exception.ToString());
             }
         }
+
+        private void button找寻错误_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                uiCHSTRAS_091_Fault f = new uiCHSTRAS_091_Fault(this, shfUserLogin, shfUnitPractice, courseType);
+                f.Show();
+            }
+            catch (Exception exception)// Exception ex
+            {
+                MessageBox.Show("Exception:" + exception.ToString());
+            }
+        }
     }
 }
