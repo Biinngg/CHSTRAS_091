@@ -147,6 +147,7 @@
             // uiCHSTRAS_091_CourseShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(792, 516);
             this.Controls.Add(this.groupBox);
             this.Controls.Add(this.ucCourseManagerSimple1);
