@@ -89,5 +89,17 @@ namespace CHSTRAS_091_BT
             }
             return images;
         }
+
+        public String[] getTexts()
+        {
+            String[] textNames = Question.Split(new char[] { ',' });
+            int size = textNames.Length;
+            String[] texts = new String[size];
+            for (int i = 0; i < size; i++)
+            {
+                texts[i] = file.getText(textNames[i]);
+            }
+            return texts;
+        }
     }
 }
