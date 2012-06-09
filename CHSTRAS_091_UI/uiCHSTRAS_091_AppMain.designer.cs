@@ -54,12 +54,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox创建课程 = new System.Windows.Forms.GroupBox();
+            this.button创建 = new System.Windows.Forms.Button();
             this.groupBox成绩管理.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHead)).BeginInit();
             this.groupBox用户管理.SuspendLayout();
             this.groupBox课程管理.SuspendLayout();
             this.groupBox训练管理.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox创建课程.SuspendLayout();
             this.SuspendLayout();
             // 
             // label学号
@@ -321,6 +324,7 @@
             this.button找寻错误.TabIndex = 18;
             this.button找寻错误.Text = "找寻错误";
             this.button找寻错误.UseVisualStyleBackColor = false;
+            this.button找寻错误.Click += new System.EventHandler(this.button找寻错误_Click);
             // 
             // button组合拼图
             // 
@@ -366,6 +370,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.ForeColor = System.Drawing.Color.Sienna;
             this.groupBox1.Location = new System.Drawing.Point(386, 122);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(310, 36);
@@ -398,12 +403,37 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // groupBox创建课程
+            // 
+            this.groupBox创建课程.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox创建课程.Controls.Add(this.button创建);
+            this.groupBox创建课程.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBox创建课程.Location = new System.Drawing.Point(60, 445);
+            this.groupBox创建课程.Name = "groupBox创建课程";
+            this.groupBox创建课程.Size = new System.Drawing.Size(99, 63);
+            this.groupBox创建课程.TabIndex = 59;
+            this.groupBox创建课程.TabStop = false;
+            this.groupBox创建课程.Text = "课程编辑";
+            // 
+            // button创建
+            // 
+            this.button创建.BackColor = System.Drawing.Color.Tan;
+            this.button创建.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button创建.ForeColor = System.Drawing.Color.White;
+            this.button创建.Location = new System.Drawing.Point(16, 20);
+            this.button创建.Name = "button创建";
+            this.button创建.Size = new System.Drawing.Size(64, 35);
+            this.button创建.TabIndex = 0;
+            this.button创建.Text = "编辑";
+            this.button创建.UseVisualStyleBackColor = false;
+            // 
             // uiCHSTRAS_091_AppMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(892, 566);
+            this.Controls.Add(this.groupBox创建课程);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox训练管理);
             this.Controls.Add(this.groupBox课程管理);
@@ -429,6 +459,7 @@
             this.groupBox训练管理.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox创建课程.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,5 +493,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        public System.Windows.Forms.GroupBox groupBox创建课程;
+        public System.Windows.Forms.Button button创建;
     }
 }

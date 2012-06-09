@@ -42,6 +42,7 @@ namespace CHSTRAS_091_UI
         private int game02UnitID = 4;
         //private string Typing02UnitName = "键盘练习";
         private int game03UnitID = 5;
+        private int game04UnitID = 6;
         //private string Typing03UnitName = "综合练习";
         private int Typing03UnitID = 8;
         #endregion
@@ -323,6 +324,12 @@ namespace CHSTRAS_091_UI
         private void uuiCHSTRAS_AppMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button找寻错误_Click(object sender, EventArgs e)
+        {
+            shfUserLogin.LoginUnitID = game04UnitID;//设置训练内容
+            shfUnitPractice = shfUnitPractices.GetOne(game04UnitID);
         }
     }
 }
