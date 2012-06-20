@@ -94,5 +94,18 @@ namespace _认识事物_CHSTRAS_091_
                 MessageBox.Show("Exception:" + exception.ToString());
             }
         }
+
+        private void button创建_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                uiCHSTRAS_091_CourseEdit f = new uiCHSTRAS_091_CourseEdit();
+                f.Show();
+            }
+            catch (Exception exception)// Exception ex
+            {
+                MessageBox.Show("Exception:" + exception.ToString());
+            }
+        }
     }
 }

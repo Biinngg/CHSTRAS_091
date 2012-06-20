@@ -54,14 +54,14 @@ namespace CHSTRAS_091_Test
         {
             // 训练对象：设置训练内容和训练要求。
             // 选择对象：修改训练对象内容。
-            myUnitPrac = myUnitPracs.GetOne(6); // 按键练习的训练ID是 6；
-            uiCHSTRAS_091_Option f = new uiCHSTRAS_091_Option(this, myUserLogin, myUnitPrac);
+            uiCHSTRAS_091_AppMain f = new uiCHSTRAS_091_AppMain();
             f.Show();
         }
 
         private void button前言_Click(object sender, EventArgs e)
         {
             //处理：
+            myUnitPrac = myUnitPracs.GetOne(1); // 按键练习的训练ID是 6；
             uiCHSTRAS_091_Foreword f = new uiCHSTRAS_091_Foreword(this, myUserLogin, myUnitPrac, 0);
             f.Show();
         }
@@ -69,8 +69,67 @@ namespace CHSTRAS_091_Test
         private void button认识事物_Click(object sender, EventArgs e)
         {
             //处理：
-            uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, myUserLogin, myUnitPrac, 0);
+            myUnitPrac = myUnitPracs.GetOne(2); // 按键练习的训练ID是 6；
+            uiCHSTRAS_091_Teach f = new uiCHSTRAS_091_Teach(this, myUserLogin, myUnitPrac, 1);
             f.Show();
+        }
+
+        private void button连结游戏_Click(object sender, EventArgs e)
+        {
+            myUnitPrac = myUnitPracs.GetOne(3); // 按键练习的训练ID是 6；
+            uiCHSTRAS_091_Link f = new uiCHSTRAS_091_Link(this, myUserLogin, myUnitPrac, 1);
+            f.Show();
+        }
+
+        private void button组合拼图_Click(object sender, EventArgs e)
+        {
+            myUnitPrac = myUnitPracs.GetOne(4); // 按键练习的训练ID是 6；
+            uiCHSTRAS_091_Puzzle f = new uiCHSTRAS_091_Puzzle(this, myUserLogin, myUnitPrac, 1);
+            f.Show();
+        }
+
+        private void button记忆门窗_Click(object sender, EventArgs e)
+        {
+            myUnitPrac = myUnitPracs.GetOne(5); // 按键练习的训练ID是 6；
+            uiCHSTRAS_091_Memory f = new uiCHSTRAS_091_Memory(this, myUserLogin, myUnitPrac, 1);
+            f.Show();
+        }
+
+        private void button找寻错误_Click(object sender, EventArgs e)
+        {
+            myUnitPrac = myUnitPracs.GetOne(6); // 按键练习的训练ID是 6；
+            uiCHSTRAS_091_Fault f = new uiCHSTRAS_091_Fault(this, myUserLogin, myUnitPrac, 1);
+            f.Show();
+        }
+
+        private void FOREWORD00_Click(object sender, EventArgs e)
+        {
+            button前言_Click(sender, e);
+        }
+
+        private void TEACH00_Click(object sender, EventArgs e)
+        {
+            button认识事物_Click(sender, e);
+        }
+
+        private void LINK00_Click(object sender, EventArgs e)
+        {
+            button连结游戏_Click(sender, e);
+        }
+
+        private void PUZZLE00_Click(object sender, EventArgs e)
+        {
+            button组合拼图_Click(sender, e);
+        }
+
+        private void MEMORY00_Click(object sender, EventArgs e)
+        {
+            button记忆门窗_Click(sender, e);
+        }
+
+        private void FAULT00_Click(object sender, EventArgs e)
+        {
+            button找寻错误_Click(sender, e);
         }
     }
 }

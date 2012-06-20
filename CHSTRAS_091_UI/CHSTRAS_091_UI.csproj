@@ -74,12 +74,6 @@
     <Compile Include="uiCHSTRAS_091_CourseEdit.Designer.cs">
       <DependentUpon>uiCHSTRAS_091_CourseEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="uiCHSTRAS_091_CourseShow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="uiCHSTRAS_091_CourseShow.Designer.cs">
-      <DependentUpon>uiCHSTRAS_091_CourseShow.cs</DependentUpon>
-    </Compile>
     <Compile Include="uiCHSTRAS_091_Fault.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,9 +138,6 @@
     <EmbeddedResource Include="uiCHSTRAS_091_CourseEdit.resx">
       <DependentUpon>uiCHSTRAS_091_CourseEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uiCHSTRAS_091_CourseShow.resx">
-      <DependentUpon>uiCHSTRAS_091_CourseShow.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="uiCHSTRAS_091_Base.resx">
       <DependentUpon>uiCHSTRAS_091_Base.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +165,7 @@
     <EmbeddedResource Include="uiCHSTRAS_091_Option.resx">
       <DependentUpon>uiCHSTRAS_091_Option.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

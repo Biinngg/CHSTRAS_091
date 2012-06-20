@@ -43,7 +43,6 @@
             this.button前言 = new System.Windows.Forms.Button();
             this.QUIT00 = new System.Windows.Forms.Button();
             this.tabPage认识器物教学 = new System.Windows.Forms.TabPage();
-            this.LINK01 = new System.Windows.Forms.Button();
             this.LINK00 = new System.Windows.Forms.Button();
             this.LINK = new System.Windows.Forms.Label();
             this.TEACH00 = new System.Windows.Forms.Button();
@@ -51,14 +50,10 @@
             this.FOREWORD00 = new System.Windows.Forms.Button();
             this.FOREWORD = new System.Windows.Forms.Label();
             this.tabPage认识器物游戏 = new System.Windows.Forms.TabPage();
-            this.FAULT02 = new System.Windows.Forms.Button();
-            this.FAULT01 = new System.Windows.Forms.Button();
             this.FAULT00 = new System.Windows.Forms.Button();
             this.FAULT = new System.Windows.Forms.Label();
-            this.MEMORY01 = new System.Windows.Forms.Button();
             this.MEMORY00 = new System.Windows.Forms.Button();
             this.MEMORY = new System.Windows.Forms.Label();
-            this.PUZZLE01 = new System.Windows.Forms.Button();
             this.PUZZLE00 = new System.Windows.Forms.Button();
             this.PUZZLE = new System.Windows.Forms.Label();
             this.tabPage桌面应用.SuspendLayout();
@@ -73,6 +68,10 @@
             this.tabPage桌面应用.Location = new System.Drawing.Point(4, 22);
             this.tabPage桌面应用.Size = new System.Drawing.Size(641, 67);
             // 
+            // button成绩
+            // 
+            this.button成绩.BackColor = System.Drawing.Color.DarkGoldenrod;
+            // 
             // button登录
             // 
             this.button登录.BackColor = System.Drawing.Color.Aqua;
@@ -82,6 +81,18 @@
             // 
             this.button主界面.BackColor = System.Drawing.Color.Aqua;
             this.button主界面.Click += new System.EventHandler(this.button主界面_Click);
+            // 
+            // button业务处理03
+            // 
+            this.button业务处理03.BackColor = System.Drawing.Color.DarkGoldenrod;
+            // 
+            // button业务处理02
+            // 
+            this.button业务处理02.BackColor = System.Drawing.Color.DarkGoldenrod;
+            // 
+            // button业务处理01
+            // 
+            this.button业务处理01.BackColor = System.Drawing.Color.BurlyWood;
             // 
             // tabControlUI
             // 
@@ -123,126 +134,142 @@
             // 
             // button课程结构
             // 
+            this.button课程结构.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.button课程结构.Location = new System.Drawing.Point(417, 35);
             this.button课程结构.Name = "button课程结构";
             this.button课程结构.Size = new System.Drawing.Size(75, 23);
             this.button课程结构.TabIndex = 13;
             this.button课程结构.Text = "课程结构";
-            this.button课程结构.UseVisualStyleBackColor = true;
+            this.button课程结构.UseVisualStyleBackColor = false;
             // 
             // button显示课程
             // 
+            this.button显示课程.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.button显示课程.Location = new System.Drawing.Point(336, 35);
             this.button显示课程.Name = "button显示课程";
             this.button显示课程.Size = new System.Drawing.Size(75, 23);
             this.button显示课程.TabIndex = 12;
             this.button显示课程.Text = "显示课程";
-            this.button显示课程.UseVisualStyleBackColor = true;
+            this.button显示课程.UseVisualStyleBackColor = false;
             // 
             // button创建课程
             // 
+            this.button创建课程.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.button创建课程.Location = new System.Drawing.Point(255, 35);
             this.button创建课程.Name = "button创建课程";
             this.button创建课程.Size = new System.Drawing.Size(75, 23);
             this.button创建课程.TabIndex = 11;
             this.button创建课程.Text = "创建课程";
-            this.button创建课程.UseVisualStyleBackColor = true;
+            this.button创建课程.UseVisualStyleBackColor = false;
             // 
             // button统计分析
             // 
+            this.button统计分析.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.button统计分析.Location = new System.Drawing.Point(174, 35);
             this.button统计分析.Name = "button统计分析";
             this.button统计分析.Size = new System.Drawing.Size(75, 23);
             this.button统计分析.TabIndex = 10;
             this.button统计分析.Text = "统计分析";
-            this.button统计分析.UseVisualStyleBackColor = true;
+            this.button统计分析.UseVisualStyleBackColor = false;
             // 
             // button单元成绩
             // 
+            this.button单元成绩.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.button单元成绩.Location = new System.Drawing.Point(93, 35);
             this.button单元成绩.Name = "button单元成绩";
             this.button单元成绩.Size = new System.Drawing.Size(75, 23);
             this.button单元成绩.TabIndex = 9;
             this.button单元成绩.Text = "单元成绩";
-            this.button单元成绩.UseVisualStyleBackColor = true;
+            this.button单元成绩.UseVisualStyleBackColor = false;
             // 
             // button单项成绩
             // 
+            this.button单项成绩.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.button单项成绩.Location = new System.Drawing.Point(12, 35);
             this.button单项成绩.Name = "button单项成绩";
             this.button单项成绩.Size = new System.Drawing.Size(75, 23);
             this.button单项成绩.TabIndex = 8;
             this.button单项成绩.Text = "单项成绩";
-            this.button单项成绩.UseVisualStyleBackColor = true;
+            this.button单项成绩.UseVisualStyleBackColor = false;
             // 
             // button找寻错误
             // 
+            this.button找寻错误.BackColor = System.Drawing.Color.LawnGreen;
             this.button找寻错误.Location = new System.Drawing.Point(417, 6);
             this.button找寻错误.Name = "button找寻错误";
             this.button找寻错误.Size = new System.Drawing.Size(75, 23);
             this.button找寻错误.TabIndex = 7;
             this.button找寻错误.Text = "找寻错误";
-            this.button找寻错误.UseVisualStyleBackColor = true;
+            this.button找寻错误.UseVisualStyleBackColor = false;
+            this.button找寻错误.Click += new System.EventHandler(this.button找寻错误_Click);
             // 
             // button记忆门窗
             // 
+            this.button记忆门窗.BackColor = System.Drawing.Color.LawnGreen;
             this.button记忆门窗.Location = new System.Drawing.Point(336, 6);
             this.button记忆门窗.Name = "button记忆门窗";
             this.button记忆门窗.Size = new System.Drawing.Size(75, 23);
             this.button记忆门窗.TabIndex = 6;
             this.button记忆门窗.Text = "记忆门窗";
-            this.button记忆门窗.UseVisualStyleBackColor = true;
+            this.button记忆门窗.UseVisualStyleBackColor = false;
+            this.button记忆门窗.Click += new System.EventHandler(this.button记忆门窗_Click);
             // 
             // button组合拼图
             // 
+            this.button组合拼图.BackColor = System.Drawing.Color.LawnGreen;
             this.button组合拼图.Location = new System.Drawing.Point(255, 6);
             this.button组合拼图.Name = "button组合拼图";
             this.button组合拼图.Size = new System.Drawing.Size(75, 23);
             this.button组合拼图.TabIndex = 5;
             this.button组合拼图.Text = "组合拼图";
-            this.button组合拼图.UseVisualStyleBackColor = true;
+            this.button组合拼图.UseVisualStyleBackColor = false;
+            this.button组合拼图.Click += new System.EventHandler(this.button组合拼图_Click);
             // 
             // button连结游戏
             // 
+            this.button连结游戏.BackColor = System.Drawing.Color.LawnGreen;
             this.button连结游戏.Location = new System.Drawing.Point(174, 6);
             this.button连结游戏.Name = "button连结游戏";
             this.button连结游戏.Size = new System.Drawing.Size(75, 23);
             this.button连结游戏.TabIndex = 4;
             this.button连结游戏.Text = "连结游戏";
-            this.button连结游戏.UseVisualStyleBackColor = true;
+            this.button连结游戏.UseVisualStyleBackColor = false;
+            this.button连结游戏.Click += new System.EventHandler(this.button连结游戏_Click);
             // 
             // button认识事物
             // 
+            this.button认识事物.BackColor = System.Drawing.Color.LawnGreen;
             this.button认识事物.Location = new System.Drawing.Point(93, 6);
             this.button认识事物.Name = "button认识事物";
             this.button认识事物.Size = new System.Drawing.Size(75, 23);
             this.button认识事物.TabIndex = 3;
             this.button认识事物.Text = "认识事物";
-            this.button认识事物.UseVisualStyleBackColor = true;
+            this.button认识事物.UseVisualStyleBackColor = false;
             this.button认识事物.Click += new System.EventHandler(this.button认识事物_Click);
             // 
             // button前言
             // 
+            this.button前言.BackColor = System.Drawing.Color.LawnGreen;
             this.button前言.Location = new System.Drawing.Point(12, 6);
             this.button前言.Name = "button前言";
             this.button前言.Size = new System.Drawing.Size(75, 23);
             this.button前言.TabIndex = 2;
             this.button前言.Text = "前言";
-            this.button前言.UseVisualStyleBackColor = true;
+            this.button前言.UseVisualStyleBackColor = false;
             this.button前言.Click += new System.EventHandler(this.button前言_Click);
             // 
             // QUIT00
             // 
+            this.QUIT00.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.QUIT00.Location = new System.Drawing.Point(498, 6);
             this.QUIT00.Name = "QUIT00";
             this.QUIT00.Size = new System.Drawing.Size(75, 23);
             this.QUIT00.TabIndex = 1;
             this.QUIT00.Text = "退出";
-            this.QUIT00.UseVisualStyleBackColor = true;
+            this.QUIT00.UseVisualStyleBackColor = false;
             // 
             // tabPage认识器物教学
             // 
-            this.tabPage认识器物教学.Controls.Add(this.LINK01);
             this.tabPage认识器物教学.Controls.Add(this.LINK00);
             this.tabPage认识器物教学.Controls.Add(this.LINK);
             this.tabPage认识器物教学.Controls.Add(this.TEACH00);
@@ -256,23 +283,16 @@
             this.tabPage认识器物教学.Text = "认识器物教学";
             this.tabPage认识器物教学.UseVisualStyleBackColor = true;
             // 
-            // LINK01
-            // 
-            this.LINK01.Location = new System.Drawing.Point(182, 45);
-            this.LINK01.Name = "LINK01";
-            this.LINK01.Size = new System.Drawing.Size(75, 23);
-            this.LINK01.TabIndex = 6;
-            this.LINK01.Text = "答题";
-            this.LINK01.UseVisualStyleBackColor = true;
-            // 
             // LINK00
             // 
+            this.LINK00.BackColor = System.Drawing.Color.LawnGreen;
             this.LINK00.Location = new System.Drawing.Point(65, 45);
             this.LINK00.Name = "LINK00";
             this.LINK00.Size = new System.Drawing.Size(75, 23);
             this.LINK00.TabIndex = 5;
             this.LINK00.Text = "出题";
-            this.LINK00.UseVisualStyleBackColor = true;
+            this.LINK00.UseVisualStyleBackColor = false;
+            this.LINK00.Click += new System.EventHandler(this.LINK00_Click);
             // 
             // LINK
             // 
@@ -285,12 +305,14 @@
             // 
             // TEACH00
             // 
+            this.TEACH00.BackColor = System.Drawing.Color.LawnGreen;
             this.TEACH00.Location = new System.Drawing.Point(65, 22);
             this.TEACH00.Name = "TEACH00";
             this.TEACH00.Size = new System.Drawing.Size(75, 23);
             this.TEACH00.TabIndex = 3;
             this.TEACH00.Text = "展示植物";
-            this.TEACH00.UseVisualStyleBackColor = true;
+            this.TEACH00.UseVisualStyleBackColor = false;
+            this.TEACH00.Click += new System.EventHandler(this.TEACH00_Click);
             // 
             // TEACH
             // 
@@ -303,12 +325,14 @@
             // 
             // FOREWORD00
             // 
+            this.FOREWORD00.BackColor = System.Drawing.Color.LawnGreen;
             this.FOREWORD00.Location = new System.Drawing.Point(65, 0);
             this.FOREWORD00.Name = "FOREWORD00";
             this.FOREWORD00.Size = new System.Drawing.Size(101, 23);
             this.FOREWORD00.TabIndex = 1;
             this.FOREWORD00.Text = "给家长教师的话";
-            this.FOREWORD00.UseVisualStyleBackColor = true;
+            this.FOREWORD00.UseVisualStyleBackColor = false;
+            this.FOREWORD00.Click += new System.EventHandler(this.FOREWORD00_Click);
             // 
             // FOREWORD
             // 
@@ -321,14 +345,10 @@
             // 
             // tabPage认识器物游戏
             // 
-            this.tabPage认识器物游戏.Controls.Add(this.FAULT02);
-            this.tabPage认识器物游戏.Controls.Add(this.FAULT01);
             this.tabPage认识器物游戏.Controls.Add(this.FAULT00);
             this.tabPage认识器物游戏.Controls.Add(this.FAULT);
-            this.tabPage认识器物游戏.Controls.Add(this.MEMORY01);
             this.tabPage认识器物游戏.Controls.Add(this.MEMORY00);
             this.tabPage认识器物游戏.Controls.Add(this.MEMORY);
-            this.tabPage认识器物游戏.Controls.Add(this.PUZZLE01);
             this.tabPage认识器物游戏.Controls.Add(this.PUZZLE00);
             this.tabPage认识器物游戏.Controls.Add(this.PUZZLE);
             this.tabPage认识器物游戏.Location = new System.Drawing.Point(4, 22);
@@ -338,32 +358,16 @@
             this.tabPage认识器物游戏.Text = "认识器物游戏";
             this.tabPage认识器物游戏.UseVisualStyleBackColor = true;
             // 
-            // FAULT02
-            // 
-            this.FAULT02.Location = new System.Drawing.Point(309, 45);
-            this.FAULT02.Name = "FAULT02";
-            this.FAULT02.Size = new System.Drawing.Size(75, 23);
-            this.FAULT02.TabIndex = 9;
-            this.FAULT02.Text = "改错";
-            this.FAULT02.UseVisualStyleBackColor = true;
-            // 
-            // FAULT01
-            // 
-            this.FAULT01.Location = new System.Drawing.Point(182, 45);
-            this.FAULT01.Name = "FAULT01";
-            this.FAULT01.Size = new System.Drawing.Size(75, 23);
-            this.FAULT01.TabIndex = 8;
-            this.FAULT01.Text = "答题";
-            this.FAULT01.UseVisualStyleBackColor = true;
-            // 
             // FAULT00
             // 
+            this.FAULT00.BackColor = System.Drawing.Color.LawnGreen;
             this.FAULT00.Location = new System.Drawing.Point(69, 45);
             this.FAULT00.Name = "FAULT00";
             this.FAULT00.Size = new System.Drawing.Size(75, 23);
             this.FAULT00.TabIndex = 7;
             this.FAULT00.Text = "出题";
-            this.FAULT00.UseVisualStyleBackColor = true;
+            this.FAULT00.UseVisualStyleBackColor = false;
+            this.FAULT00.Click += new System.EventHandler(this.FAULT00_Click);
             // 
             // FAULT
             // 
@@ -374,23 +378,16 @@
             this.FAULT.TabIndex = 6;
             this.FAULT.Text = "找寻错误";
             // 
-            // MEMORY01
-            // 
-            this.MEMORY01.Location = new System.Drawing.Point(182, 21);
-            this.MEMORY01.Name = "MEMORY01";
-            this.MEMORY01.Size = new System.Drawing.Size(75, 23);
-            this.MEMORY01.TabIndex = 5;
-            this.MEMORY01.Text = "答题";
-            this.MEMORY01.UseVisualStyleBackColor = true;
-            // 
             // MEMORY00
             // 
+            this.MEMORY00.BackColor = System.Drawing.Color.LawnGreen;
             this.MEMORY00.Location = new System.Drawing.Point(69, 21);
             this.MEMORY00.Name = "MEMORY00";
             this.MEMORY00.Size = new System.Drawing.Size(75, 23);
             this.MEMORY00.TabIndex = 4;
             this.MEMORY00.Text = "出题";
-            this.MEMORY00.UseVisualStyleBackColor = true;
+            this.MEMORY00.UseVisualStyleBackColor = false;
+            this.MEMORY00.Click += new System.EventHandler(this.MEMORY00_Click);
             // 
             // MEMORY
             // 
@@ -401,23 +398,16 @@
             this.MEMORY.TabIndex = 3;
             this.MEMORY.Text = "记忆门窗";
             // 
-            // PUZZLE01
-            // 
-            this.PUZZLE01.Location = new System.Drawing.Point(182, -1);
-            this.PUZZLE01.Name = "PUZZLE01";
-            this.PUZZLE01.Size = new System.Drawing.Size(75, 23);
-            this.PUZZLE01.TabIndex = 2;
-            this.PUZZLE01.Text = "答题";
-            this.PUZZLE01.UseVisualStyleBackColor = true;
-            // 
             // PUZZLE00
             // 
+            this.PUZZLE00.BackColor = System.Drawing.Color.LawnGreen;
             this.PUZZLE00.Location = new System.Drawing.Point(69, -1);
             this.PUZZLE00.Name = "PUZZLE00";
             this.PUZZLE00.Size = new System.Drawing.Size(75, 23);
             this.PUZZLE00.TabIndex = 1;
             this.PUZZLE00.Text = "出题";
-            this.PUZZLE00.UseVisualStyleBackColor = true;
+            this.PUZZLE00.UseVisualStyleBackColor = false;
+            this.PUZZLE00.Click += new System.EventHandler(this.PUZZLE00_Click);
             // 
             // PUZZLE
             // 
@@ -451,21 +441,16 @@
         private System.Windows.Forms.TabPage tabPage认识器物教学;
         private System.Windows.Forms.TabPage tabPage认识器物游戏;
         private System.Windows.Forms.Button QUIT00;
-        private System.Windows.Forms.Button LINK01;
         private System.Windows.Forms.Button LINK00;
         private System.Windows.Forms.Label LINK;
         private System.Windows.Forms.Button TEACH00;
         private System.Windows.Forms.Label TEACH;
         private System.Windows.Forms.Button FOREWORD00;
         private System.Windows.Forms.Label FOREWORD;
-        private System.Windows.Forms.Button FAULT02;
-        private System.Windows.Forms.Button FAULT01;
         private System.Windows.Forms.Button FAULT00;
         private System.Windows.Forms.Label FAULT;
-        private System.Windows.Forms.Button MEMORY01;
         private System.Windows.Forms.Button MEMORY00;
         private System.Windows.Forms.Label MEMORY;
-        private System.Windows.Forms.Button PUZZLE01;
         private System.Windows.Forms.Button PUZZLE00;
         private System.Windows.Forms.Label PUZZLE;
         private System.Windows.Forms.Button button课程结构;

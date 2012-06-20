@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="btCHSTRAS_091_CourseEdit.cs" />
     <Compile Include="btCHSTRAS_091_Fault.cs" />
     <Compile Include="btCHSTRAS_091_Link_Status.cs" />
     <Compile Include="btCHSTRAS_091_Memory.cs" />

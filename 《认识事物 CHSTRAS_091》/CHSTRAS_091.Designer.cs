@@ -33,6 +33,7 @@
             this.groupBox用户管理.SuspendLayout();
             this.groupBox课程管理.SuspendLayout();
             this.groupBox训练管理.SuspendLayout();
+            this.groupBox创建课程.SuspendLayout();
             this.SuspendLayout();
             // 
             // button认识植物
@@ -60,6 +61,10 @@
             // 
             this.button找寻错误.Click += new System.EventHandler(this.button找寻错误_Click);
             // 
+            // button创建
+            // 
+            this.button创建.Click += new System.EventHandler(this.button创建_Click);
+            // 
             // CHSTRAS_091
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -72,6 +77,7 @@
             this.groupBox用户管理.ResumeLayout(false);
             this.groupBox课程管理.ResumeLayout(false);
             this.groupBox训练管理.ResumeLayout(false);
+            this.groupBox创建课程.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
